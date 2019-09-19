@@ -5,8 +5,8 @@ import React from "react"
 
 const Content = styled.div`
   max-width: 860px;
-  padding: 1rem 1.0875rem;
-  font-size: 1.2rem;
+  padding: 2rem 1.0875rem 1rem 1.0875rem;
+  font-size: 1.4rem;
 `
 
 const NavLink = styled(Link)`

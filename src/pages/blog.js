@@ -5,6 +5,7 @@ import styled from "@emotion/styled"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+// import Img from 'gatsby-image';
 
 const Content = styled.div`
   margin: 0 auto;
@@ -22,13 +23,16 @@ const MarkerHeader = styled.h3`
   display: inline;
   border-radius: 1em 0 1em 0;
   margin-bottom: 10px;
-  background-image: linear-gradient(
-    -100deg,
-    rgba(255, 250, 150, 0.15),
-    rgba(255, 250, 150, 0.8) 100%,
-    rgba(255, 250, 150, 0.25)
-  );
-`
+  // background-image: linear-gradient(
+  //   -100deg,
+  //   rgba(255, 250, 150, 0.15),
+  //   rgba(255, 250, 150, 0.8) 100%,
+  //   rgba(255, 250, 150, 0.25)
+  // );
+  background-color: rgba(92, 187, 254, 0.7);
+  padding-right: 9px;
+  padding-left: 7px;
+  `
 
 const ReadingTime = styled.h5`
   display: inline;
@@ -51,6 +55,8 @@ const IndexPage = ({ data }) => {
                 color: inherit;
               `}
             >
+              {/* {node.frontmatter.image.childImageSharp.fluid} */}
+              {/* <div>{node.frontmatter.image}</div> */}
               <MarkerHeader>{node.frontmatter.title} </MarkerHeader>
               <div>
                 <ArticleDate>{node.frontmatter.date}</ArticleDate>
@@ -75,7 +81,7 @@ export const query = graphql`
       }
     }
     allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
-      totalCount
+      totalCount  
       edges {
         node {
           id

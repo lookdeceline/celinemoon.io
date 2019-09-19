@@ -13,17 +13,22 @@ const Content = styled.div`
 const MarkedHeader = styled.h1`
   display: inline;
   border-radius: 1em 0 1em 0;
-  background-image: linear-gradient(
-    -100deg,
-    rgba(255, 250, 150, 0.15),
-    rgba(255, 250, 150, 0.8) 100%,
-    rgba(255, 250, 150, 0.25)
-  );
+  // background-image: linear-gradient(
+  //   -100deg,
+  //   rgba(255, 250, 150, 0.15),
+  //   rgba(255, 250, 150, 0.8) 100%,
+  //   rgba(255, 250, 150, 0.25)
+  // );
+  font-size: 2.8rem;
 `
 
 const HeaderDate = styled.h3`
-  margin-top: 10px;
-  color: #606060;
+  margin-top: 15px;
+  color: #5cbbfe;
+  font-size: 1rem;
+  font-weight: 400;
+  // text-align: right;
+  // color: #606060;
 `
 
 // STYLE THE TAGS INSIDE THE MARKDOWN HERE
@@ -42,7 +47,8 @@ const MarkdownContent = styled.div`
     right: -0.1px;
     bottom: 0;
     transition: top 0.1s ease-in-out;
-    background-color: rgba(255, 250, 150, 0.8);
+    // background-color: rgba(255, 250, 150, 0.8);
+    background-color: rgba(92, 187, 254, 0.7);
   }
 
   a:hover::after {
@@ -51,21 +57,26 @@ const MarkdownContent = styled.div`
 `
 
 export default ({ data }) => {
+  let styles = {
+    zoom: 0.9
+  };
   const post = data.markdownRemark
   return (
-    <Layout>
-      <SEO
-        title={post.frontmatter.title}
-        description={post.frontmatter.description || post.excerpt}
-      />
-      <Content>
-        <MarkedHeader>{post.frontmatter.title}</MarkedHeader>
-        <HeaderDate>
-          {post.frontmatter.date} - {post.fields.readingTime.text}
-        </HeaderDate>
-        <MarkdownContent dangerouslySetInnerHTML={{ __html: post.html }} />
-      </Content>
-    </Layout>
+    <div style = {styles}>
+      <Layout>
+        <SEO
+          title={post.frontmatter.title}
+          description={post.frontmatter.description || post.excerpt}
+        />
+        <Content>
+          <MarkedHeader>{post.frontmatter.title}</MarkedHeader>
+          <HeaderDate>
+            {post.frontmatter.date} - {post.fields.readingTime.text}
+          </HeaderDate>
+          <MarkdownContent dangerouslySetInnerHTML={{ __html: post.html }} />
+        </Content>
+      </Layout>
+    </div>
   )
 }
 
