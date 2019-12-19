@@ -3,17 +3,30 @@ import { Link, graphql } from "gatsby"
 import Img from "gatsby-image"
 import { css } from "@emotion/core"
 import styled from "@emotion/styled"
+import './global.css'
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import '../components/global.css'
+import Layout from "./layout"
+import SEO from "./seo"
 // import Img from 'gatsby-image';
 
-const PageTitle = styled.h1`
+const SectionTitle = styled.span`
   font-family: 'DM Sans', sans-serif;
+  font-size: 2em;
   font-weight: 500;
 `
-
+const Expand = styled(Link)`
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  margin-left: 5vw;
+  padding: 3px 14px;
+  border-radius: 15px;
+  background: #e3f4e5;
+  text-decoration: none;
+  
+  :hover {
+    color: #fd163f;
+  }
+`
 const Content = styled.div`
   margin: 0 auto;
   max-width: 860px;
@@ -23,30 +36,41 @@ const Content = styled.div`
 const MarkerHeader = styled.h3`
   display: inline;
   font-family: 'DM Sans', sans-serif;
-  font-weight: 500;
+  // border-radius: 1em 0 1em 0;
   margin-bottom: 10px;
+  // background-image: linear-gradient(
+  //   -100deg,
+  //   rgba(255, 250, 150, 0.15),
+  //   rgba(255, 250, 150, 0.8) 100%,
+  //   rgba(255, 250, 150, 0.25)
+  // );
+
+  // background-color: rgba(92, 187, 254, 0.45);
+  // height: 3px;
+  // background-color: rgba(216, 123, 73, 0.5);
+  // padding-right: 9px;
+  // padding-left: 7px;
   `
+
 const ArticleDate = styled.h5`
   display: inline;
-  font-size: 14px;
-  font-weight: 400;
-  color: #0e51ec;
-  // color: #fd163f;
+  // color: #606060;
+  // color: #063268;
+  // color: #c42a00;
+  // color: rgb(143, 10, 93);
+  color: #fb2811;
   margin-bottom: 10px;
 `
 
 const ReadingTime = styled.h5`
   display: inline;
-  font-size: 14px;
-  font-weight: 400;
-  color: #0e51ec;
-  // color: #fd163f;
+  // color: #606060;
+  // color: #063268;
+  // color: #c42a00;
+  // color: rgb(240, 50, 50);
+  // color: rgb(143, 10, 93);
+  color: #fb2811;
   margin-bottom: 10px;
-`
-
-const MarkerContent = styled.h5`
-  font-size: 17.6px;
-  font-weight: 400;
 `
 
 const SinglePost = styled.section`
@@ -55,14 +79,16 @@ const SinglePost = styled.section`
 
 const IndexPage = ({ data }) => {
   return (
-    <Layout>
-      <SEO title="Blog" />
+    <div>
       <Content>
-        <PageTitle>Blog</PageTitle>
+        <div style={{ marginBottom: 20, display: 'flex', alignItems: 'center'}}>
+          <SectionTitle>Latest Posts</SectionTitle>
+          <Expand to="/blog">View All</Expand>
+        </div>
         {data.allMarkdownRemark.edges.map(({ node }) => (
-          <SinglePost>
-            <div key={node.id}>
-            {/* // <div key={node.id}> */}
+          <SinglePost key={node.id}>
+            <div>
+              {/* // <div key={node.id}> */}
               <Link
                 to={node.frontmatter.path}
                 css={css`
@@ -73,10 +99,6 @@ const IndexPage = ({ data }) => {
                 {/* {node.frontmatter.image.childImageSharp.fluid} */}
                 {/* <div>{node.frontmatter.image}</div> */}
                 <MarkerHeader>{node.frontmatter.title} </MarkerHeader>
-                <div>
-                  <ArticleDate>{node.frontmatter.date}</ArticleDate>
-                  <ReadingTime> - {node.fields.readingTime.text}</ReadingTime>
-                </div>
                 <div>{node.frontmatter.description}</div>
                 {/* <div><Img fluid={node.frontmatter.thumbnail.childImageSharp}/></div> */}
               </Link>
@@ -84,43 +106,9 @@ const IndexPage = ({ data }) => {
           </SinglePost>
         ))}
       </Content>
-    </Layout>
+    </div>
   )
 }
 
 export default IndexPage
 
-export const query = graphql`
-  query {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-    allMarkdownRemark(
-      sort: { fields: [frontmatter___date], order: DESC }
-      filter: { frontmatter: { draft: { eq: false } } }
-    ) {
-      totalCount
-      edges {
-        node {
-          id
-          frontmatter {
-            title
-            date(formatString: "DD MMMM, YYYY")
-            path
-            description
-
-          }
-          fields {
-            slug
-            readingTime {
-              text
-            }
-          }
-          excerpt
-        }
-      }
-    }
-  }
-`

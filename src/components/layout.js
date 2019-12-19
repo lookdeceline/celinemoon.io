@@ -25,6 +25,7 @@ const GatsbyLink = styled.a`
 `
 
 const Footer = styled.footer`
+  margin-top: 15vh;
   display: flex;
   justify-content: center;
 `
@@ -46,9 +47,10 @@ const Layout = ({ children }) => (
         <Content>
           <main>{children}</main>
           <Footer>
-            © {new Date().getFullYear()}, Built with
+            © {new Date().getFullYear()},
             {` `}
-            <GatsbyLink href="https://www.gatsbyjs.org">Gatsby</GatsbyLink>
+            {/*<GatsbyLink href="https://www.gatsbyjs.org">Gatsby</GatsbyLink>*/}
+            <GatsbyLink href="https://github.com/lookdeceline">lookdeceline</GatsbyLink>
           </Footer>
         </Content>
       </>

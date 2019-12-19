@@ -2,11 +2,14 @@ import { Link } from "gatsby"
 import styled from "@emotion/styled"
 import PropTypes from "prop-types"
 import React from "react"
+import './global.css'
 
 const Content = styled.div`
   max-width: 860px;
   padding: 2rem 1.0875rem 1rem 1.0875rem;
   font-size: 1.4rem;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
 `
 
 const NavLink = styled(Link)`
@@ -78,7 +81,7 @@ const Header = ({ siteTitle }) => (
       <p>
         <HomeLink to="/">{siteTitle}</HomeLink>
         <NavLink to="/blog">Blog</NavLink>
-        <GitHubLink href="https://github.com/niklasmtj/gatsby-starter-julia">GitHub</GitHubLink>
+        <GitHubLink href="https://github.com/lookdeceline">GitHub</GitHubLink>
       </p>
     </Content>
   </SiteHeader>

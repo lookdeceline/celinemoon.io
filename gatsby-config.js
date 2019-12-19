@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Celine Moon`,
-    description: `Wecome to Maclinee Page.`,
-    author: `@niklasmtj`,
+    title: `lookdeceline`,
+    description: `JeongWon's Blog`,
+    author: `@lookdeceline`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -44,7 +44,9 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        // icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/web-programming.svg`, 
+        // icon: `<div>Icons made by <a href="https://www.flaticon.com/authors/icongeek26" title="Icongeek26">Icongeek26</a> from <a href="https://www.flaticon.com/"             title="Flaticon">www.flaticon.com</a></div>`
       },
     },
     `gatsby-plugin-sharp`,

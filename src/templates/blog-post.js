@@ -4,6 +4,8 @@ import styled from "@emotion/styled"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
+import '../components/global.css'
+
 const Content = styled.div`
   margin: 0 auto;
   max-width: 860px;
@@ -11,6 +13,8 @@ const Content = styled.div`
 `
 
 const MarkedHeader = styled.h1`
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
   display: inline;
   border-radius: 1em 0 1em 0;
   // background-image: linear-gradient(
@@ -19,13 +23,13 @@ const MarkedHeader = styled.h1`
   //   rgba(255, 250, 150, 0.8) 100%,
   //   rgba(255, 250, 150, 0.25)
   // );
-  font-size: 2.8rem;
+  font-size: 2.75rem;
 `
 
 const HeaderDate = styled.h3`
   margin-top: 15px;
-  color: #5cbbfe;
-  font-size: 1rem;
+  color: #0E51EC;
+  font-size: 1.05rem;
   font-weight: 400;
   // text-align: right;
   // color: #606060;
@@ -42,17 +46,21 @@ const MarkdownContent = styled.div`
     content: "";
     position: absolute;
     z-index: -1;
-    top: 70%;
+    top: 85%;
     left: -0.1px;
     right: -0.1px;
     bottom: 0;
     transition: top 0.1s ease-in-out;
-    // background-color: rgba(255, 250, 150, 0.8);
-    background-color: rgba(92, 187, 254, 0.7);
+    background-color: #0E51EC;
   }
 
-  a:hover::after {
-    top: 0;
+  // a:hover::after {
+  //   top: 0;
+  // }
+  
+  a:hover {
+    // top: 0;
+    color: #fd163f;
   }
 `
 
@@ -67,6 +75,7 @@ export default ({ data }) => {
         <SEO
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
+          // description = "world"
         />
         <Content>
           <MarkedHeader>{post.frontmatter.title}</MarkedHeader>
