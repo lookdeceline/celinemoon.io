@@ -96,10 +96,9 @@ sup {
   top: -0.5em;
 }
 img {
-  border-style: solid;
-  border-color: hsla(156, 11%, 27%, 0.5);
-  border-width: 1px;
-  /* padding-bottom: 50px; */
+  /*border-style: solid;*/
+  /*border-color: hsla(156, 11%, 27%, 0.5);*/
+  /*border-width: 1px;*/
 }
 svg:not(:root) {
   overflow: hidden;

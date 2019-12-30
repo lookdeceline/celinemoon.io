@@ -31,6 +31,7 @@ const HeaderDate = styled.h3`
   color: #0E51EC;
   font-size: 1.05rem;
   font-weight: 400;
+  margin-bottom: 50px;
   // text-align: right;
   // color: #606060;
 `
@@ -40,18 +41,19 @@ const MarkdownContent = styled.div`
   a {
     text-decoration: none;
     position: relative;
+    color: #0E51EC;
   }
 
   a::after {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    top: 85%;
-    left: -0.1px;
-    right: -0.1px;
-    bottom: 0;
-    transition: top 0.1s ease-in-out;
-    background-color: #0E51EC;
+    // content: "";
+    // position: absolute;
+    // z-index: -1;
+    // top: 85%;
+    // left: -0.1px;
+    // right: -0.1px;
+    // bottom: 0;
+    // transition: top 0.1s ease-in-out;
+    // background-color: #0E51EC;
   }
 
   // a:hover::after {

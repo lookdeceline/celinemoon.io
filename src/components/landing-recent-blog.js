@@ -36,45 +36,28 @@ const Content = styled.div`
 const MarkerHeader = styled.h3`
   display: inline;
   font-family: 'DM Sans', sans-serif;
-  // border-radius: 1em 0 1em 0;
   margin-bottom: 10px;
-  // background-image: linear-gradient(
-  //   -100deg,
-  //   rgba(255, 250, 150, 0.15),
-  //   rgba(255, 250, 150, 0.8) 100%,
-  //   rgba(255, 250, 150, 0.25)
-  // );
-
-  // background-color: rgba(92, 187, 254, 0.45);
-  // height: 3px;
-  // background-color: rgba(216, 123, 73, 0.5);
-  // padding-right: 9px;
-  // padding-left: 7px;
   `
 
 const ArticleDate = styled.h5`
   display: inline;
-  // color: #606060;
-  // color: #063268;
-  // color: #c42a00;
-  // color: rgb(143, 10, 93);
   color: #fb2811;
   margin-bottom: 10px;
 `
 
 const ReadingTime = styled.h5`
   display: inline;
-  // color: #606060;
-  // color: #063268;
-  // color: #c42a00;
-  // color: rgb(240, 50, 50);
-  // color: rgb(143, 10, 93);
   color: #fb2811;
   margin-bottom: 10px;
 `
 
 const SinglePost = styled.section`
   padding: 13px 0;
+  :hover{
+    // background-color: #1875d1;
+    color: #0E51EC;
+    border-radius: 20px;
+  }
 `;
 
 const IndexPage = ({ data }) => {
