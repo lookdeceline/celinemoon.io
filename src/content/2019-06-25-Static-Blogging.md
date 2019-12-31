@@ -4,7 +4,7 @@ date: "2019-06-25"
 draft: false
 path: "/blog/Static_Blogging_with_Gatsby_on_Github_Pages"
 thumbnail: ../images/post1.svg
-description: "A step by step guide to setting up a personal static blog."
+description: "A step by step guide to setting up a personal static blog"
 ---
 
 ## Step by Step Guide

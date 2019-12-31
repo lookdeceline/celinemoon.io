@@ -2,13 +2,17 @@ code {
   background-color: hsla(0, 0%, 0%, 0.04);
 }
 
+/*.gatsby-resp-image-wrapper {*/
+/*  margin: 0 0 30px 0;*/
+/*}*/
+
 body {
   margin: 0;
   font-family: 'Roboto', 'DM Sans', serif, 'Avenir', 'Helvetica', 'sans-serif';
   /* 'Nunito', 'Roboto Slab' */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-weight: lighter;
+  /*font-weight: lighter;*/
   /*background-color: #f9f8f2;*/
   /* background-color: rgb(254, 201, 158); */
 }
@@ -198,7 +202,7 @@ textarea {
   font: inherit;
 }
 html {
-  font: 110%/1.45em georgia, serif;
+  font: 115%/1.45em georgia, serif;
   line-height: 1.5em;
   /* text-align: justify; */
   box-sizing: border-box;

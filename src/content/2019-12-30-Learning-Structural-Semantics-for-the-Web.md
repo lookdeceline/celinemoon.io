@@ -1,10 +1,10 @@
 ---
-title: "Learning Structural Semantics for the Web"
-date: "2019-12-28"
+title: "Notes From: Learning Structural Semantics for the Web"
+date: "2019-12-30"
 draft: false
 path: "/blog/Learning-Structural-Semantics-for-the-Web"
 thumbnail: ../images/juliaDoeEx.png
-description: Notes from the technical report 'Learning Structural Semantics for the Web'.
+description: Notes from the technical report 'Learning Structural Semantics for the Web'
 ---
 
 This post is to summarize points / concepts / conclusions to be noted 
