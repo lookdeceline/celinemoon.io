@@ -32,7 +32,7 @@ module.exports = {
             aliases:{sh: "bash", js:"javascript"},
             showLineNumbers: true,
           }
-        }],
+          }, `gatsby-remark-copy-linked-files`],
       },
     },
     {
