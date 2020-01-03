@@ -2,7 +2,7 @@
 title: "Exploring Deep Font"
 date: "2020-01-03"
 draft: false
-path: "/blog/exploring-deep-typography"
+path: "/blog/exploring-deep-font"
 thumbnail: ../images/juliaDoeEx.png
 description: Exploring the font space & Understanding how a neural network creates new fonts.
 ---
@@ -118,6 +118,8 @@ series into 3 parts - intro
 2. feel the kern 무슨 nn?
 3. auto encoder
 4. vae, gan 
+- gan: glyphgan, deep gan, 
+- pix2pix => zi2zi (https://kaonashi-tyc.github.io/2017/04/06/zi2zi.html)
 5. future 1 :  style transfer :  english fonts to korean  using cycle gan??? 
 	then what is cycle gan ??? where is it used?
 	what other ways are there to trasfer style?
