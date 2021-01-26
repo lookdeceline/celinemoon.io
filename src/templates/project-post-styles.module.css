@@ -1,0 +1,58 @@
+.titleContainer {
+    display: flex;
+    align-items: center;
+
+    border-radius: 16px;
+    padding: 30px;
+}
+
+.featuredImage {
+    width: 100px;
+    height: 100px;
+    border-radius: 28px;
+}
+
+.titleContent {
+    margin-left: 20px;
+}
+
+.h1{
+    font-size: 34px;
+    font-weight: 600;
+    margin: 0 0 10px 0;
+}
+
+h2 {
+    font-size: 24px;
+    letter-spacing: -.05em;
+    font-weight: 600;
+    line-height: 29px;
+    margin-top: 0;
+    margin-bottom: 80px;
+}
+
+.mdBody {
+    margin: 80px 0 80px 0;
+}
+
+h5{
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: -.05em;
+    color: #088BEE;
+    margin-bottom: 0;
+}
+
+h3 {
+    font-size: 20px;
+    letter-spacing: -.05rem;
+    font-weight: 600;
+    /* color: #CF8405; */
+    color: black;
+}
+
+p{
+    font-size: 17px;
+    /* letter-spacing: -0.05rem; */
+    /* line-height: 142%; */
+}

@@ -1,0 +1,103 @@
+.cardsContainer {
+    display: grid;
+    /* 270 */
+    grid-template-columns: repeat(auto-fill, minmax(430px, 1fr)); 
+    /* grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));   */
+    /* grid-template-columns: repeat(auto-fit, minmax(305px, 1fr)); */
+    /* 32px */
+    grid-gap: 20px;
+    margin-top: 40px;
+    align-items: stretch;
+}   
+
+
+.cardItem {
+    height: auto;
+    background-color: #F2F2F8;
+    border-radius: 16px;
+    /* box-shadow:  0 0 5px rgba(0, 0, 0, 0.365); */
+    padding: 30px 30px 22px 30px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+/*
+.imageContainer {
+   height: 270px;
+   overflow: hidden;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    justify-content: center;
+}
+*/
+
+
+
+.blogpostImageContainer {
+    width: 23px;
+    height: 23px;
+    min-width: 23px;
+    overflow: hidden;
+    justify-content: center;
+}
+
+.image {
+    object-fit: scale-down;
+    object-position: top;
+    display: block;
+    max-height: 100%;
+    max-width: 100%;
+    border-radius: 28px;
+}
+
+.cardContent {
+    /* height:  */
+    /* backdrop-filter: blur(10px); */
+    min-width: 100%;
+    padding: 0;
+    color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+.cardHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cardContentDate {
+    margin: 0;
+    font-size: 14px;
+    margin-bottom: 4px;
+    color: #7E8489;
+    font-weight: 300;
+    /* letter-spacing: -0.04em; */
+}
+
+.cardContentTitle {
+    margin: 7px 0 10px 0;
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.cardContentIntro {
+    margin: 0 0 30px 0;
+    font-size: 14px;
+    /* letter-spacing: -0.04em; */
+    font-weight: 300;
+}
+
+.appStore {
+    font-size: 12px;
+    letter-spacing: -0.04em;
+    color: #0B70CA;
+}
+
+.smallTagsContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}

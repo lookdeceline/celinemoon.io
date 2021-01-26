@@ -1,0 +1,36 @@
+.h1{
+    font-size: 34px;
+    font-weight: 600;
+    /* letter-spacing: -.05em; */
+    margin-bottom: 10px;
+}
+
+.h2 {
+    font-size: 20px;
+    /* letter-spacing: -.05em; */
+    font-weight: 500;
+    line-height: 29px;
+    margin-top: 0;
+    margin-bottom: 80px;
+}
+
+.h5{
+    font-size: 17px;
+    font-weight: 400;
+    /* letter-spacing: -.05em; */
+    color: #7E8489;
+    margin-bottom: 5px;
+}
+
+h3 {
+    font-size: 24px;
+    letter-spacing: -.05rem;
+    font-weight: 600;
+    color: #CF8405;
+}
+
+p{
+    font-size: 19px;
+    letter-spacing: -0.05rem;
+    line-height: 142%;
+}

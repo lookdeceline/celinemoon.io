@@ -1,0 +1,148 @@
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.intro {
+    font-weight: 400;
+    font-size: 17px;
+    color: #1d1d1f;
+    /* letter-spacing: -.04em; */
+    line-height: 24px;
+    margin: 0;
+}
+
+.subSectionTitle {
+    font-weight: 600;
+    font-size: 30px;
+    margin: 0 0 6px 0;
+    padding:0;
+    color: black;
+}
+
+.profileImage {
+    width: 130px;
+    height: 130px;
+    min-width: 130px;
+    border-radius: 40px;
+}
+
+.body {
+    margin: 110px 0;
+}
+
+.blogSection {
+    margin-top: 90px;
+}
+
+.cardsContainer {
+    display: grid;
+    /* 270 */
+    grid-template-columns: repeat(auto-fill, minmax(430px, 1fr)); 
+    /* grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));   */
+    /* grid-template-columns: repeat(auto-fit, minmax(305px, 1fr)); */
+    /* 32px */
+    grid-gap: 20px;
+    margin-top: 40px;
+    align-items: stretch;
+}   
+
+
+.cardItem {
+    /* max-width: 425px; */
+    /* height: 472.5px; */
+    height: auto;
+    background-color: #F2F2F8;
+    border-radius: 16px;
+    /* box-shadow:  0 0 5px rgba(0, 0, 0, 0.365); */
+    padding: 30px 30px 22px 30px;
+
+    display: flex;
+    flex-direction: row;
+}
+/*
+.imageContainer {
+   height: 270px;
+   overflow: hidden;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    justify-content: center;
+}
+*/
+
+.imageContainer {
+    /* 280 */
+   height: 100px;
+   width: 100px;
+   min-width: 100px;
+   /* 322.5px; */
+   overflow: hidden;
+    /* border-top-left-radius: 28px;
+    border-top-right-radius: 28px; */
+    /* border-radius: 28px; */
+    justify-content: center;
+    /* width: 50%; */
+    /* padding: 5px; */
+}
+
+.blogpostImageContainer {
+    width: 65px;
+    height: 58px;
+    min-width: 65px;
+    overflow: hidden;
+    justify-content: center;
+}
+
+.image {
+    object-fit: scale-down;
+    object-position: top;
+    display: block;
+    max-height: 100%;
+    max-width: 100%;
+    border-radius: 28px;
+}
+
+.cardContent {
+    /* height:  */
+    /* backdrop-filter: blur(10px); */
+    padding: 0 0 0 20px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+.cardContentTitle {
+    margin: 0 0 5px 0;
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.cardContentDate {
+    margin: 0;
+    font-size: 14px;
+    margin-bottom: 12px;
+    color: #7E8489;
+    font-weight: 300;
+    letter-spacing: -0.04em;
+
+}
+
+.cardContentIntro {
+    margin: 0 0 10px 0;
+    font-size: 14px;
+    /* letter-spacing: -0.04em; */
+    font-weight: 300;
+}
+
+.appStore {
+    font-size: 12px;
+    letter-spacing: -0.04em;
+    color: #0B70CA;
+}
+
+.smallTagsContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}

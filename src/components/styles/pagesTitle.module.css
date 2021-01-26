@@ -1,0 +1,12 @@
+.h1 {
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+.h2 {
+    white-space: pre;
+    line-height: 21px;
+    font-size: 17px;
+    /* font-weight: 400; */
+    margin-bottom: 40px;
+}

@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.container {
+    font-family: 'Inter';
+    
+    margin: 5.25rem auto;
+    width: 85%;
+    padding: 0 1rem;
+    max-width: 812px;
+}
+
+/* .content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(305px, 1fr));
+    grid-gap: 19px;
+} */
