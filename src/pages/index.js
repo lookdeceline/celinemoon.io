@@ -3,6 +3,7 @@ import { Link, graphql } from "gatsby"
 import Img from "gatsby-image"
 
 import Layout from "../components/layout"
+import SEO from "../components/seo"
 import SmallThumbnailPost from "../components/smallThumbnailPost"
 import IconText from "../components/icon-note"
 import styles from "../styles/index.module.css"
@@ -23,13 +24,15 @@ export default function Home({ data }) {
 
   return (
     <Layout>
+      <SEO title="Lookdeceline"/>
       <div className={styles.about}>
         <div>
-          <h1 className={styles.subSectionTitle}>Welcome, I'm Jeongwon Moon.</h1>
+          <h1 className={styles.subSectionTitle}>About Me</h1>
           <h2 className={styles.intro}>
-            I am a UX-driven iOS Developer, interested in building delightful and seamless UI/UX systems.
-            <br/>
-            People also call me Celine.
+          Hi, I’m Celine and an iOS developer. My development interest lies in the intersection of designing 
+          and writing codes to build fluid user experience on iOS. 
+          This site is to recap what I’ve learned in the process. 
+          I designed, built, and maintain this site. 👩🏻‍💻
           </h2>
         </div>  
         {/* <Img className={styles.profileImage} fluid={data.file.childImageSharp.fluid} /> */}
@@ -42,7 +45,7 @@ export default function Home({ data }) {
           {/* a list of projects  */}
           <div className={styles.cardsContainer}>
             {projectList.map(({ node }) => (
-              <Link to={node.fields.slug} >
+              <Link to={`/projects/${node.frontmatter.path}`} >
               <div key={node.id} className={styles.cardItem}
                 style={{backgroundColor: node.frontmatter.backgroundColor}} >
                 {/* <Link to={node.fields.slug} > */}
@@ -62,9 +65,9 @@ export default function Home({ data }) {
                     
                   
                   <div className={styles.cardContent}>
-                    <h4 className={styles.cardContentTitle}>
+                    <div className={styles.cardContentTitle}>
                       {node.frontmatter.title}
-                    </h4>
+                    </div>
                     {/* <p className={styles.cardContentDate}>
                       {node.frontmatter.date}
                     </p> */}
@@ -84,7 +87,7 @@ export default function Home({ data }) {
         </div>
 
         <div className={styles.blogSection}>
-          <h3 className={styles.subSectionTitle}>Blog</h3>
+          <h3 className={styles.subSectionTitle}>Blog Posts</h3>
                   {/* a list of blog posts */}
                   <div className={styles.cardsContainer}>
                     {blogList.map(({ node }) => (
@@ -185,6 +188,7 @@ export const query = graphql`
             tags
             type
             text
+            path
           }
           fields {
             slug

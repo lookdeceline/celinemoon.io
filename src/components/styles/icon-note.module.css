@@ -4,25 +4,25 @@
 }
 
 .iconSmall {
-    width: 13px;
-    height: 13px;
+    width: 12px;
+    height: 12px;
 }
 
 .iconMedium {
-    width: 16px;
-    height: 16px;
+    width: 15px;
+    height: 15px;
 }
 
 .textSmall {
-    font-size: 13px;
+    font-size: 12px;
     margin-left: 5px;
     color: #0B70CA;
-    letter-spacing: -0.04em;
+    /* letter-spacing: -0.04em; */
 }
 
 .textMedium {
-    font-size: 16px;
+    font-size: 15px;
     margin-left: 5px;
     color: #0B70CA;
-    letter-spacing: -0.04em;
+    /* letter-spacing: -0.04em; */
 }

@@ -7,13 +7,13 @@ import styles from "./styles/smallThumbnailPost.module.css"
 
 const SmallThumbnailPost = ({ node }) => {
     return (
-        <Link to={node.fields.slug} 
+        <Link to={`/blog/${node.frontmatter.path}`} 
             key={node.id} 
             className={styles.cardItem}>
             {/* <div key={node.id} className={styles.cardItem}> */}
             
             <div className={styles.cardContent}>
-              <div className={styles.cardHeader}>
+              {/* <div className={styles.cardHeader}>
                 <p className={styles.cardContentDate}>
                   {node.frontmatter.date}
                 </p>
@@ -23,18 +23,17 @@ const SmallThumbnailPost = ({ node }) => {
                   // className={styles.imageContainer}
                   fluid={node.frontmatter.featuredImage.childImageSharp.fluid} />
                 </div>  
-              </div>
+              </div> */}
 
-              <h4 className={styles.cardContentTitle}>
-                  {node.frontmatter.title}
-              </h4>
+              <div className={styles.cardContentTitle}>
+                🗒 {node.frontmatter.title}
+              </div>
 
               <div className={styles.cardContentIntro}>
                   {node.frontmatter.intro}
               </div>
-          </div>
 
-          <div className={styles.smallTagsContainer}>
+              <div className={styles.smallTagsContainer}>
                   {node.frontmatter.tags ? node.frontmatter.tags.map(( tag, index ) => {
                       return (
                           <SmallTagBox tag={tag} />
@@ -42,7 +41,10 @@ const SmallThumbnailPost = ({ node }) => {
                   }) 
                   : null
                   }
+              </div>
           </div>
+
+          
         {/* </div> */}
         </Link>
     )

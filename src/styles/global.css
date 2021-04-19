@@ -5,12 +5,16 @@ html {
 
 body { 
   margin:0;
+  color: #373530;
 }
 
 a {
-  color: #000000;
+  /* color: #000000; */
+  color: #373530;
+  /* color: #0088cc; */
   text-decoration: none;
 }
+
 
 /* a:hover {
   color: black;

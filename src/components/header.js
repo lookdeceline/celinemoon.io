@@ -28,26 +28,28 @@ export default function Header() {
 		`
 	)
 	return (
-		<div className={styles.header} >
-			<Link to="/" className={styles.h3}>
-				<div>
-					{data.site.siteMetadata.title}
-				</div>
-			</Link>
+		<div className={styles.headerBackground}> 
+			<div className={styles.header} >
+				<Link to="/" className={styles.h3}>
+					<div>
+						🐤 {data.site.siteMetadata.title}
+					</div>
+				</Link>
 
-			<div className={styles.listLink}> 
-				{/* <ListLink to="/about/">ABOUT</ListLink> */}
-				<Link to="/projects/">Projects</Link>
-				<Link to="/blog/" className={styles.pageLink}>Blog</Link>
-				<Link to="/contact/" className={styles.pageLink}>Contact</Link>
+				<div className={styles.listLink}> 
+					{/* <ListLink to="/about/">ABOUT</ListLink> */}
+					<Link to="/projects/">Projects</Link>
+					<Link to="/blog/" className={styles.pageLink}>Blog</Link>
+					<Link to="/about/" className={styles.pageLink}>About</Link>
+				</div>
+				
+				{/* <div className={styles.socials}>
+					<GithubIcon className={styles.githubIcon}/>
+					<TwitterIcon className={styles.otherIcons}/>
+					<InstagramIcon className={styles.otherIcons}/>
+				</div> */}
+				
 			</div>
-			
-			{/* <div className={styles.socials}>
-				<GithubIcon className={styles.githubIcon}/>
-				<TwitterIcon className={styles.otherIcons}/>
-				<InstagramIcon className={styles.otherIcons}/>
-			</div> */}
-			
 		</div>
 	)
 }

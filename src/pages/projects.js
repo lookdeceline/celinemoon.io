@@ -4,11 +4,12 @@ import Img from "gatsby-image"
 
 // import styles from "../styles/blog.module.css"
 import Layout from "../components/layout"
+import SEO from "../components/seo"
 import PagesTitle from "../components/pagesTitle"
 import BigThumbnailPost from "../components/bigThumbnailPost"
 import styles from "../styles/index.module.css"
 
-console.log(styles)
+// console.log(styles)
 
 // const Post = props => (
 //     <div className={styles.post}>
@@ -23,15 +24,16 @@ console.log(styles)
 export default function Blog({ data }) {
     return (
       <Layout>
-				{/* <Link to="/">Home</Link> */}
+				<SEO title="Projects"/>
         <PagesTitle 
         title="Projects" 
-        titleIntro={`These are my selected projects. \nPersonal projects, term projects, etc.`}
+        titleIntro={"These are my selected projects. Personal projects, term projects, etc."}
         />
         
-        <div className={styles.cardsContainer}>
+        {/* <div className={styles.cardsContainer}> */}
+        <div className={styles.projectsPageCardsContainer}>
           {data.allMarkdownRemark.edges.map(({ node }) => (
-            <BigThumbnailPost node={ node } />
+            <BigThumbnailPost node={ node }/>
           //   <div key={node.id} className={styles.cardItem}>
           //   <Link to={node.fields.slug}>
           //       <Img 
@@ -117,6 +119,7 @@ query {
           backgroundColor
           text
           type
+          path
         }
         fields {
           slug

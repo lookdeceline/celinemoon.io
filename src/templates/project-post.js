@@ -29,10 +29,10 @@ export default function BlogPost({ data }) {
                     </div>
                 </div>
                 
-                <div className={styles.mdBody}>
+                <div>
                     {/* <h5>{post.frontmatter.date}</h5> */}
                     {/* <h2>{post.frontmatter.intro}</h2> */}
-                    <div dangerouslySetInnerHTML={{ __html: post.html }} />
+                    <div className={styles.mdBody} dangerouslySetInnerHTML={{ __html: post.html }} />
                 </div>
             </div>
         </Layout>

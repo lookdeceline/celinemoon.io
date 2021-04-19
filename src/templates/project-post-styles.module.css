@@ -7,24 +7,24 @@
 }
 
 .featuredImage {
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
     border-radius: 28px;
 }
 
 .titleContent {
-    margin-left: 20px;
+    margin-left: 30px;
 }
 
 .h1{
-    font-size: 34px;
-    font-weight: 600;
+    font-size: 36px;
+    font-weight: 500;
     margin: 0 0 10px 0;
 }
 
-h2 {
+.h2 {
     font-size: 24px;
-    letter-spacing: -.05em;
+    /* letter-spacing: -.05em; */
     font-weight: 600;
     line-height: 29px;
     margin-top: 0;
@@ -35,7 +35,7 @@ h2 {
     margin: 80px 0 80px 0;
 }
 
-h5{
+.h5{
     font-size: 18px;
     font-weight: 600;
     letter-spacing: -.05em;
@@ -43,16 +43,29 @@ h5{
     margin-bottom: 0;
 }
 
-h3 {
-    font-size: 20px;
-    letter-spacing: -.05rem;
-    font-weight: 600;
-    /* color: #CF8405; */
-    color: black;
+.mdBody h3 {
+    font-size: 25px;
+    /* letter-spacing: -.05em; */
+    font-weight: 400;
+    line-height: 25px;
+    margin-top: 43px;
+    margin-bottom: 6px;
+}
+.mdBody hr {
+    margin-bottom: 16px;
 }
 
-p{
+.mdBody a {
+    color: #0088cc;
+}
+
+.mdBody p{
     font-size: 17px;
-    /* letter-spacing: -0.05rem; */
-    /* line-height: 142%; */
+    line-height: 27px;
+    /* font-weight: 300; */
+}
+
+.mdBody li {
+    font-size: 17px;
+    line-height: 27px;
 }

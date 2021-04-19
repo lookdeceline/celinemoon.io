@@ -3,11 +3,12 @@ import { Link, graphql } from "gatsby"
 import Img from "gatsby-image"
 
 import Layout from "../components/layout"
+import SEO from "../components/seo"
 import PagesTitle from "../components/pagesTitle"
 import SmallThumbnailPost from "../components/smallThumbnailPost"
 import styles from "../styles/index.module.css"
 
-console.log(styles)
+// console.log(styles)
 
 // const Post = props => (
 //     <div className={styles.post}>
@@ -23,9 +24,10 @@ export default function Blog({ data }) {
     return (
       <Layout>
 				{/* <Link to="/">Home</Link> */}
+        <SEO title = "Blog"/>
         <PagesTitle 
-        title="Blog" 
-        titleIntro={`I try to organize things I've learned to share & look them up later.\nContents mainly concern three.js, iOS, Swift.`}
+        title="Blog Posts" 
+        titleIntro="Things I've learned so far."
         />
 
         <div className={styles.cardsContainer}>
@@ -60,6 +62,7 @@ query {
             }
           }
           tags
+          path
         }
         fields {
           slug

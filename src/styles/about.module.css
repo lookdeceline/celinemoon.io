@@ -1,0 +1,25 @@
+.contact {
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+.resumeContainer{
+    /* max-width: 350px; */
+    background-color: #F5F5FA;
+    border-radius: 17px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+
+    padding: 30px;
+    align-items: center;
+
+    margin-bottom: 80px;
+}
+
+.downloadIcon {
+    /* width: 56px;
+    height: 69.3px; */
+    width: 68.36px;
+    height: 68.36;
+}

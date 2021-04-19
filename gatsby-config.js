@@ -6,9 +6,11 @@
 
 module.exports = {
   siteMetadata: {
-    title: "LOOKDECELINE",
-    description: "Welcome, I'm Jeongwon Moon",
-    author: "Celine Jeongwon Moon"
+    title: "Lookdeceline",
+    description: "Celine's iOS Development Blog",
+    siteUrl: "https://lookdeceline/github.io/",
+    author: "Celine Jeongwon Moon",
+    defaultSiteImage: `src/images/babyChick.png`,
   },
   plugins: [
     {
@@ -25,6 +27,13 @@ module.exports = {
         name: "images",
       },
     },
+    
+    // {
+    //   resolve: "gatsby-plugin-sharp",
+    //   options: {
+    //     icon: "src/images/babyChick.png"
+    //   }
+    // },
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     // `gatsby-transformer-remark`,
@@ -44,6 +53,19 @@ module.exports = {
           include: /src/ // See below to configure properly
         }
       }
+    },
+
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `gatsby-starter-default`,
+        short_name: `starter`,
+        start_url: `/`,
+        background_color: `#663399`,
+        theme_color: `#663399`,
+        display: `minimal-ui`,
+        icon: `src/images/babyChick.png`, // This path is relative to the root of the site.
+      },
     },
 
     // gatsby-remark-prismjs
@@ -88,7 +110,7 @@ module.exports = {
               // Defaults to false.
               // If you wish to only show line numbers on certain code blocks,
               // leave false and use the {numberLines: true} syntax below
-              showLineNumbers: false,
+              showLineNumbers: true,
               // If setting this to true, the parser won't handle and highlight inline
               // code used in markdown i.e. single backtick code like `this`.
               noInlineHighlight: false,

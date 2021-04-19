@@ -22,8 +22,8 @@ export default function Footer() {
 	return (
 		<div className={styles.footer} >
             <div className={styles.leftSide}>
-                <div> © 2021 {data.site.siteMetadata.title}. </div>
-                <div> All rights reserved.</div>
+                <div> © 2021 {data.site.siteMetadata.title}, all rights reserved.</div>
+				<div> Inspired by <a href="https://hohyeonmoon.com" target="_blank">Hohyeon</a></div>
             </div>
 
             <div className={styles.rightSide}>

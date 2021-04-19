@@ -8,7 +8,8 @@ import styles from "./styles/bigThumbnailPost.module.css"
 
 const BigThumbnailPost = ({ node }) => {
     return (
-        <Link to={node.fields.slug} >
+        <Link to={`/projects/${node.frontmatter.path}`} 
+        style={{ flexGrow: 1, flexBasis: '50%'}}>
             <div key={node.id} 
                 className={styles.cardItem}
                 style={{backgroundColor: node.frontmatter.backgroundColor}} >
@@ -20,9 +21,9 @@ const BigThumbnailPost = ({ node }) => {
                 </div>
                 
                 <div className={styles.cardContent}>
-                    <h4 className={styles.cardContentTitle}>
+                    <div className={styles.cardContentTitle}>
                         {node.frontmatter.title}
-                    </h4>
+                    </div>
                     <div className={styles.cardContentIntro}>
                         {node.frontmatter.intro}
                     </div>

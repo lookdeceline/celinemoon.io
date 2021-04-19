@@ -24,6 +24,10 @@ exports.createPages = async ({ graphql, actions }) => {
             allMarkdownRemark {
                 edges {
                   node {
+                    frontmatter {
+                        title
+                        path
+                    }
                     fields {
                       slug
                     }
@@ -36,7 +40,7 @@ exports.createPages = async ({ graphql, actions }) => {
     result.data.allMarkdownRemark.edges.forEach(({ node }) => {
         if (node.fields.slug.indexOf('/blog') === 0) {
             createPage({
-                path: node.fields.slug,
+                path: `/blog/${node.frontmatter.path}`,
                 component: path.resolve(`./src/templates/blog-post.js`),
                 context: {
                     slug: node.fields.slug,
@@ -45,7 +49,8 @@ exports.createPages = async ({ graphql, actions }) => {
         } else if (node.fields.slug.indexOf('/projects') === 0) {
             console.log("project createPage")
             createPage({
-                path: node.fields.slug,
+                // path: node.fields.slug,
+                path: `/projects/${node.frontmatter.path}`,
                 component: path.resolve(`./src/templates/project-post.js`),
                 context: {
                     slug: node.fields.slug,
