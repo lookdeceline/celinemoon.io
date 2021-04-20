@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    column-gap: 56px;
+    /* column-gap: 56px; */
 }
 
 .intro {
@@ -30,6 +30,7 @@
     border-width: 1px;
     border-color: #373530;
     border-style: solid;
+    margin-left: 56px;
 }
 
 .body {
@@ -52,7 +53,7 @@
 
     display: flex;
     flex-direction: column;
-    row-gap: 20px;
+    /* row-gap: 20px; */
 }   
 
 
@@ -67,6 +68,7 @@
 
     display: flex;
     flex-direction: row;
+    margin-bottom: 20px;
 }
 /*
 .imageContainer {
@@ -117,13 +119,14 @@
     /* color: black; */
     display: flex;
     flex-direction: column;
-    row-gap: 10px;
+    /* row-gap: 10px; */
 }
 
 .cardContentTitle {
     /* margin: 0 0 5px 0; */
     font-size: 19px;
     font-weight: 500;
+    margin-bottom: 10px;
 }
 
 .cardContentDate {
@@ -133,7 +136,7 @@
     color: #7E8489;
     font-weight: 300;
     letter-spacing: -0.04em;
-
+    margin-bottom: 10px;
 }
 
 .cardContentIntro {
@@ -141,6 +144,7 @@
     font-size: 15px;
     /* letter-spacing: -0.04em; */
     font-weight: 400;
+    margin-bottom: 10px;
 }
 
 .appStore {
@@ -158,10 +162,39 @@
 
 
 .projectsPageCardsContainer {
-    display: flex;
-    flex-direction: row;
+    /* display: flex;
+    flex-direction: row; */
     /* flex-wrap: wrap; */
     /* flex-basis: 0; */
-    column-gap: 20px;
+    /* column-gap: 20px; */
+    /* width: 50%; */
+    width: 100%;
+    max-width: 420px;
+    margin-right: auto;
+    /* margin-left: auto; */
+}
 
+
+/* mobile screens */ 
+@media (max-width: 800px) {
+    .about {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        /* column-gap: 56px; */
+    }
+
+    .profileImage {
+        width: 120px;
+        height: 120px;
+        min-width: 120px;
+        border-radius: 60px;
+        border-width: 1px;
+        border-color: #373530;
+        border-style: solid;
+        margin-top: 20px;
+        margin-left: 0;
+        
+    }
 }

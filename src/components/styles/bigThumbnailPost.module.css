@@ -12,7 +12,7 @@
     background-color: #F2F2F8;
     border-radius: 16px;
     padding: 30px 30px 30px 30px;
-    
+    margin-bottom: 20px;
 }
 
 .imageContainer {
@@ -45,13 +45,14 @@
     /* color: black; */
     display: flex;
     flex-direction: column;
-    row-gap: 14px;
+    /* row-gap: 14px; */
 }
 
 .cardContentTitle {
     /* margin: 0 0 5px 0; */
     font-size: 19px;
     font-weight: 500;
+    margin-bottom: 14px;
 }
 
 .cardContentDate {
@@ -69,6 +70,7 @@
     font-size: 15px;
     /* letter-spacing: -0.04em; */
     font-weight: normal;
+    margin-bottom: 14px;
 }
 
 .appStore {

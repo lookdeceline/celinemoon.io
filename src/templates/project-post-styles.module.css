@@ -1,6 +1,7 @@
 .titleContainer {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 
     border-radius: 16px;
     padding: 30px;
@@ -8,6 +9,7 @@
 
 .featuredImage {
     width: 90px;
+    min-width: 90px;
     height: 90px;
     border-radius: 28px;
 }
@@ -68,4 +70,21 @@
 .mdBody li {
     font-size: 17px;
     line-height: 27px;
+}
+
+/* mobile screens */ 
+@media (max-width: 620px) {
+    .titleContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    
+        border-radius: 16px;
+        padding: 30px;
+    }
+
+    .titleContent {
+        margin: 10px 0 0 0;
+    }
 }

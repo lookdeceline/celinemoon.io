@@ -17,6 +17,7 @@
     border-radius: 16px;
     /* box-shadow:  0 0 5px rgba(0, 0, 0, 0.365); */
     padding: 30px;
+    margin-bottom: 20px;
 
     display: flex;
     flex-direction: column;
@@ -60,7 +61,7 @@
     /* color: black; */
     display: flex;
     flex-direction: column;
-    row-gap: 20px;
+    /* row-gap: 20px; */
 }
 
 .cardHeader {
@@ -75,20 +76,19 @@
     margin-bottom: 4px;
     color: #7E8489;
     font-weight: 300;
-    /* letter-spacing: -0.04em; */
 }
 
 .cardContentTitle {
-    /* margin: 7px 0 10px 0; */
     font-size: 19px;
     font-weight: 500;
+    margin-bottom: 20px;
 }
 
 .cardContentIntro {
-    /* margin: 0 0 30px 0; */
     font-size: 15px;
     /* letter-spacing: -0.04em; */
     font-weight: 400;
+    margin-bottom: 20px;
 }
 
 .appStore {
