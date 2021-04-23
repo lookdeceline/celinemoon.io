@@ -31,8 +31,10 @@ export default function Blog({ data }) {
         />
 
         <div className={styles.cardsContainer}>
-          {data.allMarkdownRemark.edges.map(({ node }) => (
-            <SmallThumbnailPost node={node}/>
+          {data.allMarkdownRemark.edges
+          .filter(({node}) => node.frontmatter.publish)
+          .map(({ node }) => (
+            <SmallThumbnailPost node={node}/>     
           ))}
         </div>
       </Layout>
@@ -63,6 +65,7 @@ query {
           }
           tags
           path
+          publish
         }
         fields {
           slug

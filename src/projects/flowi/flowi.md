@@ -7,11 +7,22 @@ backgroundColor: '#FEF6E5'
 type: "app"
 text: "On App Store"
 path: "Flowi"
+publish: true
 ---
 
 ### About the App
-* Flowi ranks, tracks, and visualizes your entire Apple Music listening history by top played songs, artists, decades, and more.
+---
+- Flowi ranks, tracks, and visualizes a user's entire Apple Music listening history by top played songs, artists, decades, and more.
+- You can download the app on [App Store]([https://apps.apple.com/kr/app/flowi/id1546946854](https://apps.apple.com/kr/app/flowi/id1546946854)).
 
+### Tech Stack
+---
+- iOS Media Player
+- (open-sourced library) [Charts]([https://github.com/danielgindi/Charts](https://github.com/danielgindi/Charts))
 
-
-<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/4SZl1r2O_bY" frameborder="0" allowfullscreen></iframe> -->
+### My Role
+---
+- Designed UI/UX of the app.
+- Implemented the iOS app.
+    - Sorted songs by various factors - individual songs, artists, genres, and decades - in top played order.
+    - Added basic charts to visualize the distribution of each factor.

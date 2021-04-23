@@ -25,19 +25,22 @@ export default function Home({ data }) {
   return (
     <Layout>
       <SEO title="Lookdeceline"/>
-      <div className={styles.about}>
-        <div>
-          <h1 className={styles.subSectionTitle}>About Me</h1>
-          <h2 className={styles.intro}>
-          Hi, I’m Celine and an iOS developer. My development interest lies in the intersection of designing 
-          and writing codes to build fluid user experience on iOS. 
-          This site is to recap what I’ve learned in the process. 
-          I designed, built, and maintain this site. 👩🏻‍💻
-          </h2>
-        </div>  
-        {/* <Img className={styles.profileImage} fluid={data.file.childImageSharp.fluid} /> */}
-        <Img className={styles.profileImage} fluid={profilePic.childImageSharp.fluid} />
-      </div> 
+      {/* <div className={styles.about}> */}
+          <div>
+            <h1 className={styles.subSectionTitle}>About Me</h1>
+            <div className={styles.aboutContainer}>
+              <h2 className={styles.intro}>
+              Hi, I’m Celine and an iOS developer. My development interest lies in the intersection of designing 
+              and writing codes to build fluid user experience on iOS. 
+              This site is to recap what I’ve learned in the process. 
+              I designed, built, and maintain this site. 👩🏻‍💻
+              </h2>
+            
+              {/* <Img className={styles.profileImage} fluid={data.file.childImageSharp.fluid} /> */}
+              <Img className={styles.profileImage} fluid={profilePic.childImageSharp.fluid} />
+            </div>  
+        </div>
+      {/* </div>  */}
 
       <div className={styles.body}>
         <div className = {styles.projectSection}>
@@ -90,7 +93,9 @@ export default function Home({ data }) {
           <h3 className={styles.subSectionTitle}>Blog Posts</h3>
                   {/* a list of blog posts */}
                   <div className={styles.cardsContainer}>
-                    {blogList.map(({ node }) => (
+                    {blogList
+                    .filter(({node}) => node.frontmatter.publish)
+                    .map(({ node }) => (
                       <SmallThumbnailPost node={node}/>
                       // <Link to={node.fields.slug} 
                       //   key={node.id} 
@@ -189,6 +194,7 @@ export const query = graphql`
             type
             text
             path
+            publish
           }
           fields {
             slug

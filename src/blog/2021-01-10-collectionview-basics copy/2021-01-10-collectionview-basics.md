@@ -5,6 +5,7 @@ intro: "A look into the basics of UIKit's Collection View."
 featuredImage: ./swift-square-blue.png
 tags: ["Core Animation", "CAShapeLayer"]
 path: "collection-view-basics"
+publish: false
 ---
 My brother writes his developer's blog in Korean. But often, he writes certain terminologies in English. An important part of a blog aesthetic is the font. While there are few hundreds of free English fonts, there aren't that many available in Korean. So he had to spend hours finding the right Korean and English fonts that were available for free, but also look good enough together.
 Creating a new font is an absolute pita. Even more so for Asian characters that have more character numbers. Korean has 40 characters, and a Korean word is a combination of at least 2 characters. With kerning included, the font design process requires hard manual work on each pixel.

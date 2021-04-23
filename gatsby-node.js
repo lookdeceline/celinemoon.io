@@ -27,6 +27,7 @@ exports.createPages = async ({ graphql, actions }) => {
                     frontmatter {
                         title
                         path
+                        publish
                     }
                     fields {
                       slug
@@ -36,8 +37,12 @@ exports.createPages = async ({ graphql, actions }) => {
               }
         }
     `)
+
     // console.log(JSON.stringify(result, null, 4))
-    result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+    result.data.allMarkdownRemark.edges
+    // .filter(({ node }) => node.frontmatter.publish)
+    .forEach(({ node }) => {
+        // console.log(node.frontmatter.title, node.fields.slug, node.fields.slug.indexOf('/blog'))
         if (node.fields.slug.indexOf('/blog') === 0) {
             createPage({
                 path: `/blog/${node.frontmatter.path}`,

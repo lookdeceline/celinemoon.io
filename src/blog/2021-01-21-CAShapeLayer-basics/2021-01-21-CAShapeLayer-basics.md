@@ -5,6 +5,7 @@ intro: "The basics of Swift's sorted function."
 featuredImage: ./swift-square-orange.png
 tags: ["Core Animation", "CAShapeLayer"]
 path: "swift-sorted"
+publish: true
 ---
 
 ### Definition

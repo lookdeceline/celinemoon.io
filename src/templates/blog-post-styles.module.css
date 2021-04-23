@@ -3,6 +3,7 @@
     font-weight: 500;
     /* letter-spacing: -.05em; */
     margin-bottom: 10px;
+    overflow-wrap: break-word;
 }
 
 .h2 {
@@ -33,15 +34,20 @@
 } */
 
 .article p{
-    font-size: 15px;
+    font-size: 17px;
     /* letter-spacing: -0.05rem; */
-    line-height: 27px;
+    line-height: 30px;
+    margin-bottom: 0;
     /* font-weight: 300; */
 }
 
 .article li {
-    font-size: 15px;
-    line-height: 27px;
+    font-size: 17px;
+    line-height: 30px;
+}
+
+.article ul ul{
+    padding-inline-start: 30px;
 }
 
 .article h3 {

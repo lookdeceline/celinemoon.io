@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+.footerBackground {
+    width: 100%;
+    background-color: #F2F2F8;
+    padding: 20px 0;
+}
 
 .footer {
     display: flex;
@@ -6,13 +11,11 @@
     justify-content: space-between;
 
     font-family: 'Inter';
-    /* letter-spacing: -0.04em; */
     font-weight: 500;
 
-    margin: 0 auto 80px auto;
-    /* width: 96%; */
-    padding: 0 1rem;
-    max-width: 700px;
+    background-color: #F2F2F8;
+    margin: 0 auto;
+    max-width: 750px;
 }
 
 .leftSide {
