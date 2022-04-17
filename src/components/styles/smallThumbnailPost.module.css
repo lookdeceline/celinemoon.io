@@ -14,7 +14,7 @@
 .cardItem {
     height: auto;
     background-color: #F2F2F8;
-    border-radius: 16px;
+    border-radius: 5px;
     /* box-shadow:  0 0 5px rgba(0, 0, 0, 0.365); */
     padding: 30px;
     margin-bottom: 20px;

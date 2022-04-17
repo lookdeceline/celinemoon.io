@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 .footerBackground {
     width: 100%;
-    background-color: #F2F2F8;
-    padding: 20px 0;
+    background-color: #F3F5F7;
+    padding: 40px 0;
 }
 
 .footer {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-
+    /* justify-content: space-between; */
+    justify-content: center;
     font-family: 'Inter';
     font-weight: 500;
 
@@ -24,6 +24,10 @@
 
     font-size: 15px;
     line-height: 25px;
+}
+
+.comment {
+    color: #b1afb5;
 }
 
 .rightSide {

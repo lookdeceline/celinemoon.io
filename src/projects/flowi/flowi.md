@@ -2,12 +2,13 @@
 title: "Flowi"
 date: "2021-01-03"
 intro: "Rank, track, and visualize your Apple Music library."
-featuredImage: ./flowi_big.png
-backgroundColor: '#FEF6E5'
+featuredImage: ./flowi-cover.png
+backgroundColor: '#FFF9E7'
 type: "app"
 text: "On App Store"
 path: "Flowi"
 publish: true
+order: 5
 ---
 
 ### About the App

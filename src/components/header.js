@@ -5,6 +5,7 @@ import styles from "./styles/header.module.css"
 import GithubIcon from "../images/github.svg"
 import TwitterIcon from "../images/twitter.svg"
 import InstagramIcon from "../images/instagram.svg"
+import LinkedInIcon from "../images/linkedin.svg"
 
 const ListLink = props => (
     // <li style={{ display: `inline`}}>   
@@ -30,24 +31,31 @@ export default function Header() {
 	return (
 		<div className={styles.headerBackground}> 
 			<div className={styles.header} >
-				<Link to="/" className={styles.h3}>
+				{/* <Link to="/" className={styles.h3}>
 					<div>
-						🐤 {data.site.siteMetadata.title}
+						{data.site.siteMetadata.title}
 					</div>
-				</Link>
+				</Link> */}
 
 				<div className={styles.listLink}> 
 					{/* <ListLink to="/about/">ABOUT</ListLink> */}
-					<Link to="/projects/">Projects</Link>
-					<Link to="/blog/" className={styles.pageLink}>Blog</Link>
-					<Link to="/about/" className={styles.pageLink}>About</Link>
+					{/* <Link to="/projects/" className={styles.pageLink}>Projects</Link> */}
+					{/* <Link to="/blog/" className={styles.pageLink}>Blog</Link> */}
+					<Link to="/" className={styles.h3}>
+						<div>
+							{data.site.siteMetadata.title}
+						</div>
+					</Link>
+					<Link to="/about/" className={styles.pageLink}>about</Link>
 				</div>
 				
-				{/* <div className={styles.socials}>
-					<GithubIcon className={styles.githubIcon}/>
-					<TwitterIcon className={styles.otherIcons}/>
-					<InstagramIcon className={styles.otherIcons}/>
-				</div> */}
+				<div className={styles.socials}>
+					<Link to="https://github.com/lookdeceline" > <GithubIcon className={styles.githubIcon}/> </Link>
+					<Link to="https://www.linkedin.com/in/celinemoon/"> <LinkedInIcon className={styles.otherIcons}/> </Link>
+					
+					{/* <TwitterIcon className={styles.otherIcons}/>
+					<InstagramIcon className={styles.otherIcons}/> */}
+				</div>
 				
 			</div>
 		</div>

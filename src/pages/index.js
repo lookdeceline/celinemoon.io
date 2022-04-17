@@ -8,6 +8,9 @@ import SmallThumbnailPost from "../components/smallThumbnailPost"
 import IconText from "../components/icon-note"
 import styles from "../styles/index.module.css"
 
+function compareOrder(node1, node2) {
+  return node1.frontmatter.order - node2.frontmatter.order
+}
 
 export default function Home({ data }) {
   let projectList = data.allMarkdownRemark.edges.filter(function (edge) {
@@ -27,18 +30,26 @@ export default function Home({ data }) {
       <SEO title="Lookdeceline"/>
       {/* <div className={styles.about}> */}
           <div>
-            <h1 className={styles.subSectionTitle}>About Me</h1>
-            <div className={styles.aboutContainer}>
+          <div className={styles.aboutContainer}>
+            <div className={styles.aboutTextContainer}>
+              <h1 className={styles.subSectionTitle}>Hi, I'm Celine.</h1>
+            {/* <div className={styles.aboutContainer}> */}
               <h2 className={styles.intro}>
-              Hi, I’m Celine and an iOS developer. My development interest lies in the intersection of designing 
-              and writing codes to build fluid user experience on iOS. 
-              This site is to recap what I’ve learned in the process. 
+              I am an iOS software engineer at Sendbird.
+              <br/>
+              My mission is to make user experience as implicit as possible through wearable devices.
+              <br/>
               I designed, built, and maintain this site. 👩🏻‍💻
               </h2>
-            
+
+              <Link to="/about/" className={styles.pageLink}>Read more about me ↗</Link>
+            </div>
               {/* <Img className={styles.profileImage} fluid={data.file.childImageSharp.fluid} /> */}
-              <Img className={styles.profileImage} fluid={profilePic.childImageSharp.fluid} />
-            </div>  
+              {/* <Img className={styles.profileImage} fluid={profilePic.childImageSharp.fluid} /> */}
+            {/* </div>  */}
+            {/* profilePic.childImageSharp.fluid */}
+            {/* <Img className={styles.profileImage} fluid={data.profileImage.childImageSharp.fluid} />   */}
+            </div> 
         </div>
       {/* </div>  */}
 
@@ -50,7 +61,8 @@ export default function Home({ data }) {
             {projectList.map(({ node }) => (
               <Link to={`/projects/${node.frontmatter.path}`} >
               <div key={node.id} className={styles.cardItem}
-                style={{backgroundColor: node.frontmatter.backgroundColor}} >
+                style={{backgroundColor: '#f6f6f8'}} >
+                  {/* node.frontmatter.backgroundColor */}
                 {/* <Link to={node.fields.slug} > */}
 
                   <div 
@@ -153,9 +165,9 @@ export default function Home({ data }) {
 
 export const query = graphql`
   query {
-    file(relativePath: { eq: "images/profile-picture.png" }) {
+    profileImage: file(relativePath: { eq: "images/profile-picture.png" }) {
       childImageSharp {
-        fluid(maxWidth: 130) {
+        fluid(maxWidth: 6000, quality: 100) {
           ...GatsbyImageSharpFluid
         }
       }
@@ -166,14 +178,14 @@ export const query = graphql`
     }) {
       nodes {
         childImageSharp {
-          fluid(maxWidth: 130) {
+          fluid(maxWidth: 6000, quality: 100) {
             originalName
             ...GatsbyImageSharpFluid
           }
         }
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(sort: { fields: [frontmatter___order], order: ASC }) {
       totalCount
       edges {
         node {
@@ -195,6 +207,7 @@ export const query = graphql`
             text
             path
             publish
+            order
           }
           fields {
             slug

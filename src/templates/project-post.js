@@ -2,6 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import styled from "styled-components"
+import { MDXProvider } from "@mdx-js/react"
 
 import LayoutBlogpost from "../components/layout-blogpost"
 import Layout from "../components/layout"
@@ -21,19 +22,30 @@ export default function BlogPost({ data }) {
     return(
         <Layout>
             <div>
-                <div className={styles.titleContainer} style={{ backgroundColor: post.frontmatter.backgroundColor }}>
+                <div className={styles.titleContainer}>
                     <Img className={styles.featuredImage} fluid={post.frontmatter.featuredImage.childImageSharp.fluid} />
-                    <div className={styles.titleContent}>
+                    <div className={styles.titleContent} style={{ backgroundColor: post.frontmatter.backgroundColor }}>
                         <h1 className={styles.h1}>{post.frontmatter.title}</h1>
+                        <h2 className={styles.h2}>{post.frontmatter.intro}</h2>
                         <IconText type={post.frontmatter.type} text={post.frontmatter.text} size="medium"/>
                     </div>
                 </div>
                 
                 <div>
-                    {/* <h5>{post.frontmatter.date}</h5> */}
-                    {/* <h2>{post.frontmatter.intro}</h2> */}
                     <div className={styles.mdBody} dangerouslySetInnerHTML={{ __html: post.html }} />
                 </div>
+                {/* <MDXProvider
+                  components={{
+                    // Map HTML element tag to React component
+                    // h1: styles.H1,
+                    // h2: DesignSystem.H2,
+                    h3: styles.h3,
+                    // Or define component inline
+                    // p: props => <p {...props} style={{ color: "rebeccapurple" }} />,
+                  }}
+                >
+                  {data.mdx.body}
+                </MDXProvider> */}
             </div>
         </Layout>
     )
@@ -43,13 +55,14 @@ export const query = graphql`
   query($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
+      rawMarkdownBody
       frontmatter {
         title
         date(formatString: "DD MMMM, YYYY")
         intro
         featuredImage {
             childImageSharp {
-              fluid(maxWidth: 500) {
+              fluid(maxWidth: 2000, quality: 100) {
                 ...GatsbyImageSharpFluid
               }
             }
@@ -59,6 +72,9 @@ export const query = graphql`
         type
         text
       }
+    }
+    mdx {
+      body
     }
   }
 `

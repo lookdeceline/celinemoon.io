@@ -23,11 +23,11 @@ export default function Footer() {
 		<div className={styles.footerBackground}>
 			<div className={styles.footer} >
 				<div className={styles.leftSide}>
-					<div> © 2021 {data.site.siteMetadata.title} </div>
-					<div> Inspired by <a href="https://hohyeonmoon.com" target="_blank">Hohyeon</a></div>
+					<div> Last update in April 2022 © {data.site.siteMetadata.title} </div>
+					{/* <div className={styles.comment}> Inspired by <a href="https://hohyeonmoon.com" target="_blank">Hohyeon</a></div> */}
 				</div>
 
-				<div className={styles.rightSide}>
+				{/* <div className={styles.rightSide}>
 					<Link to="https://github.com/lookdeceline"> 
 						<GithubIcon className={styles.icon}/> 
 					</Link>
@@ -37,7 +37,7 @@ export default function Footer() {
 					<Link to="https://www.instagram.com/lookdeceline/">
 						<InstagramIcon className={styles.icon}/>
 					</Link>
-				</div>
+				</div> */}
 			</div>
 		</div>
 	)
