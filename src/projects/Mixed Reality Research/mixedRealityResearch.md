@@ -1,11 +1,11 @@
 ---
-title: "Life-Immersive MR Research"
+title: "Life-Immersive Mixed Reality"
 date: "2020-09-21"
 intro: "HCI Research on Mixed Reality system that allows access to physical objects inside virtual environment."
-featuredImage: ./mr-sample.png
+featuredImage: ./mr-featured4.jpg
 backgroundColor: '#EFF5FA'
 type: "research"
-text: "HCI Research"
+text: "HCI RESEARCH"
 path: "MR-Research"
 publish: true
 order: 1

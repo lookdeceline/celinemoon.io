@@ -3,9 +3,12 @@ import { Link, graphql } from "gatsby"
 import Img from "gatsby-image"
 
 import Layout from "../components/layout"
+import Header from "../components/header"
+import Footer from "../components/footer"
 import SEO from "../components/seo"
 import SmallThumbnailPost from "../components/smallThumbnailPost"
 import IconText from "../components/icon-note"
+import CVPdf from '../images/CV-beta.pdf';
 import styles from "../styles/index.module.css"
 
 function compareOrder(node1, node2) {
@@ -26,42 +29,43 @@ export default function Home({ data }) {
   })[0]
 
   return (
-    <Layout>
+    // <Layout>
+    <div>
+      <Header/>
       <SEO title="Lookdeceline"/>
       {/* <div className={styles.about}> */}
-          <div>
+          <div className={styles.abountContainerContainer}>
           <div className={styles.aboutContainer}>
             <div className={styles.aboutTextContainer}>
               <h1 className={styles.subSectionTitle}>Hi, I'm Celine.</h1>
             {/* <div className={styles.aboutContainer}> */}
               <h2 className={styles.intro}>
-              I am an iOS software engineer at Sendbird.
-              <br/>
-              My mission is to make user experience as implicit as possible through wearable devices.
+              I am currently working as an iOS software engineer at Sendbird. My mission is to make user experience as <span style={{color:"#FB2B43", fontWeight: 600}}>implicit</span> as possible through mobile / wearable devices.
               <br/>
               I designed, built, and maintain this site. 👩🏻‍💻
               </h2>
-
-              <Link to="/about/" className={styles.pageLink}>Read more about me ↗</Link>
+              <div className={styles.introLinks}>
+                <Link to="/about/" className={styles.pageLink}>Read more about me ↗</Link>
+                <a href={CVPdf} target = "_blank" className={styles.pageLink} style={{padding: `14px 68px`}}>Download CV ↗</a>
+              </div>
             </div>
               {/* <Img className={styles.profileImage} fluid={data.file.childImageSharp.fluid} /> */}
               {/* <Img className={styles.profileImage} fluid={profilePic.childImageSharp.fluid} /> */}
             {/* </div>  */}
             {/* profilePic.childImageSharp.fluid */}
             {/* <Img className={styles.profileImage} fluid={data.profileImage.childImageSharp.fluid} />   */}
-            </div> 
+          </div> 
         </div>
       {/* </div>  */}
 
       <div className={styles.body}>
         <div className = {styles.projectSection}>
-          <h3 className={styles.subSectionTitle}>Projects</h3>
+          <h3 className={styles.subSectionTitle}>Projects.</h3>
           {/* a list of projects  */}
           <div className={styles.cardsContainer}>
             {projectList.map(({ node }) => (
               <Link to={`/projects/${node.frontmatter.path}`} >
-              <div key={node.id} className={styles.cardItem}
-                style={{backgroundColor: '#f6f6f8'}} >
+              <div key={node.id} className={styles.cardItem} >
                   {/* node.frontmatter.backgroundColor */}
                 {/* <Link to={node.fields.slug} > */}
 
@@ -101,63 +105,21 @@ export default function Home({ data }) {
           </div>
         </div>
 
-        <div className={styles.blogSection}>
+        {/* <div className={styles.blogSection}>
           <h3 className={styles.subSectionTitle}>Blog Posts</h3>
-                  {/* a list of blog posts */}
                   <div className={styles.cardsContainer}>
                     {blogList
                     .filter(({node}) => node.frontmatter.publish)
                     .map(({ node }) => (
                       <SmallThumbnailPost node={node}/>
-                      // <Link to={node.fields.slug} 
-                      //   key={node.id} 
-                      //   className={styles.cardItem}>
-                      //   {/* <div key={node.id} className={styles.cardItem}> */}
-                      //     <div className={styles.blogpostImageContainer} >
-                      //       <Img 
-                      //       // className={styles.imageContainer}
-                      //       fluid={node.frontmatter.featuredImage.childImageSharp.fluid} />
-                      //     </div>  
-                      //     <div className={styles.cardContent}>
-                      //       <h4 className={styles.cardContentTitle}>
-                      //         {node.frontmatter.title}
-                      //       </h4>
-                      //       <p className={styles.cardContentDate}>
-                      //         {node.frontmatter.date}
-                      //       </p>
-                      //       <div className={styles.cardContentIntro}>
-                      //         {node.frontmatter.intro}
-                      //       </div>
-                      //       <div className={styles.smallTagsContainer}>
-                      //         {node.frontmatter.tags ? node.frontmatter.tags.map(( tag, index ) => {
-                      //           return (
-                      //             <SmallTagBox tag={tag} />
-                      //           )
-                      //         }) 
-                      //         : null
-                      //         }
-                      //       </div>
-                      //     </div>
-                      //   {/* </div> */}
-                      // </Link>
                     ))}
                   </div>
-                  {/* <div className={styles.cardsContainer}>
-                    {data.allMarkdownRemark.edges.map(({ node }) => (
-                      <div key={node.id}>
-                        <Link to={node.fields.slug}>
-                          <h3>{node.frontmatter.title}</h3>
-                          <h5>{node.frontmatter.date}</h5>
-                          <p>{node.frontmatter.intro}</p>
-                          <Img fluid={node.frontmatter.featuredImage.childImageSharp.fluid} />
-                        </Link>
-                      </div>
-                    ))}
-                  </div> */}
-          </div>
+        </div> */}
         
       </div>
-    </Layout>
+      <Footer />
+      </div>
+    // </Layout>
 
   )
 }
@@ -196,7 +158,7 @@ export const query = graphql`
             intro
             featuredImage {
               childImageSharp {
-                fluid(maxWidth: 800) {
+                fluid(quality: 100) {
                   ...GatsbyImageSharpFluid
                 }
               }

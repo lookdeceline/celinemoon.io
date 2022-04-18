@@ -26,9 +26,9 @@ const IconText = (props) => {
     
     return (
         <div className={styles.container}> 
-            {icon}
+            {/* {icon} */}
             <div className={textSize}> 
-                {props.text} 
+                # {props.text} 
             </div>
         </div>
     )

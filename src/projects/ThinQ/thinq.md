@@ -2,10 +2,10 @@
 title: "ThinQ for Smartwatch"
 date: "2021-01-03"
 intro: "An IoT application for smartwatches that sends push notifications based on the users' location and activity."
-featuredImage: ./thinq-featured.jpg
+featuredImage: ./thinq-featured8.jpg
 backgroundColor: '#F2F7F7'
 type: "app"
-text: "LG Electronics IoT Technologies Group"
+text: "COMPANY WORK"
 path: "ThinQ-Smartwatch"
 publish: true
 order: 2
@@ -13,7 +13,7 @@ order: 2
 
 ### About The Project
 ---
-While I worked as a research engineer at LG Electronics’ IoT Technologies Group, I designed and prototyped LG ThinQ app for smartwatches. Working closely with the team’s designer and engineers, I solved the problem of low user engagement rate of the prevsiouly existing ThinQ for smartphone.
+While I worked as a research engineer at LG Electronics IoT Technologies Group, I designed and prototyped LG ThinQ app for smartwatches. Working closely with the team’s designer and engineers, I solved the problem of low user engagement rate of the prevsiouly existing ThinQ for smartphone.
 
 ### What is ThinQ for Smartwatch?
 ---

@@ -2,10 +2,10 @@
 title: "Diarist"
 date: "2021-01-03"
 intro: "A diary app you write with your voice. Voice-writing lets your hands free, while you write as quickly as you think."
-featuredImage: ./diarist-featured4.jpg
+featuredImage: ./diarist-featured5.jpg
 backgroundColor: '#FFEEE4'
 type: "app"
-text: "Personal Project"
+text: "PERSONAL PROJECT"
 path: "Diarist"
 publish: true
 order: 4

@@ -5,7 +5,7 @@ intro: "Rank, track, and visualize your Apple Music library."
 featuredImage: ./flowi-cover.png
 backgroundColor: '#FFF9E7'
 type: "app"
-text: "On App Store"
+text: "ON APP STORE"
 path: "Flowi"
 publish: true
 order: 5

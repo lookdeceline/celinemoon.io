@@ -1,10 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.titleContainerArea {
+    
+}
+
 .titleContainer {
     display: flex;
     flex-direction: column;
+    align-items: center;
+
+    font-family: Inter;
+    max-width: 872px;
+    margin: auto;
+    padding: 128px 16px;
     /* align-items: center; */
     /* flex-wrap: wrap; */
 
-    border-radius: 16px;
+    /* border-radius: 16px; */
     /* padding: 30px; */
 }
 
@@ -13,45 +25,64 @@
     min-width: 90px;
     height: 90px;
     border-radius: 28px; */
-    max-width: 700px;
+    max-width: 640px;
     width: 100%;
     height: auto;
     border-radius: 5px;
+    margin: 64px 0 0 0;
 }
 
 .titleContent {
     /* margin-left: 30px; */
-    margin-top: 30px;
-    padding: 20px;
-    border-radius: 11px;
+    /* margin-top: 30px; */
+    /* padding: 20px; */
+    /* border-radius: 11px; */
+    text-align: center;
 }
 
 .h1{
-    font-size: 54px;
+    font-family: 'Work Sans', sans-serif;
     font-weight: 600;
-    margin: 0 0 10px 0;
+    font-size: 36px;
+    margin: 0;
 }
 
 .h2 {
-    font-size: 19px;
-    /* letter-spacing: -.05em; */
+    /* font-size: 19px;
     font-weight: 500;
     line-height: 24px;
     margin-top: 0;
-    margin-bottom: 30px;
+    margin-bottom: 30px; */
+
+    font-weight: 600;
+    font-size: 20px;
+    font-style: normal;
+    line-height: 30px;
+    margin: 32px 0 16px 0;
+}
+
+.h5 {
+    font-size: 13px;
+    font-weight: 500;
+    /* margin-left: 5px; */
+    color: #6e6e73;
+    margin: 0;
 }
 
 .mdBody {
-    margin: 80px 0 80px 0;
+    font-family: Inter;
+    max-width: 872px;
+    padding: 0 16px;
+    margin: 90px auto;
 }
 
-.h5{
+/* .h5 {
     font-size: 18px;
     font-weight: 600;
     letter-spacing: -.05em;
     color: #088BEE;
     margin-bottom: 0;
-}
+} */
 
 .mdBody h3 {
     font-size: 27px;
@@ -96,7 +127,7 @@
         flex-wrap: wrap;
     
         border-radius: 16px;
-        padding: 30px;
+        /* padding: 30px; */
     }
 
     .titleContent {

@@ -24,8 +24,9 @@ export default function About({ data }) {
                 <div> Download Resume </div>
             </div> */}
             <div className={styles.aboutContainer}>
+              <div className={styles.imageAndText}>
                 <Img className={styles.pic} fluid={data.profileImage.childImageSharp.fluid} />  
-                <div className={styles.aboutTextContainer}>
+                {/* <div className={styles.aboutTextContainer}> */}
                   <div className={styles.aboutText}> 
                   My mission is to build the most seamless user experiences by applying sensing technologies to recognize user context through wearable devices.
                   Particularly, I can thrive when I solve a user-centered problem, by mixing different sensors and sensing technologies.
@@ -43,13 +44,12 @@ export default function About({ data }) {
                   Particularly, I love both watching and implementing beautiful layers of charts. 
                   I am currently working on open-source project on Mobile visualization library for Swift.
                   
-                  <br/><br/>
-                  I designed, built, and maintain this site. 👩🏻‍💻
                   </div>
-                  <a href={CVPdf} target = "_blank" className={styles.pageLink}>Download CV</a>
-                </div>
+                {/* </div> */}
+              </div>
+              <a href={CVPdf} target = "_blank" className={styles.pageLink}>Download CV</a>
             </div> 
-
+            
 
             {/* <PagesTitle 
             title="Contact Info" 

@@ -6,6 +6,8 @@ import { MDXProvider } from "@mdx-js/react"
 
 import LayoutBlogpost from "../components/layout-blogpost"
 import Layout from "../components/layout"
+import Header from "../components/header"
+import Footer from "../components/footer"
 import IconText from '../components/icon-note'
 import styles from "./project-post-styles.module.css"
 
@@ -20,16 +22,21 @@ const Title = styled.h5`
 export default function BlogPost({ data }) {
     const post = data.markdownRemark
     return(
-        <Layout>
+        // <Layout>
+        <div>
+          <Header/>
             <div>
+              <div className={styles.titleContainerArea} style={{ backgroundColor: post.frontmatter.backgroundColor }}>
                 <div className={styles.titleContainer}>
-                    <Img className={styles.featuredImage} fluid={post.frontmatter.featuredImage.childImageSharp.fluid} />
-                    <div className={styles.titleContent} style={{ backgroundColor: post.frontmatter.backgroundColor }}>
-                        <h1 className={styles.h1}>{post.frontmatter.title}</h1>
-                        <h2 className={styles.h2}>{post.frontmatter.intro}</h2>
-                        <IconText type={post.frontmatter.type} text={post.frontmatter.text} size="medium"/>
-                    </div>
+                  <div className={styles.titleContent} style={{ backgroundColor: post.frontmatter.backgroundColor }}>
+                      <h1 className={styles.h1}>{post.frontmatter.title}</h1>
+                      <h2 className={styles.h2}>{post.frontmatter.intro}</h2>
+                      {/* <IconText type={post.frontmatter.type} text={post.frontmatter.text} size="medium"/> */}
+                      <h5 className={styles.h5}># {post.frontmatter.text}</h5>
+                  </div>
+                  <Img className={styles.featuredImage} fluid={post.frontmatter.featuredImage.childImageSharp.fluid} />
                 </div>
+              </div>
                 
                 <div>
                     <div className={styles.mdBody} dangerouslySetInnerHTML={{ __html: post.html }} />
@@ -47,7 +54,9 @@ export default function BlogPost({ data }) {
                   {data.mdx.body}
                 </MDXProvider> */}
             </div>
-        </Layout>
+          <Footer/>
+        </div>
+        // </Layout>
     )
 }
 
@@ -62,7 +71,7 @@ export const query = graphql`
         intro
         featuredImage {
             childImageSharp {
-              fluid(maxWidth: 2000, quality: 100) {
+              fluid(quality: 100) {
                 ...GatsbyImageSharpFluid
               }
             }

@@ -4,8 +4,10 @@
 
 .headerBackground {
     width: 100%;
-    background-color: #F2F5F7;
-    padding: 4px 0;
+    /* background-color: #F2F5F7; */
+    padding: 4px 0 30px 0;
+    margin: auto;
+
 }
 .header {
     /* background-color: ; */
@@ -15,20 +17,21 @@
     grid-template-columns: 1fr 1fr 1fr; */
     display: flex;
     justify-content: space-between;
-    align-items: center; 
+    align-items: flex-end; 
     margin: 0 auto;
-    /* width: 96%; */
-    max-width: 840px;
-    padding: 0 1rem;
+    /* width: 100%; */
+    max-width: 872px;
+    padding: 0 16px;
     height: 70px;
+    min-width: 0;
 }
 
 .h3 {
     font-family: 'Work Sans', sans-serif;
     display: inline;
-    margin-right: 30px;
-    font-size: 27px;
-    font-weight: 500;
+    margin-right: 50px;
+    font-size: 20px;
+    font-weight: 600;
     line-height: 100%;
     /* letter-spacing: -0.06em; */
     
@@ -63,7 +66,7 @@
 }
 
 .pageLink {
-    margin-left: 16px;
+    margin-right: 50px;
     font-size: 17px;
     font-family: 'Work Sans', sans-serif;
     /* color: dodgerblue; */
@@ -82,6 +85,8 @@
 
 
 .socials {
+    /* min-width: 0; */
+    /* overflow: hidden; */
     /* display: grid;
     grid-template-columns: repeat(10, 1fr);
     align-items: center; */
@@ -102,4 +107,93 @@
     height: 19px;
     padding-left: 8px;
     padding-right: 8px;
+}
+
+.burger {
+    display: none;
+}
+
+.dropdown {
+    display: none;;
+}
+
+.dropdownHide {
+    display: none;;
+}
+
+/* mobile screens */ 
+@media (max-width: 800px) {
+
+/* .header {
+    display: block;
+    justify-content: end;
+}
+
+.listLink {
+    justify-content: space-between;
+}
+.h3 {
+    margin-right: 0px;
+}
+.pageLinks {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+} */
+.pageLink {
+    display: none;
+    margin-right: 0px;
+}
+
+.socials {
+    display: none;
+}
+
+.burger {
+    /* grid-area: burger; */
+    display: block;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    /* background-color: #FB2B43; */
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 4px 0 0 0;
+}
+
+.dropdown {
+    /* display: flex;
+    flex-direction: column; */
+    position: absolute;
+    right: 0px;
+    height: 100vh;
+    top: 104px;
+    z-index: 100;
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-end;
+    /* justify-content: flex-start; */
+    background:rgba(255,255,255,0.5);
+    backdrop-filter: blur(16px);
+    width: 100%;
+    margin: 0;
+    padding: 30px 3.5% 30px 0;
+
+}
+
+.dropdownHide {
+    display: none;
+}
+
+.menuPageLink {
+    display: block;
+    font-size: 17px;
+    font-family: 'Work Sans', sans-serif;
+}
 }

@@ -2,10 +2,10 @@
 title: "Cisum"
 date: "2021-01-03"
 intro: "A novel music streaming app that automatically compiles playlists of top played songs for different user context."
-featuredImage: ./cisum-landing.jpg
+featuredImage: ./cisum-featured2.jpg
 backgroundColor: '#FFEEF0'
 type: "app"
-text: "Term Project"
+text: "TERM PROJECT"
 path: "Cisum"
 publish: true
 order: 3

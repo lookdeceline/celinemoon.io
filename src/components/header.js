@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useStaticQuery, Link, graphql } from "gatsby"
 
 import styles from "./styles/header.module.css"
@@ -28,6 +28,21 @@ export default function Header() {
 			}
 		`
 	)
+
+	const [menuActivated, setMenuActivated] = useState(false)
+
+	function toggleNav() {
+		console.log("### toggled")
+		console.log(menuActivated)
+		if(!menuActivated) {
+			setMenuActivated(true)
+			// menuActivated = true
+		} else {
+			setMenuActivated(false)
+			// menuActivated = false
+		}
+	}
+	
 	return (
 		<div className={styles.headerBackground}> 
 			<div className={styles.header} >
@@ -46,7 +61,10 @@ export default function Header() {
 							{data.site.siteMetadata.title}
 						</div>
 					</Link>
-					<Link to="/about/" className={styles.pageLink}>about</Link>
+					{/* <div className={styles.pageLinks}> */}
+						<Link to="/about/" className={styles.pageLink}>about</Link>
+						<Link to="/" className={styles.pageLink}>projects</Link>
+					{/* </div> */}
 				</div>
 				
 				<div className={styles.socials}>
@@ -57,6 +75,25 @@ export default function Header() {
 					<InstagramIcon className={styles.otherIcons}/> */}
 				</div>
 				
+				<button className={styles.burger} onClick={toggleNav}>
+					<div className={styles.line1}></div>
+                    <div className={styles.line2}></div>
+                    <div className={styles.line3}></div>
+				</button>
+
+				<div className={menuActivated ? styles.dropdown : styles.dropdownHide}>
+					{/* "sdddd" */}
+					<Link to="/about/" className={styles.menuPageLink}>about</Link>
+					<Link to="/" className={styles.menuPageLink}>projects</Link>
+					<Link to="https://github.com/lookdeceline" > <GithubIcon className={styles.githubIcon}/> </Link>
+					<Link to="https://www.linkedin.com/in/celinemoon/"> <LinkedInIcon className={styles.otherIcons}/> </Link>
+				</div>
+				{/* {
+					(menuActivated) ? (
+
+					)
+					:null
+				} */}
 			</div>
 		</div>
 	)
