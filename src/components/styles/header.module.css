@@ -30,7 +30,7 @@
     font-family: 'Work Sans', sans-serif;
     display: inline;
     margin-right: 50px;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 600;
     line-height: 100%;
     /* letter-spacing: -0.06em; */
@@ -92,21 +92,19 @@
     align-items: center; */
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-end;
+    gap: 20px;
 }
 
-.githubIcon {
-    /* grid-column: 8/9; */
+/* .githubIcon {
     height: 19px;
-    padding-left: 8px;
-    padding-right: 8px;
-}
+} */
 
-.otherIcons {
-    width: 19px;
+.socialIcon {
+    width: auto;
     height: 19px;
-    padding-left: 8px;
-    padding-right: 8px;
+    /* padding-left: 8px;
+    padding-right: 8px; */
 }
 
 .burger {
@@ -179,12 +177,12 @@
     gap: 16px;
     align-items: flex-end;
     /* justify-content: flex-start; */
-    background:rgba(255,255,255,0.5);
-    backdrop-filter: blur(16px);
+    background:rgba(253,230,230,0.65);
+    backdrop-filter: blur(24px);
     width: 100%;
     margin: 0;
     padding: 30px 3.5% 30px 0;
-
+    
 }
 
 .dropdownHide {
@@ -193,7 +191,13 @@
 
 .menuPageLink {
     display: block;
-    font-size: 17px;
+    font-size: 22px;
+    /* font-weight: 500; */
     font-family: 'Work Sans', sans-serif;
+}
+
+.socialIcon {
+    height: 22px;
+    width: 22px;
 }
 }

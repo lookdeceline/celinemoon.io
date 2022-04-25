@@ -4,6 +4,7 @@ import Img from "gatsby-image"
 import styled from "styled-components"
 import { MDXProvider } from "@mdx-js/react"
 
+import SEO from "../components/seo"
 import LayoutBlogpost from "../components/layout-blogpost"
 import Layout from "../components/layout"
 import Header from "../components/header"
@@ -21,9 +22,17 @@ const Title = styled.h5`
 
 export default function BlogPost({ data }) {
     const post = data.markdownRemark
+    const image = post.frontmatter.image
+      ? post.frontmatter.image.childImageSharp.resize
+      : null
+    // console.log("image: ", post.frontmatter.featuredImage.childImageSharp.fluid.src)
     return(
         // <Layout>
         <div>
+          <SEO title={post.frontmatter.title}
+          description={post.frontmatter.intro}
+          featuredImage={post.frontmatter.featuredImage.childImageSharp.fluid.src}/>
+
           <Header/>
             <div>
               <div className={styles.titleContainerArea} style={{ backgroundColor: post.frontmatter.backgroundColor }}>
@@ -72,6 +81,7 @@ export const query = graphql`
         featuredImage {
             childImageSharp {
               fluid(quality: 100) {
+                src
                 ...GatsbyImageSharpFluid
               }
             }

@@ -7,10 +7,11 @@
 module.exports = {
   siteMetadata: {
     title: "Celine Moon",
-    description: "Celine's iOS Development Blog",
-    siteUrl: "https://lookdeceline/github.io/",
+    description: "My mission is to make user experience as implicit as possible through building mobile / wearable applications.",
+    siteUrl: "https://lookdeceline.github.io",
     author: "Celine Jeongwon Moon",
     defaultSiteImage: `src/images/babyChick.png`,
+    // defaultSocialCardImage: `src/images/previewImage2.png`,
   },
   plugins: [
     {
@@ -34,11 +35,29 @@ module.exports = {
     //     icon: "src/images/babyChick.png"
     //   }
     // },
+    `gatsby-plugin-image`,
+    // {
+    //   resolve: `gatsby-plugin-sharp`,
+    //   options: {
+    //     defaults: {
+    //       formats: [`auto`, `webp`],
+    //       placeholder: `dominantColor`,
+    //       quality: 100,
+    //       backgroundColor: `transparent`,
+    //       tracedSVGOptions: {},
+    //       blurredOptions: {},
+    //       jpgOptions: {},
+    //       pngOptions: {},
+    //       webpOptions: {},
+    //       avifOptions: {},
+    //     },
+    //   },
+    // },
     {
       resolve: "gatsby-plugin-sharp",
       options: {
         defaults: {
-          quality: 100
+          quality: 100,
         }
       }
     },
@@ -69,8 +88,8 @@ module.exports = {
         name: `gatsby-starter-default`,
         short_name: `starter`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#F9F9F9`,
+        theme_color: `#F9F9F9`,
         display: `minimal-ui`,
         icon: `src/images/babyChick.png`, // This path is relative to the root of the site.
       },
@@ -176,6 +195,33 @@ module.exports = {
             },
           },
         ],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        // You can add multiple tracking ids and a pageview event will be fired for all of them.
+        trackingIds: [
+          // process.env.GA_TRACKING_ID, // Google Analytics / GA
+          "G-BW80RM13GV"
+         
+        ],
+        // This object gets passed directly to the gtag config command
+        // This config will be shared across all trackingIds
+        // gtagConfig: {
+        //   optimize_id: 'OPT_CONTAINER_ID',
+        //   anonymize_ip: true,
+        //   cookie_expires: 0,
+        // },
+        // This object is used for configuration specific to this plugin
+        pluginConfig: {
+          // Puts tracking script in the head instead of the body
+          head: false,
+          // Setting this parameter is also optional
+          respectDNT: true,
+          // Avoids sending pageview hits from custom paths
+          // exclude: ['/preview/**', '/do-not-track/me/too/'],
+        },
       },
     },
   ],

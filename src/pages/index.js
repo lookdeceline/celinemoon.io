@@ -8,7 +8,7 @@ import Footer from "../components/footer"
 import SEO from "../components/seo"
 import SmallThumbnailPost from "../components/smallThumbnailPost"
 import IconText from "../components/icon-note"
-import CVPdf from '../images/CV-beta.pdf';
+import CVPdf from '../images/CV.pdf';
 import styles from "../styles/index.module.css"
 
 function compareOrder(node1, node2) {
@@ -32,21 +32,24 @@ export default function Home({ data }) {
     // <Layout>
     <div>
       <Header/>
-      <SEO title="Lookdeceline"/>
+      <SEO title="Home"/>
       {/* <div className={styles.about}> */}
           <div className={styles.abountContainerContainer}>
           <div className={styles.aboutContainer}>
             <div className={styles.aboutTextContainer}>
+            {/* <u style={{textDecorationThickness: `5px`, textDecorationColor: `#FB2B43`, textUnderlineOffset: `3px`}}> */}
               <h1 className={styles.subSectionTitle}>Hi, I'm Celine.</h1>
             {/* <div className={styles.aboutContainer}> */}
               <h2 className={styles.intro}>
-              I am currently working as an iOS software engineer at Sendbird. My mission is to make user experience as <span style={{color:"#FB2B43", fontWeight: 600}}>implicit</span> as possible through mobile / wearable devices.
+              {/* <span style={{color:"#FB2B43", fontWeight: 600}}> */}
+              I am currently working as an iOS software engineer at Sendbird. My mission is to make user experience as implicit as possible through mobile / wearable devices.
               <br/>
               I designed, built, and maintain this site. 👩🏻‍💻
               </h2>
               <div className={styles.introLinks}>
-                <Link to="/about/" className={styles.pageLink}>Read more about me ↗</Link>
-                <a href={CVPdf} target = "_blank" className={styles.pageLink} style={{padding: `14px 68px`}}>Download CV ↗</a>
+                <Link to="/about/" className={styles.pageLink}>Read more about me ↗&#xFE0E;</Link>
+                {/* style={{padding: `14px 68px`}} */}
+                <a href={CVPdf} target = "_blank" className={styles.pageLink} id="cvLink">Download CV ↗&#xFE0E;</a>
               </div>
             </div>
               {/* <Img className={styles.profileImage} fluid={data.file.childImageSharp.fluid} /> */}
@@ -147,7 +150,7 @@ export const query = graphql`
         }
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___order], order: ASC }) {
+    allMarkdownRemark(sort: { fields: [frontmatter___order], order: ASC }, filter: {frontmatter: {publish: { eq: true } }}) {
       totalCount
       edges {
         node {

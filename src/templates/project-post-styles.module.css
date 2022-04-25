@@ -73,7 +73,7 @@
     font-family: Inter;
     max-width: 872px;
     padding: 0 16px;
-    margin: 90px auto;
+    margin: 90px auto 180px auto;
 }
 
 /* .h5 {
@@ -89,18 +89,18 @@
     /* letter-spacing: -.05em; */
     font-weight: 600;
     line-height: 25px;
-    margin-top: 43px;
+    margin-top: 80px;
     margin-bottom: 6px;
 }
 
 .mdBody h4 {
     font-size: 19px;
     font-weight: 600;
-    margin: 40px 0 0 0;
+    margin: 48px 0 9px 0;
 }
 
 .mdBody hr {
-    margin-bottom: 16px;
+    /* margin-bottom: -50px; */
 }
 
 .mdBody a {
@@ -108,14 +108,25 @@
 }
 
 .mdBody p{
-    font-size: 17px;
+    font-size: 16px;
     line-height: 27px;
+    margin: 0 0 16px 0;
     /* font-weight: 300; */
 }
 
+.mdBody ul {
+    margin: 0;
+}
+
 .mdBody li {
-    font-size: 17px;
-    line-height: 30px;
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 16px;
+}
+
+/* nested list */
+.mdBody ul li ul li{
+    margin-top: -8px;
 }
 
 /* mobile screens */ 
@@ -127,7 +138,7 @@
         flex-wrap: wrap;
     
         border-radius: 16px;
-        /* padding: 30px; */
+        /* padding: 128px 16px 64px 16px; */
     }
 
     .titleContent {

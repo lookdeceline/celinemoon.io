@@ -6,6 +6,7 @@ import GithubIcon from "../images/github.svg"
 import TwitterIcon from "../images/twitter.svg"
 import InstagramIcon from "../images/instagram.svg"
 import LinkedInIcon from "../images/linkedin.svg"
+import MailIcon from "../images/mail.svg"
 
 const ListLink = props => (
     // <li style={{ display: `inline`}}>   
@@ -32,8 +33,8 @@ export default function Header() {
 	const [menuActivated, setMenuActivated] = useState(false)
 
 	function toggleNav() {
-		console.log("### toggled")
-		console.log(menuActivated)
+		// console.log("### toggled")
+		// console.log(menuActivated)
 		if(!menuActivated) {
 			setMenuActivated(true)
 			// menuActivated = true
@@ -68,8 +69,9 @@ export default function Header() {
 				</div>
 				
 				<div className={styles.socials}>
-					<Link to="https://github.com/lookdeceline" > <GithubIcon className={styles.githubIcon}/> </Link>
-					<Link to="https://www.linkedin.com/in/celinemoon/"> <LinkedInIcon className={styles.otherIcons}/> </Link>
+					<Link to="https://github.com/lookdeceline" > <GithubIcon className={styles.socialIcon}/> </Link>
+					<Link to="https://www.linkedin.com/in/celinemoon/"> <LinkedInIcon className={styles.socialIcon}/> </Link>
+					<a href="mailto:celine@snu.ac.kr"> <MailIcon className={styles.socialIcon} style={{height: `16px`}}/> </a>
 					
 					{/* <TwitterIcon className={styles.otherIcons}/>
 					<InstagramIcon className={styles.otherIcons}/> */}
@@ -85,8 +87,9 @@ export default function Header() {
 					{/* "sdddd" */}
 					<Link to="/about/" className={styles.menuPageLink}>about</Link>
 					<Link to="/" className={styles.menuPageLink}>projects</Link>
-					<Link to="https://github.com/lookdeceline" > <GithubIcon className={styles.githubIcon}/> </Link>
-					<Link to="https://www.linkedin.com/in/celinemoon/"> <LinkedInIcon className={styles.otherIcons}/> </Link>
+					<Link to="https://github.com/lookdeceline" > <GithubIcon className={styles.socialIcon}/> </Link>
+					<Link to="https://www.linkedin.com/in/celinemoon/"> <LinkedInIcon className={styles.socialIcon}/> </Link>
+					<a href="mailto:celine@snu.ac.kr"> <MailIcon className={styles.socialIcon} /> </a>
 				</div>
 				{/* {
 					(menuActivated) ? (

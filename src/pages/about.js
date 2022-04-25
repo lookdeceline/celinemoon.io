@@ -1,5 +1,6 @@
 import React from "react"
-import Img from "gatsby-image"
+// import Img from "gatsby-image"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
@@ -7,12 +8,16 @@ import SEO from "../components/seo"
 import PagesTitle from "../components/pagesTitle"
 import styles from "../styles/about.module.css"
 import DownloadYellow from "../images/DownloadYellow.svg"
-import CVPdf from '../images/CV-beta.pdf';
+import CVPdf from '../images/CV.pdf';
 
 export default function About({ data }) {
+
+    const profileImage = getImage(data.profileImage)
     return (
         <Layout> 
-            <SEO title="About"/>
+            <SEO title="About"
+            featuredImage={data.profileImage.childImageSharp.fluid.src}/>
+            
             <div className={styles.me}>
                 <div className={styles.hi}>Hi there, I'm Celine Moon, an iOS software engineer at Sendbird.</div>
             </div>
@@ -25,7 +30,8 @@ export default function About({ data }) {
             </div> */}
             <div className={styles.aboutContainer}>
               <div className={styles.imageAndText}>
-                <Img className={styles.pic} fluid={data.profileImage.childImageSharp.fluid} />  
+                {/* <Img className={styles.pic} fluid={data.profileImage.childImageSharp.fluid} />   */}
+                <GatsbyImage image={profileImage} />
                 {/* <div className={styles.aboutTextContainer}> */}
                   <div className={styles.aboutText}> 
                   My mission is to build the most seamless user experiences by applying sensing technologies to recognize user context through wearable devices.
@@ -71,10 +77,14 @@ export default function About({ data }) {
 
 export const query = graphql`
   query {
-    profileImage: file(relativePath: { eq: "images/profile-picture.png" }) {
+    profileImage: file(relativePath: { eq: "images/profile-picture2.png" }) {
       childImageSharp {
-        fluid(maxWidth: 800, quality: 100) {
+        gatsbyImageData(
+          placeholder: BLURRED
+        )
+        fluid(quality: 100) {
           ...GatsbyImageSharpFluid
+          
         }
       }
     }

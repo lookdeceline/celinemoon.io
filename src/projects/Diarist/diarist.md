@@ -1,12 +1,12 @@
 ---
-title: "Diarist"
+title: "LaLa"
 date: "2021-01-03"
 intro: "A diary app you write with your voice. Voice-writing lets your hands free, while you write as quickly as you think."
-featuredImage: ./diarist-featured5.jpg
-backgroundColor: '#FFEEE4'
+featuredImage: ./diarist-featured7.jpg
+backgroundColor: '#E1CBFE'
 type: "app"
 text: "PERSONAL PROJECT"
-path: "Diarist"
+path: "LaLa"
 publish: true
 order: 4
 ---
@@ -14,17 +14,17 @@ order: 4
 ### About This Project
 ---
 As a personal project, I made a diary app using speech recognition.
-There are many hand interaction-based diaries: either via typing or by physically writing with a digital pen. However, there are no apps dedicated to writing diaries solely by voice. Voice Diarist lets users use speech as prime means in writing diaries, and provides a visually structured interface to keep the diaries organized. 
+There are many hand interaction-based diaries: either via typing or by physically writing with a digital pen. However, there are no apps dedicated to writing diaries solely by voice. LaLa lets users use speech as prime means in writing diaries, and provides a visually structured interface to keep the diaries organized. 
 
 ### Project Context
 ---
-#### What is Diarist?
-Voice Diarist is a mobile diary app you write with your voice.
+#### What is LaLa?
+LaLa is a mobile diary app you write with your voice.
 Instead of having to type in the texts or write with a digital pen (e.g. Apple Pencil), you simply 
 speak to the app to write your diary.
 
 #### Project Motivation
-Voice Diarist is a mobile diary app you write with your voice.
+LaLa is a mobile diary app you write with your voice.
 Instead of having to type in the texts or write with a digital pen (e.g. Apple Pencil), you simply 
 speak to the app to write your diary.
 
