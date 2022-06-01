@@ -36,7 +36,7 @@ I conducted a preliminary user study to identify the pain points of digital diar
 regularly keep diaries on digital devices, such as smartphones or tablets. A qualitative user study 
 revealed the following:
 
-* Pain Point 1 The position in which users write diaries is not comfortable.
+* **Pain Point 1**  The position in which users write diaries is not comfortable.
     * user A) “I want to write my diary at the end of the day in my most comfortable position. Like 
 write while rolling around in bed, maybe.”
     * user B) “I usually type in my diary app on my iPhone while in my bed, but my arms ache after a 
@@ -44,7 +44,7 @@ while, cause I have to hold them up high in the air if I want ro type fast.”
     * user C) “/ like to write with my iPad, but that also means I have to be sitting at my desk to do 
 it. Sometimes keep my diary See/s like another set of /a6or.”
 
-* Pain Point 2 The length of diaries and the visual interface of diaries app often makes long 
+* **Pain Point 2**  The length of diaries and the visual interface of diaries app often makes long 
 writings become messy.
     * user D) “Keeping diary lets me record the flow of my thoughts, but at the same time it‘s tough to 
 keep fhe records organ/zed. Like when I want to look back through what I wrote, I remember writing 
@@ -67,18 +67,24 @@ speaking into the app.
 ### User Interface Design
 ---
 
-<div class="projectImage" style="width:80%; margin: 30px auto;">
+<div class="projectImage" style="width: 680px; max-width:100%; margin: 30px auto;">
     <img src="./ui.jpg">
 </div>
 
 ### System Architecture
 ---
-<div class="projectImage" style="width:73%; margin: 30px auto;">
+
+<div class="projectImage" style="width: 620px; max-width:100%; margin: 30px auto;">
     <img src="./sys-arch.jpg">
 </div>
 
 ### Final Output, Lessons
 ---
+#### Final Output
+<div class="projectImage" style="width: 270px; max-width:100%; margin: 30px auto 60px auto;">
+    <img src="./final-output2.jpg">
+</div>
+
 #### Design Lessons
 Speech-to-text interactions have become readily accessible for both developers and end-users, but it still falls short of human-level dictation. Furthermore, there still remain critical challenges to user experience that cannot be solely handled with STT gadget, such as detecting and writing down the punctuation marks from human speech.
 
