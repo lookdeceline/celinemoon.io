@@ -13,16 +13,31 @@
 
 .cardItem {
     height: auto;
-    background-color: #F2F2F8;
-    border-radius: 5px;
+    /* background-color: #F2F2F8; */
+    
+    /* border: 1.5px solid #848488;
+    border-radius: 15px; */
+
+    border: 1px solid #848488;
+    border-radius: 23px;
+
+    /* border-left: 4px solid #000;
+    background-color: #FBFBFD; */
     /* box-shadow:  0 0 5px rgba(0, 0, 0, 0.365); */
-    padding: 30px;
-    margin-bottom: 20px;
+    padding: 34px;
+    margin-bottom: 25px;
 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 
+    transition: transform .16s ease-out,background-color .16s ease-out,border-color .16s ease-out;
+}
+
+.cardItem:hover {
+    border-color: #FB2B43;
+    transform: scale(1.01);
+    
 }
 /*
 .imageContainer {
@@ -53,10 +68,19 @@
     border-radius: 28px;
 }
 
+.cardWrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    width: 100%;
+}
+
 .cardContent {
     /* height:  */
     /* backdrop-filter: blur(10px); */
-    min-width: 100%;
+    /* min-width: 100%; */
+    flex-grow: 1;
     padding: 0;
     /* color: black; */
     display: flex;
@@ -79,16 +103,26 @@
 }
 
 .cardContentTitle {
-    font-size: 19px;
+    font-size: 19.7px;
     font-weight: 500;
-    margin-bottom: 20px;
+    line-height: 29px;;
+    margin-bottom: 4px;
 }
 
 .cardContentIntro {
-    font-size: 15px;
+    font-size: 16px;
+    /* color: #6e6e73; */
+    color: #515154;
     /* letter-spacing: -0.04em; */
+    line-height: 25px;
     font-weight: 400;
-    margin-bottom: 20px;
+    margin-bottom: 8px;
+}
+
+.chevron {
+    width: auto;
+    height: 33px;
+    fill: #FB2B43;
 }
 
 .appStore {
@@ -101,6 +135,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    gap: 20px;
 }
 
 /* mobile screens */ 

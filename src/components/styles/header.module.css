@@ -103,8 +103,13 @@
 .socialIcon {
     width: auto;
     height: 19px;
+    fill: #000;
     /* padding-left: 8px;
     padding-right: 8px; */
+}
+
+.socialIcon:hover {
+    fill: #FB2B43;
 }
 
 .burger {

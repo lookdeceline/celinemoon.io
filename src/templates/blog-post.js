@@ -24,6 +24,7 @@ export default function BlogPost({ data }) {
                 <h1 className={styles.h1}>{post.frontmatter.title}</h1>
                 {/* <h5 className={styles.h5}>{post.frontmatter.date}</h5> */}
                 <h2 className={styles.h2}>{post.frontmatter.intro}</h2>
+                
                 <div className={styles.article} dangerouslySetInnerHTML={{ __html: post.html }} />
             </div>
         </Layout>

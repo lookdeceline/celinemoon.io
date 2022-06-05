@@ -3,6 +3,8 @@ import { Link, graphql } from "gatsby"
 import Img from "gatsby-image"
 
 import Layout from "../components/layout"
+import Header from "../components/header"
+import Footer from "../components/footer"
 import SEO from "../components/seo"
 import PagesTitle from "../components/pagesTitle"
 import SmallThumbnailPost from "../components/smallThumbnailPost"
@@ -22,22 +24,29 @@ import styles from "../styles/index.module.css"
 
 export default function Blog({ data }) {
     return (
-      <Layout>
-				{/* <Link to="/">Home</Link> */}
+      // <Layout>
+      <div>
+        <Header/>
         <SEO title = "Blog"/>
-        <PagesTitle 
-        title="Blog Posts" 
-        titleIntro="Things I've learned so far."
-        />
+        {/* <div className={styles.pageContainer}> */}
 
-        <div className={styles.cardsContainer}>
-          {data.allMarkdownRemark.edges
-          .filter(({node}) => node.frontmatter.publish)
-          .map(({ node }) => (
-            <SmallThumbnailPost node={node}/>     
-          ))}
+          <PagesTitle 
+          title="Blog" 
+          titleIntro="I mostly write about iOS development."
+          />
+        <div className={styles.pageContainer}>  
+          {/* <div className={styles.cardsContainer}> */}
+            {data.allMarkdownRemark.edges
+            .filter(({node}) => node.frontmatter.publish)
+            .map(({ node }) => (
+              <SmallThumbnailPost node={node}/>     
+            ))}
+          {/* </div> */}
         </div>
-      </Layout>
+
+        <Footer/>
+      </div>
+      //  </Layout>
     )
   }
 

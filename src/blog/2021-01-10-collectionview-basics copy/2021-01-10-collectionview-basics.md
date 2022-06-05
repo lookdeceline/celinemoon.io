@@ -3,7 +3,7 @@ title: "Collection View Basics"
 date: "2021-01-10"
 intro: "A look into the basics of UIKit's Collection View."
 featuredImage: ./swift-square-blue.png
-tags: ["Core Animation", "CAShapeLayer"]
+tags: ["UIKit", "CAShapeLayer"]
 path: "collection-view-basics"
 publish: false
 ---

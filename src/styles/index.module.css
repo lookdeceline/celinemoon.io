@@ -300,3 +300,11 @@
     }
 
 }
+
+ /* blog.js */
+ .pageContainer {
+    margin: 40px auto 180px auto;
+    font-family: Inter;
+    max-width: 872px;
+    padding: 0 16px;
+ }

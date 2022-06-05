@@ -4,6 +4,8 @@ import Img from "gatsby-image"
 
 import SmallTagBox from "./smallTagBox"
 import styles from "./styles/smallThumbnailPost.module.css"
+import ChevronIcon from "../blog/images/chevron-right.svg"
+import ChevronRegularIcon from "../blog/images/chevron-right-regular.svg"
 
 const SmallThumbnailPost = ({ node }) => {
     return (
@@ -12,37 +14,31 @@ const SmallThumbnailPost = ({ node }) => {
             className={styles.cardItem}>
             {/* <div key={node.id} className={styles.cardItem}> */}
             
-            <div className={styles.cardContent}>
-              {/* <div className={styles.cardHeader}>
-                <p className={styles.cardContentDate}>
-                  {node.frontmatter.date}
-                </p>
+            <div className={styles.cardWrapper}>
+              <div className={styles.cardContent}>
 
-                <div className={styles.blogpostImageContainer} >
-                  <Img 
-                  // className={styles.imageContainer}
-                  fluid={node.frontmatter.featuredImage.childImageSharp.fluid} />
-                </div>  
-              </div> */}
+                <div className={styles.cardContentTitle}>
+                  {node.frontmatter.title}
+                </div>
 
-              <div className={styles.cardContentTitle}>
-                🗒 {node.frontmatter.title}
+                <div className={styles.cardContentIntro}>
+                    {node.frontmatter.intro}
+                </div>
+
+                <div className={styles.smallTagsContainer}>
+                    {node.frontmatter.tags ? node.frontmatter.tags.map(( tag, index ) => {
+                        return (
+                            <SmallTagBox tag={tag} />
+                        )
+                    }) 
+                    : null
+                    }
+                </div>
               </div>
-
-              <div className={styles.cardContentIntro}>
-                  {node.frontmatter.intro}
-              </div>
-
-              <div className={styles.smallTagsContainer}>
-                  {node.frontmatter.tags ? node.frontmatter.tags.map(( tag, index ) => {
-                      return (
-                          <SmallTagBox tag={tag} />
-                      )
-                  }) 
-                  : null
-                  }
-              </div>
-          </div>
+                
+              <ChevronIcon className={styles.chevron}/>
+              
+            </div>
 
           
         {/* </div> */}

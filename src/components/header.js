@@ -63,8 +63,9 @@ export default function Header() {
 						</div>
 					</Link>
 					{/* <div className={styles.pageLinks}> */}
-						<Link to="/about/" className={styles.pageLink}>about</Link>
 						<Link to="/" className={styles.pageLink}>projects</Link>
+						<Link to="/blog/" className={styles.pageLink}>blog</Link>
+						<Link to="/about/" className={styles.pageLink}>about</Link>
 					{/* </div> */}
 				</div>
 				
