@@ -86,8 +86,10 @@ export default function Header() {
 
 				<div className={menuActivated ? styles.dropdown : styles.dropdownHide}>
 					{/* "sdddd" */}
-					<Link to="/about/" className={styles.menuPageLink}>about</Link>
 					<Link to="/" className={styles.menuPageLink}>projects</Link>
+					<Link to="/blog/" className={styles.menuPageLink}>blog</Link>
+					<Link to="/about/" className={styles.menuPageLink}>about</Link>
+					
 					<Link to="https://github.com/lookdeceline" > <GithubIcon className={styles.socialIcon}/> </Link>
 					<Link to="https://www.linkedin.com/in/celinemoon/"> <LinkedInIcon className={styles.socialIcon}/> </Link>
 					<a href="mailto:celine@snu.ac.kr"> <MailIcon className={styles.socialIcon} /> </a>

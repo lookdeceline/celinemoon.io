@@ -6,7 +6,7 @@
 
 module.exports = {
   siteMetadata: {
-    title: "Celine Moon",
+    title: "CELINE MOON",
     description: "My mission is to make user experience as implicit as possible through building mobile / wearable applications.",
     siteUrl: "https://lookdeceline.github.io",
     author: "Celine Jeongwon Moon",

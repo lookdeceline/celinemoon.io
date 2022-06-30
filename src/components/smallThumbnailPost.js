@@ -5,6 +5,7 @@ import Img from "gatsby-image"
 import SmallTagBox from "./smallTagBox"
 import styles from "./styles/smallThumbnailPost.module.css"
 import ChevronIcon from "../blog/images/chevron-right.svg"
+import SeePostIcon from "../blog/images/seePost.svg"
 import ChevronRegularIcon from "../blog/images/chevron-right-regular.svg"
 
 const SmallThumbnailPost = ({ node }) => {
@@ -25,6 +26,7 @@ const SmallThumbnailPost = ({ node }) => {
                     {node.frontmatter.intro}
                 </div>
 
+               {/* <div className={styles.tagsAndArrow}> */}
                 <div className={styles.smallTagsContainer}>
                     {node.frontmatter.tags ? node.frontmatter.tags.map(( tag, index ) => {
                         return (
@@ -34,9 +36,12 @@ const SmallThumbnailPost = ({ node }) => {
                     : null
                     }
                 </div>
+
+                {/* <SeePostIcon className={styles.chevron}/> */}
+               {/* </div>  */}
               </div>
-                
-              <ChevronIcon className={styles.chevron}/>
+              <SeePostIcon className={styles.chevron}/>
+              
               
             </div>
 

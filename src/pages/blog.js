@@ -27,11 +27,11 @@ export default function Blog({ data }) {
       // <Layout>
       <div>
         <Header/>
-        <SEO title = "Blog"/>
+        <SEO title = "Dev Blog"/>
         {/* <div className={styles.pageContainer}> */}
 
           <PagesTitle 
-          title="Blog" 
+          title="Dev Blog" 
           titleIntro="I mostly write about iOS development."
           />
         <div className={styles.pageContainer}>  

@@ -38,12 +38,11 @@ export default function Home({ data }) {
           <div className={styles.aboutContainer}>
             <div className={styles.aboutTextContainer}>
             {/* <u style={{textDecorationThickness: `5px`, textDecorationColor: `#FB2B43`, textUnderlineOffset: `3px`}}> */}
-              <h1 className={styles.subSectionTitle}>Hi, I'm Celine.</h1>
+              <h1 className={styles.subSectionTitle}>Hi, my name is Celine.</h1>
             {/* <div className={styles.aboutContainer}> */}
               <h2 className={styles.intro}>
               {/* <span style={{color:"#FB2B43", fontWeight: 600}}> */}
-              I am currently working as an iOS software engineer at Sendbird. My mission is to make user experience as implicit as possible through mobile / wearable devices.
-              <br/>
+              I am currently working as an iOS software engineer at Sendbird. I write code to enable aesthetic and delightful user interfaces.
               I designed, built, and maintain this site. 👩🏻‍💻
               </h2>
               <div className={styles.introLinks}>

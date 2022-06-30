@@ -22,15 +22,16 @@
     /* width: 100%; */
     max-width: 872px;
     padding: 0 16px;
-    height: 70px;
+    height: 85px;
     min-width: 0;
 }
 
 .h3 {
-    font-family: 'Work Sans', sans-serif;
+    /* font-family: 'Work Sans', sans-serif; */
+    font-family: 'Urbanist', sans-serif;
     display: inline;
     margin-right: 50px;
-    font-size: 22px;
+    font-size: 21px;
     font-weight: 600;
     line-height: 100%;
     /* letter-spacing: -0.06em; */
@@ -44,11 +45,15 @@
 
 .h3:hover {
     /* text-decoration: underline; */
-    text-decoration-color: #FB2B43;
+    text-decoration-color: #0171E2;
+    color: #0171E2;
+    
     /* text-decoration-skip-ink: none; */
     /* text-underline-offset: 3px;
     text-decoration-thickness: 2px; */
-    color: #FB2B43;
+
+    /* text-decoration-color: #FB2B43; */
+    /* color: #FB2B43; */
 }
 
 .listLink {
@@ -68,19 +73,19 @@
 .pageLink {
     margin-right: 50px;
     font-size: 17px;
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Urbanist', sans-serif;
+    /* font-family: 'Work Sans', sans-serif; */
     /* color: dodgerblue; */
 }
 
 .pageLink:hover {
-    /* background-color: #FFEEF0; */
     text-decoration: underline;
-    text-decoration-color: #FB2B43;
+    text-decoration-color: #0171E2;
+    text-decoration-thickness: 3px;
+    color: #0171E2;
+    
     text-decoration-skip-ink: none;
     text-underline-offset: 3px;
-    text-decoration-thickness: 2px;
-    /* font-weight: 600; */
-    color: #FB2B43;
 }
 
 
@@ -93,7 +98,7 @@
     display: flex;
     flex-direction: row;
     align-items: flex-end;
-    gap: 20px;
+    gap: 24px;
 }
 
 /* .githubIcon {
@@ -109,7 +114,9 @@
 }
 
 .socialIcon:hover {
-    fill: #FB2B43;
+    /* fill: #FB2B43; */
+    fill: #0171E2;
+    
 }
 
 .burger {
@@ -179,10 +186,11 @@
 
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 24px;
     align-items: flex-end;
     /* justify-content: flex-start; */
-    background:rgba(253,230,230,0.65);
+    /* background:rgba(253,230,230,0.65); */
+    background:rgba(254, 246, 213, 0.65);
     backdrop-filter: blur(24px);
     width: 100%;
     margin: 0;
@@ -197,12 +205,13 @@
 .menuPageLink {
     display: block;
     font-size: 22px;
+    font-family: 'Urbanist', sans-serif;
     /* font-weight: 500; */
-    font-family: 'Work Sans', sans-serif;
+    /* font-family: 'Work Sans', sans-serif; */
 }
 
 .socialIcon {
-    height: 22px;
-    width: 22px;
+    height: 24px;
+    width: 24px;
 }
 }

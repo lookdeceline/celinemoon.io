@@ -31,8 +31,9 @@
 }
 
 .hi {
-    font-family: 'Work Sans', sans-serif;
-    font-size: 30px;
+    /* font-family: 'Work Sans', sans-serif; */
+    font-family: 'Urbanist', sans-serif;
+    font-size: 34px;
     line-height: 1.4;
     font-weight: 600;
     margin-bottom: 30px;;
@@ -67,7 +68,9 @@
 
 .pageLink {
     margin-top: 50px;
-    font-size: 16px;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
 
     
     color: black;
@@ -75,11 +78,10 @@
     /* font-size: 16px; */
     cursor: pointer;
 
-    /* border-color: #2196F3; */
-    /* color: dodgerblue */
-    border: 2px solid #FB2B43;
-    background-color: white;
-    color: #FB2B43;
+    font-family: 'Urbanist', sans-serif;
+    border: 2px solid #000;
+    /* background-color: #000; */
+    color: #000;
 }
 
 .pageLink:hover {
@@ -91,8 +93,8 @@
     font-weight: 600;
     color: #0070F5; */
     
-    border: 2px solid black;
-    background-color: black;
+    border: 2px solid #0171E2;
+    background-color: #0171E2;
     color: white;
 }
 

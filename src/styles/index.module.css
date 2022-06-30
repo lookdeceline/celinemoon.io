@@ -11,7 +11,9 @@
 .abountContainerContainer {
     /* max-width: 840px; */
     /* margin: auto; */
-    background-color: #F9F9F9;
+    /* background-color: #FCEDBC; */
+    background-color: #fff6d6;
+    /* background-color: #F9F9F9; */
     font-family: Inter;
 }
 
@@ -37,13 +39,14 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    font-family: 'Urbanist', sans-serif;
 }
 
 .intro {
-    font-weight: 600;
+    font-weight: 500;
     font-size: 20px;
     font-style: normal;
-    line-height: 30px;
+    line-height: 33px;
     margin: 0;
 }
 
@@ -54,18 +57,18 @@
 }
 
 .pageLink {
-    margin-top: 66px;
-    font-size: 16px;
+    margin-top: 40px;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
 
-    /* border: 2px solid black; */
-    background-color: white;
-    color: black;
-    padding: 12px 40px;
-    /* font-size: 16px; */
+    padding: 10px 40px;
     cursor: pointer;
 
-    border: 2px solid #FB2B43;
-    color: #FB2B43;
+    border: 2px solid #000;
+    color: #000;
+    /* border: 2px solid #FB2B43;
+    color: #FB2B43; */
 
 }
 
@@ -87,10 +90,12 @@
 }
 
 .subSectionTitle {
-    font-family: 'Work Sans', sans-serif;
+    /* font-family: 'Work Sans', sans-serif; */
+    font-family: 'Urbanist', sans-serif;
     font-weight: 600;
-    font-size: 36px;
-    margin: 0 0 20px 0;
+    font-size: 37px;
+    letter-spacing: 0.01em;
+    margin: 0 0 24px 0;
     padding:0;
 }
 
@@ -154,7 +159,7 @@
     flex-direction: column;
     /* padding-bottom: 20px; */
 
-    border-bottom: 1px solid #D0D0D0;
+    border-bottom: 2px solid #000;
 }
 
 .imageContainer {
@@ -166,7 +171,8 @@
    overflow: hidden;
     /* border-top-left-radius: 28px;
     border-top-right-radius: 28px; */
-    border-radius: 5px;
+    /* border: 1px solid #000; */
+    /* border-radius: 5px; */
     justify-content: center;
     /* width: 50%; */
     /* padding: 5px; */
@@ -196,7 +202,7 @@
 .cardContent {
     /* height:  */
     /* backdrop-filter: blur(10px); */
-    padding: 32px 0 64px 0;
+    padding: 32px 0 32px 0;
     /* color: white;
     background-color: black; */
     display: flex;
@@ -207,8 +213,10 @@
 
 .cardContentTitle {
     /* margin: 0 0 5px 0; */
-    font-family: 'Work Sans', sans-serif;
-    font-size: 20px;
+    /* font-family: 'Work Sans', sans-serif; */
+    font-family: 'Urbanist', sans-serif;
+    font-size: 24px;
+    letter-spacing: 0.01em;
     font-weight: 600;
     /* margin-bottom: 10px; */
 }
@@ -229,7 +237,7 @@
     line-height: 1.4;
     /* letter-spacing: -0.04em; */
     font-weight: 500;
-    margin: 16px 0;
+    margin: 18px 0;
 }
 
 .appStore {
@@ -267,7 +275,7 @@
     } 
 
     .intro {
-        margin-bottom: 90px;
+        margin-bottom: 40px;
     }
 
     .introLinks {
@@ -279,8 +287,9 @@
     .pageLink {
         margin-left: 0;
         margin-top: 0;
-        /* padding: 10px 32px;
-        border: 1.5px solid #FB2B43; */
+        /* padding: 10px 32px; */
+        border: 1.5px solid #000;
+        padding: 8px 30px;
     }
 
     .body {

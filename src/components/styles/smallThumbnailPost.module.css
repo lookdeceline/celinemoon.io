@@ -18,8 +18,9 @@
     /* border: 1.5px solid #848488;
     border-radius: 15px; */
 
-    border: 1px solid #848488;
-    border-radius: 23px;
+    border: 1.5px solid #000;
+    /* #848488; */
+    /* border-radius: 23px; */
 
     /* border-left: 4px solid #000;
     background-color: #FBFBFD; */
@@ -35,9 +36,9 @@
 }
 
 .cardItem:hover {
-    border-color: #FB2B43;
+    border-color: #0171E2;
     transform: scale(1.01);
-    
+    background-color: #F0F5F9;
 }
 /*
 .imageContainer {
@@ -71,7 +72,7 @@
 .cardWrapper {
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    gap: 60px;
     align-items: center;
     width: 100%;
 }
@@ -103,27 +104,41 @@
 }
 
 .cardContentTitle {
+    font-family: 'Urbanist', sans-serif;
     font-size: 19.7px;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 29px;;
     margin-bottom: 4px;
 }
 
 .cardContentIntro {
-    font-size: 16px;
+    font-size: 17px;
     /* color: #6e6e73; */
-    color: #515154;
+    /* color: #515154; */
     /* letter-spacing: -0.04em; */
     line-height: 25px;
     font-weight: 400;
-    margin-bottom: 8px;
+    margin-bottom: 20px;
+    /* margin-right: 68px; */
+}
+
+.tagsAndArrow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .chevron {
-    width: auto;
-    height: 33px;
-    fill: #FB2B43;
+    min-width: 48px;
+    width: 48px;
+    height: auto;
+    /* fill: #0258F1; */
+    stroke: #000;
 }
+
+/* .chevron:hover {
+    stroke: #0171E2;
+} */
 
 .appStore {
     font-size: 12px;
@@ -142,5 +157,14 @@
 @media (max-width: 800px) {
     .cardItem {
         padding: 30px 16px;
+    }
+
+    .cardWrapper {
+        gap: 30px;
+    }
+
+    .chevron {
+        min-width: 42px;
+        width: 42px;
     }
 }
