@@ -1,0 +1,28 @@
+ 
+ .tagTilesSection {
+    /* background-color: #DDEBF4; */
+    /* background-color: #FFFCF2; */
+    border-top: 1.5px solid black;
+    border-bottom: 1.5px solid black;
+ }
+
+ .tagTilesContainer {
+    max-width: 872px;
+    margin: auto;
+    /* padding: 0 16px;  */
+
+    border-left: 1.5px solid black;
+    /* border-right: 1.5px solid black; */
+
+    display: flex;
+    flex-direction: row;
+}
+
+ 
+ /* blog small screen */
+ @media (max-width: 800px) {
+    .tagTilesContainer {
+        border-left: none;
+        border-right: none;
+    }
+}

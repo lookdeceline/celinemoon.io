@@ -8,6 +8,8 @@ import Footer from "../components/footer"
 import SEO from "../components/seo"
 import PagesTitle from "../components/pagesTitle"
 import SmallThumbnailPost from "../components/smallThumbnailPost"
+import TagTile from "../components/tagTile"
+import TagsBar from "../components/tagsBar"
 import styles from "../styles/index.module.css"
 
 // console.log(styles)
@@ -22,7 +24,11 @@ import styles from "../styles/index.module.css"
 //     </div>
 //   )
 
+
 export default function Blog({ data }) {
+  let tags = data.allMarkdownRemark.group
+  
+  console.log("### nodes: ", data.allMarkdownRemark.edges)
     return (
       // <Layout>
       <div>
@@ -34,19 +40,31 @@ export default function Blog({ data }) {
           title="Dev Blog" 
           titleIntro="I mostly write about iOS development."
           />
-        <div className={styles.pageContainer}>  
-          {/* <div className={styles.cardsContainer}> */}
-            {data.allMarkdownRemark.edges
-            .filter(({node}) => node.frontmatter.publish)
-            .map(({ node }) => (
-              <SmallThumbnailPost node={node}/>     
-            ))}
-          {/* </div> */}
-        </div>
 
+              {/* tags */}
+              {/* <div className={styles.tagTilesSection}>
+                <div className={styles.tagTilesContainer}>
+                  {tags
+                  .map( tag  => (
+                    <TagTile tag={tag}/>
+                  ))}
+                </div>
+              </div> */}
+              <TagsBar/>
+
+              {/* posts section */}
+              <div className={styles.postsSectionBackground}>
+                <div className={styles.pageContainer}>  
+                    {data.allMarkdownRemark.edges
+                    .filter(({node}) => node.frontmatter.publish)
+                    .map(({ node }) => (
+                      <SmallThumbnailPost node={node}/>     
+                    ))}
+                </div>
+              </div>
+            
         <Footer/>
       </div>
-      //  </Layout>
     )
   }
 
@@ -55,7 +73,12 @@ export const query = graphql`
 query {
   allMarkdownRemark(
     sort: { fields: [frontmatter___date], order: DESC },
-    filter: {fileAbsolutePath: {regex: "/(blog)/.*.md$/"}}
+    filter: {
+      fileAbsolutePath: {regex: "/(blog)/.*.md$/"}
+      frontmatter: {
+        publish: { eq: true }
+      }
+    }
     ) {
     totalCount
     edges {
@@ -78,6 +101,19 @@ query {
         }
         fields {
           slug
+        }
+      }
+    }
+
+    group(field: frontmatter___tags) {
+      fieldValue
+      totalCount
+      edges {
+        node {
+          frontmatter {
+            publish
+            path
+          }
         }
       }
     }

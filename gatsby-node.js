@@ -1,4 +1,5 @@
 const path = require(`path`)
+const _ = require("lodash")
 const { createFilePath } = require(`gatsby-source-filesystem`)
 
 exports.onCreateNode = ({ node, getNode, actions }) => {
@@ -18,6 +19,8 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
 
 // createPages API: Gatsby calls this so that plugins can add pages.
 exports.createPages = async ({ graphql, actions }) => {
+    const tagTemplate = path.resolve("src/templates/tags.js")
+
     const { createPage } = actions
     const result = await graphql(`
         query {
@@ -34,13 +37,18 @@ exports.createPages = async ({ graphql, actions }) => {
                     }
                   }
                 }
+            }
+
+            tagsGroup: allMarkdownRemark(limit: 2000) {
+                group(field: frontmatter___tags) {
+                  fieldValue
+                }
               }
         }
     `)
 
     // console.log(JSON.stringify(result, null, 4))
     result.data.allMarkdownRemark.edges
-    // .filter(({ node }) => node.frontmatter.publish)
     .forEach(({ node }) => {
         // console.log(node.frontmatter.title, node.fields.slug, node.fields.slug.indexOf('/blog'))
         if (node.fields.slug.indexOf('/blog') === 0) {
@@ -62,6 +70,20 @@ exports.createPages = async ({ graphql, actions }) => {
                 },
             })
         }
+    })
+
+    // Extract tag data from query
+    const tags = result.data.tagsGroup.group
+    console.log(tags)
+    // Make tag pages
+    tags.forEach(tag => {
+        createPage({
+        path: `/tags/${tag.fieldValue}/`,
+        component: tagTemplate,
+        context: {
+            tag: tag.fieldValue,
+        },
+        })
     })
 
 

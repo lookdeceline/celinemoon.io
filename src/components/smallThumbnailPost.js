@@ -57,35 +57,35 @@ export default SmallThumbnailPost;
 
 
 
-export const query = graphql`
-  query {
-    allMarkdownRemark(sort: 
-        { fields: [frontmatter___date], order: DESC },
-        filter: {fileAbsolutePath: {regex: "/(blog)/.*.md$/"}}
-        ) {
-      totalCount
-      edges {
-        node {
-          id
-          frontmatter {
-            title
-            date(formatString: "YYYY. MM. DD.")
-            intro
-            featuredImage {
-              childImageSharp {
-                fluid(maxWidth: 800) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-            backgroundColor
-            tags
-          }
-          fields {
-            slug
-          }
-        }
-      }
-    }
-  }
-`
+// export const query = graphql`
+//   query {
+//     allMarkdownRemark(sort: 
+//         { fields: [frontmatter___date], order: DESC },
+//         filter: {fileAbsolutePath: {regex: "/(blog)/.*.md$/"}}
+//         ) {
+//       totalCount
+//       edges {
+//         node {
+//           id
+//           frontmatter {
+//             title
+//             date(formatString: "YYYY. MM. DD.")
+//             intro
+//             featuredImage {
+//               childImageSharp {
+//                 fluid(maxWidth: 800) {
+//                   ...GatsbyImageSharpFluid
+//                 }
+//               }
+//             }
+//             backgroundColor
+//             tags
+//           }
+//           fields {
+//             slug
+//           }
+//         }
+//       }
+//     }
+//   }
+// `

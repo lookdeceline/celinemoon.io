@@ -1,0 +1,13 @@
+.tile {
+    font-family: 'Urbanist', sans-serif;
+    font-size: 19px;
+    font-weight: 400;
+
+    padding: 14px 50px;
+    border-right:  1.5px solid black; 
+}
+
+.tile:hover {
+    color: #0171E2;
+    background-color: #F0F5F9;
+}

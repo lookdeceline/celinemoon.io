@@ -2,7 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 .containerContainer {
-    background-color: #DEECF4;
+    background-color: #6fa6dd;
+    /* background-color: #8ac2ff; */
+    /* background-color: #DEECF4; */
     /* c8e5f3 */
     /* #CCC4FB */
     /* background-color: #fff7f0; */
@@ -13,25 +15,23 @@
 }
 
 .container{
-    padding: 110px 16px 110px 16px;
-    /* padding-top: 70px; */
+    font-family: 'Urbanist', sans-serif;
+    color: #1d1d1f;
+
+    padding: 180px 16px 180px 16px;
     max-width: 872px;
     margin: auto;
     display: flex;
     flex-direction: column;
     gap: 16px;
-    /* justify-content: space-between; */
     align-items: center;
-    /* align-self: baseline; */
-    color: #1d1d1f;
 }
 
 .h1 {
-    /* font-family: 'Work Sans', sans-serif; */
-    font-family: 'Urbanist', sans-serif;
-    font-size: 50px;
+    font-size: 37px;
     margin: 0;
     font-weight: 600;
+    letter-spacing: 0.02em;
 }
 
 .h2 {
@@ -40,11 +40,7 @@
     font-size: 20px;
     font-weight: 500;
     margin: 0;
-    /* margin-bottom: 40px; */
-    font-family: 'Urbanist', sans-serif;
-    /* font-family: Inter; */
-    /* font-family: 'Urbanist', sans-serif; */
-    /* color: #6e6e73; */
+    letter-spacing: 0.02em;
 }
 
 /* mobile screens */ 
