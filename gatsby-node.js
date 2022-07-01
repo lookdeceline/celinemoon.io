@@ -24,7 +24,13 @@ exports.createPages = async ({ graphql, actions }) => {
     const { createPage } = actions
     const result = await graphql(`
         query {
-            allMarkdownRemark {
+            allMarkdownRemark (
+                filter: {
+                    frontmatter: {
+                      publish: { eq: true }
+                    }
+                  }
+            ) {
                 edges {
                   node {
                     frontmatter {
@@ -39,7 +45,14 @@ exports.createPages = async ({ graphql, actions }) => {
                 }
             }
 
-            tagsGroup: allMarkdownRemark(limit: 2000) {
+            tagsGroup: allMarkdownRemark(
+                limit: 2000
+                filter: {
+                    frontmatter: {
+                      publish: { eq: true }
+                    }
+                }
+            ) {
                 group(field: frontmatter___tags) {
                   fieldValue
                 }
@@ -47,10 +60,9 @@ exports.createPages = async ({ graphql, actions }) => {
         }
     `)
 
-    // console.log(JSON.stringify(result, null, 4))
     result.data.allMarkdownRemark.edges
+    // .filter(({node}) => node.frontmatter.publish)
     .forEach(({ node }) => {
-        // console.log(node.frontmatter.title, node.fields.slug, node.fields.slug.indexOf('/blog'))
         if (node.fields.slug.indexOf('/blog') === 0) {
             createPage({
                 path: `/blog/${node.frontmatter.path}`,
@@ -76,8 +88,9 @@ exports.createPages = async ({ graphql, actions }) => {
     const tags = result.data.tagsGroup.group
     console.log(tags)
     // Make tag pages
-    tags.forEach(tag => {
-        createPage({
+    tags
+    .forEach(tag => {
+    createPage({
         path: `/tags/${tag.fieldValue}/`,
         component: tagTemplate,
         context: {

@@ -24,7 +24,6 @@ export default function Tags({ pageContext, data }) {
     totalCount === 1 ? "" : "s"
   } tagged with "${tag}"`
   
-  // console.log("### tags: ", tags)
   console.log("### tag: ", tag)
   console.log("### edges: ", edges)
   console.log("### totalCount: ", totalCount)
@@ -32,8 +31,7 @@ export default function Tags({ pageContext, data }) {
       // <Layout>
       <div>
         <Header/>
-        <SEO title = "Dev Blog"/>
-        {/* <div className={styles.pageContainer}> */}
+        <SEO title = "Tags"/>
 
           <PagesTitle 
           title="Dev Blog" 
