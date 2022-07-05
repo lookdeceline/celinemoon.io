@@ -19,14 +19,14 @@
 
 .link {
     font-size: 24px;
-    color: #FF0200;
+    color: #0061f2;
 }
 
 .link:hover {
     text-decoration: underline;
-    text-decoration-color: #FF0200;
+    text-decoration-color: #0061f2;
     text-decoration-thickness: 4px;
-    color: #FF0200;
+    color: #0061f2;
     
     text-decoration-skip-ink: none;
     text-underline-offset: 5px;

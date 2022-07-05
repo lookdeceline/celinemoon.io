@@ -2,8 +2,8 @@
 title: "ThinQ for Smartwatch"
 date: "2021-01-03"
 intro: "An IoT application for smartwatches that sends push notifications based on the users' location and activity."
-featuredImage: ./thinq-featured8.jpg
-backgroundColor: '#F2F7F7'
+featuredImage: ./thinq-featured-new.jpg
+backgroundColor: '#F9DB74'
 type: "app"
 text: "COMPANY WORK"
 path: "ThinQ-Smartwatch"

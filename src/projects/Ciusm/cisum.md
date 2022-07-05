@@ -7,7 +7,7 @@ backgroundColor: '#ffb55a'
 type: "app"
 text: "TERM PROJECT"
 path: "Cisum"
-publish: true
+publish: false
 order: 3
 ---
 

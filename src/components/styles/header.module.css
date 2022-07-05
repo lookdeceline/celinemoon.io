@@ -46,8 +46,8 @@
 
 .h3:hover {
     /* text-decoration: underline; */
-    text-decoration-color: #FF0200;
-    color: #FF0200;
+    text-decoration-color: #0061f2;
+    color: #0061f2;
     
     /* text-decoration-skip-ink: none; */
     /* text-underline-offset: 3px;
@@ -83,9 +83,9 @@
 
 .pageLink:hover {
     text-decoration: underline;
-    text-decoration-color: #FF0200;
+    text-decoration-color: #0061f2;
     text-decoration-thickness: 3px;
-    color: #FF0200;
+    color: #0061f2;
     
     text-decoration-skip-ink: none;
     text-underline-offset: 3px;
@@ -118,7 +118,7 @@
 
 .socialIcon:hover {
     /* fill: #FB2B43; */
-    fill: #FF0200;
+    fill: #0061f2;
     
 }
 

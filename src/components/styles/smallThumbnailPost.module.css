@@ -38,13 +38,13 @@
 }
 
 .cardItem:hover {
-    /* border-color: #FF0200; */
+    /* border-color: #0061f2; */
     transform: scale(1.01);
     /* background-color: #F5F8FA; */
 }
 
 .cardItem:hover .chevron {
-    stroke: #FF0200 !important;
+    stroke: #0061f2 !important;
     stroke-width: 3;
 }
 /*

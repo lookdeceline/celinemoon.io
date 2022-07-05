@@ -4,6 +4,7 @@
 .abountContainerContainer {
     /* max-width: 840px; */
     /* margin: auto; */
+    /* background-color: #F0DEF8; */
     background-color: #eaeff2;
     /* background-color: #F5F8FA; */
     /* background-color: #ffe39d; */
@@ -15,7 +16,7 @@
 }
 
 .aboutContainer {
-    padding: 180px 16px 180px 16px;
+    padding: 200px 16px 200px 16px;
     /* padding-top: 70px; */
     max-width: 872px;
     margin: auto;
