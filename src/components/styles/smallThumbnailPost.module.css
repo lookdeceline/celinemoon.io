@@ -17,7 +17,8 @@
     
     /* border: 1.5px solid #848488;
     border-radius: 15px; */
-    background-color: #FFFCF2;
+    border-radius: 5px 5px 5px 5px;
+    background-color: #fffef9;
     border: 1.5px solid #000;
     /* background-color: white; */
     /* #848488; */
@@ -37,9 +38,14 @@
 }
 
 .cardItem:hover {
-    border-color: #0171E2;
+    /* border-color: #FF0200; */
     transform: scale(1.01);
-    background-color: #F0F5F9;
+    /* background-color: #F5F8FA; */
+}
+
+.cardItem:hover .chevron {
+    stroke: #FF0200 !important;
+    stroke-width: 3;
 }
 /*
 .imageContainer {
@@ -106,10 +112,10 @@
 
 .cardContentTitle {
     font-family: 'Urbanist', sans-serif;
-    font-size: 19.7px;
+    font-size: 23px;
     font-weight: 600;
     line-height: 29px;;
-    margin-bottom: 4px;
+    margin-bottom: 16px;
 }
 
 .cardContentIntro {
@@ -135,11 +141,8 @@
     height: auto;
     /* fill: #0258F1; */
     stroke: #000;
+    stroke-width: 2;
 }
-
-/* .chevron:hover {
-    stroke: #0171E2;
-} */
 
 .appStore {
     font-size: 12px;

@@ -4,7 +4,9 @@
 .abountContainerContainer {
     /* max-width: 840px; */
     /* margin: auto; */
-    background-color: #ffe39d;
+    background-color: #eaeff2;
+    /* background-color: #F5F8FA; */
+    /* background-color: #ffe39d; */
     /* background-color: #ffdd88; */
     /* background-color: #FCEDBC; */
     /* background-color: #fff6d6; */
@@ -87,7 +89,7 @@
 .subSectionTitle {
     /* font-family: 'Work Sans', sans-serif; */
     font-family: 'Urbanist', sans-serif;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 37px;
     letter-spacing: 0.01em;
     margin: 0 0 24px 0;
@@ -95,14 +97,17 @@
 }
 
 .profileImage {
-    width: 240px; /* 120 */
+    display: inline;
+    width: 76px; /* 120 */
     height: auto; /* 120 */
-    min-width: 240px;  /* 120 */
+    min-width: 76px;  /* 120 */
     /* border-radius: 60px; */
     /* border-width: 1px; */
     /* border-color: #373530;
     border-style: solid; */
-    margin-left: 44px;
+    margin-bottom: 12px;
+    margin-left: -8px
+    /* margin-left: 44px; */
 }
 
 .body {
@@ -187,7 +192,7 @@
     display: block;
     max-height: 100%;
     max-width: 100%;
-    border-radius: 5px 5px 0px 0px;
+    border-radius: 5px 5px 5px 5px;
     transition: transform 0.7s;
 }
 .image:hover {
@@ -210,7 +215,7 @@
     /* margin: 0 0 5px 0; */
     /* font-family: 'Work Sans', sans-serif; */
     font-family: 'Urbanist', sans-serif;
-    font-size: 24px;
+    font-size: 21px;
     letter-spacing: 0.01em;
     font-weight: 600;
     /* margin-bottom: 10px; */

@@ -8,6 +8,8 @@
 }
 
 .tile:hover {
-    color: #0171E2;
-    background-color: #F0F5F9;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    color: #FF0200;
+    /* background-color: #F0F5F9; */
 }

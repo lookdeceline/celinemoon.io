@@ -28,6 +28,10 @@ export default function Home({ data }) {
     return node && node.childImageSharp.fluid.originalName === "profile-picture.png";
   })[0]
 
+  let pottedPlant = data.allFile.nodes.filter(function(node) {
+    return node && node.childImageSharp.fluid.originalName === "pottedPlant.png";
+  })[0]
+console.log("pottedPlant: ", pottedPlant)
   return (
     // <Layout>
     <div>
@@ -38,12 +42,14 @@ export default function Home({ data }) {
           <div className={styles.aboutContainer}>
             <div className={styles.aboutTextContainer}>
             {/* <u style={{textDecorationThickness: `5px`, textDecorationColor: `#FB2B43`, textUnderlineOffset: `3px`}}> */}
+              {/* <Img className={styles.profileImage} fluid={pottedPlant.childImageSharp.fluid} /> */}
               <h1 className={styles.subSectionTitle}>Hi, my name is Celine.</h1>
             {/* <div className={styles.aboutContainer}> */}
               <h2 className={styles.intro}>
               {/* <span style={{color:"#FB2B43", fontWeight: 600}}> */}
               I am currently working as an iOS software engineer at Sendbird. I write code to enable aesthetic and delightful user interfaces.
-              I designed, built, and maintain this site. 👩🏻‍💻
+              I designed, built, and maintain this site. 🪴
+              
               </h2>
               <div className={styles.introLinks}>
                 <Link to="/about/" className={styles.pageLink}>Read more about me ↗&#xFE0E;</Link>

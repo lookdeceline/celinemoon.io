@@ -10,7 +10,7 @@ module.exports = {
     description: "My mission is to make user experience as implicit as possible through building mobile / wearable applications.",
     siteUrl: "https://lookdeceline.github.io",
     author: "Celine Jeongwon Moon",
-    defaultSiteImage: `src/images/babyChick.png`,
+    defaultSiteImage: `src/images/pottedPlant.png`,
     // defaultSocialCardImage: `src/images/previewImage2.png`,
   },
   plugins: [
@@ -91,7 +91,7 @@ module.exports = {
         background_color: `#F9F9F9`,
         theme_color: `#F9F9F9`,
         display: `minimal-ui`,
-        icon: `src/images/babyChick.png`, // This path is relative to the root of the site.
+        icon: `src/images/pottedPlant.png`, // This path is relative to the root of the site.
       },
     },
 
