@@ -34,7 +34,19 @@ export default function About({ data }) {
                 <GatsbyImage image={profileImage} />
                 {/* <div className={styles.aboutTextContainer}> */}
                   <div className={styles.aboutText}> 
-                  My mission is to build the most seamless user experiences by applying sensing technologies to recognize user context through wearable devices.
+                  My biggest inspiration for writing code is aesthetic and delightful mobile user experiences. 
+                  To provide the code base that is most optimal for seamless user experience and user interface designs, 
+                  I strive to learn about different corners of software engineering, 
+                  such as asynchronous programming, networking, modularization, among others. 
+
+                  I am currently collaborating on a productivity app for iOS. 
+
+                  <br/><br/>
+                  In my free time I do side projects, 
+                  make <a href="https://www.youtube.com/channel/UCYR-Y9lEq92-zUlqQY1xeIA" target = "_blank" className={styles.youtubeLink}>Youtube videos</a>, 
+                  or take care of my plants. 
+
+                  {/* My mission is to build the most seamless user experiences by applying sensing technologies to recognize user context through wearable devices.
                   Particularly, I can thrive when I solve a user-centered problem, by mixing different sensors and sensing technologies.
 
                   <br/><br/>
@@ -48,12 +60,13 @@ export default function About({ data }) {
                   <br/><br/>
                   On the side lines, I have a huge love for delightful user interface designs. 
                   Particularly, I love both watching and implementing beautiful layers of charts. 
-                  I am currently working on open-source project on Mobile visualization library for Swift.
+                  I am currently working on open-source project on Mobile visualization library for Swift. */}
                   
                   </div>
                 {/* </div> */}
               </div>
-              <a href={CVPdf} target = "_blank" className={styles.pageLink}>Download CV</a>
+              {/* CVPdf */}
+              <a href={""} target = "_blank" className={styles.pageLink}>Download CV</a>
             </div> 
             
 

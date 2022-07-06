@@ -66,6 +66,17 @@
     line-height: 1.6;
 }
 
+.youtubeLink {
+    color: #0061f2;
+}
+
+.youtubeLink:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 2px;
+    color: #0061f2;
+}
+
 .pageLink {
     margin-top: 50px;
     font-size: 18px;

@@ -54,7 +54,8 @@ console.log("pottedPlant: ", pottedPlant)
               <div className={styles.introLinks}>
                 <Link to="/about/" className={styles.pageLink}>Read more about me ↗&#xFE0E;</Link>
                 {/* style={{padding: `14px 68px`}} */}
-                <a href={CVPdf} target = "_blank" className={styles.pageLink} id="cvLink">Download CV ↗&#xFE0E;</a>
+                {/* CVPdf */}
+                <a href={""} target = "_blank" className={styles.pageLink} id="cvLink">Download CV ↗&#xFE0E;</a>
               </div>
             </div>
               {/* <Img className={styles.profileImage} fluid={data.file.childImageSharp.fluid} /> */}
