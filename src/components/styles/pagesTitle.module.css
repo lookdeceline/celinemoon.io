@@ -48,6 +48,10 @@
 /* mobile screens */ 
 @media (max-width: 800px) {
 
+    .container{
+        padding: 110px 16px 110px 16px;
+    }
+
     .h2 {
         font-size: 19px;
     }

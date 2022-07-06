@@ -80,7 +80,7 @@
     display: flex;
     flex-direction: row;
     gap: 60px;
-    align-items: center;
+    align-items: left;
     width: 100%;
 }
 
@@ -135,6 +135,10 @@
     justify-content: space-between;
 }
 
+.chevronDiv {
+    align-self: center;
+}
+
 .chevron {
     min-width: 48px;
     width: 48px;
@@ -160,11 +164,21 @@
 /* mobile screens */ 
 @media (max-width: 800px) {
     .cardItem {
-        padding: 30px 16px;
+        padding: 16px 16px;
+        /* display: flex;
+        flex-direction: row;
+        justify-content: space-between; */
     }
 
     .cardWrapper {
-        gap: 30px;
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .chevronDiv {
+        align-self: flex-end;
     }
 
     .chevron {

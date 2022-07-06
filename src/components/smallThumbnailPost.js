@@ -40,7 +40,11 @@ const SmallThumbnailPost = ({ node }) => {
                 {/* <SeePostIcon className={styles.chevron}/> */}
                {/* </div>  */}
               </div>
-              <SeePostIcon className={styles.chevron}/>
+              <div className={styles.chevronDiv}>
+                <SeePostIcon className={styles.chevron}/>
+              </div>
+
+             
               
               
             </div>

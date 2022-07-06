@@ -3,7 +3,7 @@ title: "DispatchQueue: Synchronous vs Asynchronous / Serial vs Concurrent"
 date: "2022-07-05"
 intro: "This post defines `Asnychronous vs Synchronous` and `Concurrent vs Serial`, and walks through four different combinations of the two concepts."
 featuredImage: ./swift-square-orange.png
-tags: ["Programming", "Swift"]
+tags: ["Programming", "Swift",]
 path: "sync-async-serial-concurrent"
 publish: true
 ---

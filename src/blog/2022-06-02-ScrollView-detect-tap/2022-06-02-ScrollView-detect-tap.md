@@ -5,7 +5,7 @@ intro: "How do we detect a tap on a content inside a UIScrollView? How do we fin
 featuredImage: ./swift-square-orange.png
 tags: ["UIKit",]
 path: "tap-on-uiscrollview"
-publish: true
+publish: false
 ---
 
 * A `tap` is not the same as a `scroll`.

@@ -56,15 +56,26 @@ console.log("$$ data: ", data)
       <div>
         {/* <Header/> */}
         {/* <SEO title = "Dev Blog"/> */}
+
               {/* tags */}
-              <div className={styles.tagTilesSection}>
+
+              {/* rectangle tiles */}
+              {/* <div className={styles.tagTilesSection}>
                 <div className={styles.tagTilesContainer}>
                   {tags
                   .map( tag  => (
                     <TagTile tag={tag} isSelected={tag.fieldValue===selectedTag}/>
                   ))}
                 </div>
-              </div>
+              </div> */}
+
+              {/* simpler rounder pillbox tiles */}
+                <div className={styles.pillboxContainer}>
+                  {tags
+                  .map( tag  => (
+                    <TagTile tag={tag} isSelected={tag.fieldValue===selectedTag}/>
+                  ))}
+                </div>
         {/* <Footer/> */}
       </div>
     )

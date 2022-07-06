@@ -5,7 +5,7 @@ intro: "The basics of Swift's sorted function."
 featuredImage: ./swift-square-orange.png
 tags: ["Swift",]
 path: "swift-sorted"
-publish: true
+publish: false
 ---
 
 ### Definition

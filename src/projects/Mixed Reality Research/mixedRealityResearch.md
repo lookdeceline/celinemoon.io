@@ -2,8 +2,8 @@
 title: "Life-Immersive Mixed Reality"
 date: "2020-09-21"
 intro: "HCI Research on Mixed Reality system that allows access to physical objects inside virtual environment."
-featuredImage: ./mr-featured-new.jpg
-backgroundColor: '#6FA5DE'
+featuredImage: ./mr-featured-new2.jpg
+backgroundColor: '#7EB3E8'
 type: "research"
 text: "HCI RESEARCH"
 path: "MR-Research"

@@ -17,6 +17,7 @@
 .tags {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 16px;
 
     font-family: 'Urbanist', sans-serif;
@@ -29,6 +30,7 @@
     padding: 3px 16px;
     border: 1px solid #414A56;
     border-radius: 20px;
+    background-color: #f5f8fa;
 }
 
 .h1{
@@ -36,7 +38,6 @@
     font-size: 39px;
     font-weight: 600;
     /* letter-spacing: -.05em; */
-    margin-bottom: 40px;
     overflow-wrap: break-word;
     margin: 26px 0;
 }
@@ -119,4 +120,23 @@
 
 .article a {
     color: #0088cc;
+}
+
+
+@media (max-width: 800px) {
+    .titleContent {
+        padding: 60px 16px 30px 16px;
+    }
+
+    .h1 {
+        margin: 40px 0;
+    }
+
+    .h2 {
+        line-height: 32px;
+    }
+
+    .article {
+        margin: 30px auto 120px auto;
+    }
 }

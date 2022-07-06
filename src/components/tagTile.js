@@ -11,7 +11,8 @@ const TagTile = ({ tag, isSelected}) => {
 
     return (
         <Link to={`/tags/${tag.fieldValue}`} 
-        className={styles.tile}
+        // className={styles.tile}
+        className={styles.pillbox}
         style={{color: textColor, fontWeight: fontWeight}}>
             {tag.fieldValue}
         </Link>

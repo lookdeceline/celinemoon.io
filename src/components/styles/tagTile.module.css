@@ -5,10 +5,31 @@
 
     padding: 14px 50px;
     border-right:  1.5px solid black; 
+    border-radius: 11px;
 }
 
 .tile:hover {
     text-decoration: underline;
+    text-underline-offset: 3px;
+    color: #0061f2;
+    /* background-color: #F0F5F9; */
+}
+
+.pillbox {
+    font-family: 'Urbanist', sans-serif;
+    font-size: 19px;
+    font-weight: 400;
+    color: #414A56;
+
+    padding: 10px 30px;
+    border:  1.5px solid #414A56; 
+    border-radius: 30px;
+    background-color: #f3f6f9;
+}
+
+.pillbox:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2.5px;
     text-underline-offset: 3px;
     color: #0061f2;
     /* background-color: #F0F5F9; */
