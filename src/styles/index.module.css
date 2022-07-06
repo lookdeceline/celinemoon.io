@@ -122,10 +122,10 @@
     margin-top: 90px;
 }
 
-.projectSection {
+/* .projectSection { */
  /* background-color: #F5F5F7; */
     /* margin: auto; */
-}
+/* } */
 
 .cardsContainer {
     /* display: grid; */
@@ -183,7 +183,14 @@
 
 .cardItem:hover .image{
     transform: scale(1.02);
+    border-radius: 5px;
 }
+
+/* .cardItem:hover .imageContainer{
+    transform: scale(1.02);
+    border-radius: 5px;
+} */
+
 
 .imageContainer {
     /* 280 */
@@ -192,21 +199,10 @@
    min-width: 100%;
    /* 322.5px; */
    overflow: hidden;
-    /* border-top-left-radius: 28px;
-    border-top-right-radius: 28px; */
-    /* border: 1px solid #000; */
-    /* border-radius: 5px; */
     justify-content: center;
-    /* width: 50%; */
-    /* padding: 5px; */
-}
-
-.blogpostImageContainer {
-    width: 65px;
-    height: 58px;
-    min-width: 65px;
-    overflow: hidden;
-    justify-content: center;
+    border-radius: 5px;
+    transform: translateZ(0); 
+    z-index: 10;
 }
 
 .image {
@@ -215,12 +211,13 @@
     display: block;
     max-height: 100%;
     max-width: 100%;
-    border-radius: 5px 5px 5px 5px;
+    border-radius: 5px;
+    z-index: 0;
     transition: transform 0.7s;
 }
-.image:hover {
-    /* transform: scale(1.03); */
-}
+/* .image:hover {
+    transform: scale(1.03);
+} */
 
 .cardContent {
     /* height:  */
