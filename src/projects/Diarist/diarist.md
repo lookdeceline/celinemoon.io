@@ -8,7 +8,7 @@ type: "app"
 text: "PERSONAL PROJECT"
 path: "LaLa"
 publish: true
-order: 4
+order: 1
 ---
 
 ### About This Project
@@ -28,7 +28,7 @@ LaLa is a mobile diary app you write with your voice.
 Instead of having to type in the texts or write with a digital pen (e.g. Apple Pencil), you simply 
 speak to the app to write your diary.
 
-
+<!-- 
 ### Challenge
 ---
 #### Preliminary User Study
@@ -62,7 +62,7 @@ a thread-like format that manages the structure of writings to stay sorted out.
 
 In a nutshell, I designed the app to provide a structured interface that users can write into by 
 speaking into the app.
-
+ -->
 
 ### User Interface Design
 ---

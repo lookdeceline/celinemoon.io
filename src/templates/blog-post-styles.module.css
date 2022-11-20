@@ -5,7 +5,7 @@
 }
 
 .titleContent {
-    padding: 80px 16px 0px 16px;
+    padding: 120px 16px 0px 16px;
     /* padding-top: 70px; */
     max-width: 872px;
     margin: auto;
@@ -39,19 +39,51 @@
     font-weight: 600;
     /* letter-spacing: -.05em; */
     overflow-wrap: break-word;
-    margin: 26px 0;
+    margin: 30px 0;
+    /* padding: 0 0 26px 0;
+    border-bottom: solid 3px #5a6777; */
 }
 
 .h2 {
+    font-family: 'Inter', sans-serif;
+    font-size: 19px;
+    font-weight: 400;
+
+    padding: 0 0 46px 0;
+    border-bottom: solid 2px #1D1D1F; 
+}
+
+/* article section */
+.article {
     font-family: 'Inter';
-    color: #1D1D1F;
+
+    margin: 60px auto 220px auto;
+    max-width: 872px;
+    padding: 0 16px;
+}
+
+.article h2 {
+    /* font-family: 'Inter'; */
+    /* color: #1D1D1F; */
+    font-size: 29px;
+    /* letter-spacing: -.05em; */
+    font-weight: 600;
+    line-height: 27px;
+    margin: 52px 0 26px 0;
+    /* padding: 0 0 26px 0; */
+    /* border-bottom: solid 3px #5a6777; */
+}
+
+.article h3 {
+    /* color: blue; */
     font-size: 21px;
     /* letter-spacing: -.05em; */
-    font-weight: 400;
-    line-height: 27px;
-    margin: 0;
-    padding: 0 0 26px 0;
-    border-bottom: solid 3px #5a6777;
+    font-weight: 500;
+    /* line-height: 27px; */
+    /* margin-top: 60px; */
+    margin-bottom: 6px;
+    padding-bottom: 3px;
+    /* border-bottom: solid 1px #414A56; */
 }
 
 .h5{
@@ -63,26 +95,10 @@
     margin-bottom: 12.6px;
 }
 
-/* h3 {
-    font-size: 25px;
-    font-weight: 400;
-    line-height: 25px;
-    margin-top: 25px;
-    margin-bottom: 12.6px;
-} */
-
-.article {
-    font-family: 'Inter';
-
-    margin: 60px auto 180px auto;
-    max-width: 872px;
-    padding: 0 16px;
-}
-
-.article p{
+.article p {
     font-size: 17px;
     /* letter-spacing: -0.05rem; */
-    line-height: 30px;
+    line-height: 24px;
     margin-bottom: 0;
     /* font-weight: 300; */
 }
@@ -100,18 +116,6 @@
 
 .article ul ul{
     padding-inline-start: 30px;
-}
-
-.article h3 {
-    /* color: blue; */
-    font-size: 25px;
-    /* letter-spacing: -.05em; */
-    font-weight: 500;
-    /* line-height: 27px; */
-    margin-top: 60px;
-    margin-bottom: 6px;
-    padding-bottom: 3px;
-    border-bottom: solid 1px #414A56;
 }
 
 .article hr {

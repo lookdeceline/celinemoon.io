@@ -8,7 +8,7 @@ type: "research"
 text: "HCI RESEARCH"
 path: "MR-Research"
 publish: true
-order: 1
+order: 3
 ---
 
 ### About This Research

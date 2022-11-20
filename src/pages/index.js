@@ -43,7 +43,7 @@ console.log("pottedPlant: ", pottedPlant)
             <div className={styles.aboutTextContainer}>
             {/* <u style={{textDecorationThickness: `5px`, textDecorationColor: `#FB2B43`, textUnderlineOffset: `3px`}}> */}
               {/* <Img className={styles.profileImage} fluid={pottedPlant.childImageSharp.fluid} /> */}
-              <h1 className={styles.subSectionTitle}>Hi, my name is Celine.</h1>
+              <h1 className={styles.introTitle}>Hi, my name is Celine.</h1>
             {/* <div className={styles.aboutContainer}> */}
               <h2 className={styles.intro}>
               {/* <span style={{color:"#FB2B43", fontWeight: 600}}> */}

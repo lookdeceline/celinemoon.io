@@ -28,9 +28,9 @@
 }
 
 .pillbox:hover {
-    text-decoration: underline;
+    /* text-decoration: underline;
     text-decoration-thickness: 2.5px;
-    text-underline-offset: 3px;
+    text-underline-offset: 3px; */
     color: #0061f2;
     /* background-color: #F0F5F9; */
 }

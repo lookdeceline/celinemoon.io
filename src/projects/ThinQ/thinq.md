@@ -13,11 +13,11 @@ order: 2
 
 ### About The Project
 ---
-While I worked as a research engineer at LG Electronics IoT Technologies Group, I designed and prototyped LG ThinQ app for smartwatches. Working closely with the team’s designer and engineers, I solved the problem of low user engagement rate of the prevsiouly existing ThinQ for smartphone.
+While I worked as a research engineer at LG, I designed and prototyped LG ThinQ app for smartwatches. Working closely with the team’s designer and engineers, I solved the problem of low user engagement rate of the prevsiouly existing ThinQ for smartphone.
 
 ### What is ThinQ for Smartwatch?
 ---
-LG Electronic’s ThinQ is an app that acts a central hub of LG’s smart home ecosystem, allowing users to remotely control and monitor their smart home appliances throuh cloud computing.
+LG's ThinQ is an app that acts a central hub of LG’s smart home ecosystem, allowing users to remotely control and monitor their smart home appliances throuh cloud computing.
 
 ThinkQ originally only supported access through smartphones. To improve the user engagement rate which only marked 36% on smartphones, I led the taskforce to extend ThinkQ to wearable devices. I leveraged the embedded sensors that provide accurate user context-recognition, and convenient usability of smartwatch. At the end of the project, I successfully convinced the leadership of the group to kickstart the service on smartwatch.
 
@@ -93,11 +93,11 @@ The system pipeline for tracking user context and monitoring home appliance stat
 
 ### Final Output, Impacts
 ---
-#### Demo
+
+<!-- #### Demo
 Here is a quick demo of remotely controlling a robot cleaner through ThinQ Apple Watch.
-<!-- <iframe width="560" height="315" src="https://youtu.be/4sFUbaKua5A" frameborder="0" allowfullscreen></iframe> -->
-<!-- style="width:100%; max-width: 560px; height: 100%; max-height: 315px;" -->
-<iframe style="width:100%; max-width: 560px; height: 315px; margin-bottom:30px;" src="https://www.youtube.com/embed/4sFUbaKua5A?start=3" title="ThinQ for Apple Watch Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe style="width:100%; max-width: 560px; height: 315px; margin-bottom:30px;" src="https://www.youtube.com/embed/4sFUbaKua5A?start=3" title="ThinQ for Apple Watch Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
 
 #### Screenshots
 Here are the screenshots from ThinQ on Apple Watch. 
@@ -108,14 +108,14 @@ Here are the screenshots from ThinQ on Apple Watch.
 #### Thoughts, Impacts
 Implicit interactions enable seamless experience; it is less explicit on the surface, but much more essential for more pervasive computing.
 
-At the end of the project, I was given a chance to present this prototype to LG Electronics IoT Technologies Group. 
+At the end of the project, I was given a chance to present this prototype to LG Electronics ThinQ Group. 
 I was able to successfully convince the leadership to kickstart the ThinQ service for smartwatches. 
 The project is under progress.
 
-<div class="projectImage" style="width:426px; max-width: 100%; margin: 30px auto;">
+<!-- <div class="projectImage" style="width:426px; max-width: 100%; margin: 30px auto;">
     <img src="./presenting.png">
     <p style="text-align:center; color:#545454; margin-top: 8px; font-size: 14px; line-height: 18px; font-weight: 300;">
-    Me presenting the prototype to the LG Electronics IoT Technologies group's leadership.
+    Me presenting the prototype to the LG Electronics ThinQ group's leadership.
     </p>
-</div>
+</div> -->
 

@@ -40,8 +40,16 @@
     font-family: 'Urbanist', sans-serif;
 }
 
+.introTitle {
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 700;
+    font-size: 41px;
+    margin: 0 0 24px 0;
+    padding:0;
+}
+
 .intro {
-    font-weight: 500;
+    font-weight: 600;
     font-size: 20px;
     font-style: normal;
     line-height: 33px;

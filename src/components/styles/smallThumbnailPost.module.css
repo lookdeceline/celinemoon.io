@@ -34,7 +34,7 @@
     flex-direction: column;
     justify-content: space-between;
 
-    transition: transform .16s ease-out,background-color .16s ease-out,border-color .16s ease-out;
+    transition: transform .16s ease-out, background-color .16s ease-out, border-color .16s ease-out;
 }
 
 .cardItem:hover {
@@ -58,7 +58,7 @@
 */
 
 
-
+/* transition: transform .16s ease-out,background-color .16s ease-out,border-color .16s ease-out; */
 .blogpostImageContainer {
     width: 23px;
     height: 23px;
