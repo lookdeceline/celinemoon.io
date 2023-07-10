@@ -2,12 +2,12 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import Img from "gatsby-image"
 
-// import styles from "../styles/blog.module.css"
+// import * as styles from "../styles/blog.module.css"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import PagesTitle from "../components/pagesTitle"
 import BigThumbnailPost from "../components/bigThumbnailPost"
-import styles from "../styles/index.module.css"
+import * as styles from "../styles/index.module.css"
 
 // console.log(styles)
 

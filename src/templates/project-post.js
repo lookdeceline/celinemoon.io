@@ -10,7 +10,7 @@ import Layout from "../components/layout"
 import Header from "../components/header"
 import Footer from "../components/footer"
 import IconText from '../components/icon-note'
-import styles from "./project-post-styles.module.css"
+import * as styles from "./project-post-styles.module.css"
 
 const Title = styled.h5`
   font-size: 18px;
@@ -91,9 +91,6 @@ export const query = graphql`
         type
         text
       }
-    }
-    mdx {
-      body
     }
   }
 `

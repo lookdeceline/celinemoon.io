@@ -1,7 +1,7 @@
 import React from 'react'
 import { useStaticQuery, Link, graphql } from "gatsby"
 
-import styles from "./styles/tagTile.module.css"
+import * as styles from "./styles/tagTile.module.css"
 
 const TagTile = ({ tag, isSelected}) => {
     console.log("^^ tagTile: ", tag, "isSelected: ", isSelected)

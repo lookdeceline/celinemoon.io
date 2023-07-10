@@ -3,7 +3,7 @@ import React from "react"
 import { Link, graphql, useStaticQuery } from "gatsby"
 
 import TagTile from "../components/tagTile"
-import styles from "../styles/index.module.css"
+import * as styles from "../styles/index.module.css"
 
 // console.log(styles)
 

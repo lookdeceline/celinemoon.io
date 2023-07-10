@@ -7,7 +7,7 @@ import Header from "../components/header"
 import Footer from "../components/footer"
 import LayoutBlogpost from "../components/layout-blogpost"
 import Layout from "../components/layout"
-import styles from "./blog-post-styles.module.css"
+import * as styles from "./blog-post-styles.module.css"
 
 // const Title = styled.h5`
 //   font-size: 18px;

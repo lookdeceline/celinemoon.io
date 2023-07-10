@@ -5,7 +5,7 @@ import styled from "styled-components"
 
 import CheckmarkIcon from "../images/checkmark.svg"   
 import ResearchIcon from "../images/research.svg"   
-import styles from "./styles/icon-note.module.css"
+import * as styles from "./styles/icon-note.module.css"
 
 const IconText = (props) => {
     // props: type, text, size 

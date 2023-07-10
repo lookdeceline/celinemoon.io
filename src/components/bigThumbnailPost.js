@@ -4,7 +4,7 @@ import Img from "gatsby-image"
 
 import SmallTagBox from "./smallTagBox"
 import IconText from "./icon-note"
-import styles from "./styles/bigThumbnailPost.module.css"
+import * as styles from "./styles/bigThumbnailPost.module.css"
 
 const BigThumbnailPost = ({ node }) => {
     return (

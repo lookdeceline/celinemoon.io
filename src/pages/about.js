@@ -6,7 +6,7 @@ import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import PagesTitle from "../components/pagesTitle"
-import styles from "../styles/about.module.css"
+import * as styles from "../styles/about.module.css"
 import DownloadYellow from "../images/DownloadYellow.svg"
 import CVPdf from '../images/CV.pdf';
 

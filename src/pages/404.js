@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 import Header from "../components/header"
 import Footer from "../components/footer"
 
-import styles from "../styles/404.module.css"
+import * as styles from "../styles/404.module.css"
 
 
 const NotFound = () => {

@@ -9,7 +9,7 @@ import SEO from "../components/seo"
 import SmallThumbnailPost from "../components/smallThumbnailPost"
 import IconText from "../components/icon-note"
 import CVPdf from '../images/CV.pdf';
-import styles from "../styles/index.module.css"
+import * as styles from "../styles/index.module.css"
 
 function compareOrder(node1, node2) {
   return node1.frontmatter.order - node2.frontmatter.order

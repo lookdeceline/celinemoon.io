@@ -3,7 +3,7 @@ import { useStaticQuery, Link, graphql } from "gatsby"
 import Img from "gatsby-image"
 
 import SmallTagBox from "./smallTagBox"
-import styles from "./styles/smallThumbnailPost.module.css"
+import * as styles from "./styles/smallThumbnailPost.module.css"
 import ChevronIcon from "../blog/images/chevron-right.svg"
 import SeePostIcon from "../blog/images/seePost2.svg"
 import ChevronRegularIcon from "../blog/images/chevron-right-regular.svg"

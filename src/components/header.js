@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { useStaticQuery, Link, graphql } from "gatsby"
 
-import styles from "./styles/header.module.css"
+import * as styles from "./styles/header.module.css"
 import GithubIcon from "../images/github.svg"
 import TwitterIcon from "../images/twitter.svg"
 import InstagramIcon from "../images/instagram.svg"

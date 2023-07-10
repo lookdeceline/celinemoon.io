@@ -2,7 +2,7 @@ import React from 'react'
 import { useStaticQuery, Link, graphql } from "gatsby"
 import Img from "gatsby-image"
 
-import styles from "./styles/pagesTitle.module.css"
+import * as styles from "./styles/pagesTitle.module.css"
 
 const PagesTitle = (props) => {
     return (

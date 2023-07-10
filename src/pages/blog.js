@@ -10,7 +10,7 @@ import PagesTitle from "../components/pagesTitle"
 import SmallThumbnailPost from "../components/smallThumbnailPost"
 import TagTile from "../components/tagTile"
 import TagsBar from "../components/tagsBar"
-import styles from "../styles/index.module.css"
+import * as styles from "../styles/index.module.css"
 
 // console.log(styles)
 
