@@ -10,7 +10,8 @@ module.exports = {
     description: "The personal site of Celine Moon",
     siteUrl: "https://lookdeceline.github.io",
     author: "Celine Jeongwon Moon",
-    defaultSiteImage: `src/images/pottedPlant.png`,
+    defaultSiteImage: `src/images/moonStars.png`,
+    // defaultSiteImage: `src/images/pottedPlant.png`,
     // defaultSocialCardImage: `src/images/previewImage2.png`,
   },
   plugins: [
@@ -91,7 +92,7 @@ module.exports = {
         background_color: `#414A56`,
         theme_color: `#414A56`,
         display: `minimal-ui`,
-        icon: `src/images/pottedPlant.png`, // This path is relative to the root of the site.
+        icon: `src/images/moonStars.png`, // This path is relative to the root of the site.
       },
     },
 

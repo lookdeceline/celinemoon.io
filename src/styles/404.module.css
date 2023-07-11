@@ -1,5 +1,5 @@
 .page {
-    font-family: 'Urbanist', sans-serif;
+    /* font-family: 'Urbanist', sans-serif; */
     height: 100vh;  
     min-height: 100%; 
     display: flex;
@@ -7,7 +7,7 @@
 }
 
 .error {
-    background-color: #FFF2D0;
+    background-color: #766a6f;
     /* margin: auto auto auto auto; */
     /* text-align: center; */
     flex: 1;
@@ -15,18 +15,21 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 40px;
+    font-size: 22px;
+    color: #f1f1f7;
 }
 
 .link {
-    font-size: 24px;
-    color: #0061f2;
+    font-size: 17px;
+    color: #fbc5e3;
 }
 
 .link:hover {
     text-decoration: underline;
-    text-decoration-color: #0061f2;
-    text-decoration-thickness: 4px;
-    color: #0061f2;
+    text-decoration-color: #fbc5e3;
+    text-decoration-thickness: 2px;
+    color: #fbc5e3;
     
     text-decoration-skip-ink: none;
     text-underline-offset: 5px;

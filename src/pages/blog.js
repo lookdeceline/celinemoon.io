@@ -28,7 +28,8 @@ import * as styles from "../styles/index.module.css"
 export default function Blog({ data }) {
   let tags = data.allMarkdownRemark.group
   
-  console.log("### nodes: ", data.allMarkdownRemark.edges)
+  console.log("++ nodes: ", data.allMarkdownRemark.edges)
+  console.log("++ blog page.....")
     return (
       // <Layout>
       <div>

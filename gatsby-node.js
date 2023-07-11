@@ -72,7 +72,7 @@ exports.createPages = async ({ graphql, actions }) => {
                 },
             })
         } else if (node.fields.slug.indexOf('/projects') === 0) {
-            console.log("project createPage")
+            // console.log("project createPage")
             createPage({
                 // path: node.fields.slug,
                 path: `/projects/${node.frontmatter.path}`,
@@ -81,7 +81,7 @@ exports.createPages = async ({ graphql, actions }) => {
                     slug: node.fields.slug,
                 },
             })
-        }
+        } 
     })
 
     // Extract tag data from query
@@ -113,11 +113,11 @@ exports.createPages = async ({ graphql, actions }) => {
     //   })
 
     // redirect home link to blog link
-    const { createRedirect } = actions
-    createRedirect({
-        fromPath: `/`,
-        isPermanent: true,
-        redirectInBrowser: true,
-        toPath: `/blog/`,
-    })
+    // const { createRedirect } = actions
+    // createRedirect({
+    //     fromPath: `/`,
+    //     isPermanent: true,
+    //     redirectInBrowser: true,
+    //     toPath: `/blog/`,
+    // })
 }

@@ -12,13 +12,11 @@ const TagTile = ({ tag, isSelected}) => {
 
     return (
         <Link to={`/tags/${tag.fieldValue}`} 
-        // className={styles.tile}
         className={styles.pillbox}
         // style={{backgroundColor: getColor(tag.fieldValue)}} 
         >
             <span className={styles.circle} style={{backgroundColor: getColor(tag.fieldValue)}}></span>
-         {/* style={{color: textColor, fontWeight: fontWeight}}> */}
-            {tag.fieldValue}
+            <span style={{color: textColor, fontWeight: fontWeight}}>{tag.fieldValue}</span>
         </Link>
     )
 }

@@ -33,16 +33,15 @@ export default function Tags({ pageContext, data }) {
         <Header/>
         <SEO title = "Tags"/>
 
-          <PagesTitle 
+          {/* <PagesTitle 
           title="All posts" 
           // titleIntro="I mostly write about iOS development."
-          />
-
-          <TagsBar selectedTag={tag} />
+          /> */}
 
           {/* posts section */}
           <div className={styles.postsSectionBackground}>
-            <div className={styles.pageContainer}>  
+            <div className={styles.pageContainer}> 
+              <TagsBar selectedTag={tag} /> 
                 {edges
                 .map(({ node }) => (
                   <SmallThumbnailPost node={node}/>     

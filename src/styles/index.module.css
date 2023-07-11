@@ -431,8 +431,8 @@
     }
 
     .pillboxContainer {
-        padding: 40px 0;
-        margin: 40px auto 10px auto;
+        padding: 20px 0;
+        /* margin: 40px auto 10px auto; */
         column-gap: 10px;
     }
 

@@ -14,8 +14,8 @@ const NotFound = () => {
         <div className={styles.page}>
         <Header/>
             <div className={styles.error}>
-                <h1>404: Page Not Found</h1>
-                <Link className={styles.link} to="/">Go back to home</Link>
+                <div>404 error! page not found</div>
+                <Link className={styles.link} to="/">go to home</Link>
             </div>
             <Footer/>
         </div>

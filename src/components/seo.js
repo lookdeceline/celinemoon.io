@@ -18,7 +18,7 @@ function SEO({ description, lang, meta, title, featuredImage}) {
             defaultSiteImage
           }
         }
-        defaultImage: file(relativePath: { eq: "images/previewImage2.png" }) {
+        defaultImage: file(relativePath: { eq: "images/previewImage3.png" }) {
           childImageSharp {
             fluid(maxWidth: 800, quality: 100) {
               ...GatsbyImageSharpFluid
@@ -36,7 +36,6 @@ function SEO({ description, lang, meta, title, featuredImage}) {
   //       childImageSharp {
   //         fluid(maxWidth: 6000, quality: 100) {
   //           ...GatsbyImageSharpFluid
-  //         }
   //       }
   //     }
   //   }`
@@ -47,7 +46,7 @@ function SEO({ description, lang, meta, title, featuredImage}) {
   // + (featuredImage || 'src/images/previewImage2.png')
   // console.log("siteURL: ", data.site.siteMetadata.siteUrl)
   // console.log("featuredImage: ", featuredImage)
-  // console.log("defaultImage: ", data.defaultImage.childImageSharp.fluid.src)
+  // console.log("++ defaultImage: ", data.defaultImage.childImageSharp.fluid.src)
   // console.log("seo: ", pagePreviewImage)
 
   return (

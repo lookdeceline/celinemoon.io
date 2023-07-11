@@ -1,8 +1,8 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap'); */
 .footerBackground {
     width: 100%;
-    padding: 60px 0;
-    background-color: #2a323c;
+    padding: 40px 0;
+    background-color: #191a1b;
     /* background-color: #414a56; */
      /* #FCEDBC; */
 }
@@ -42,4 +42,11 @@
     height: 30px;
     /* padding-left: 12px; */
     margin-left: 12px;
+}
+
+@media (max-width: 800px) {
+    .footerBackground {
+        width: 100%;
+        padding: 20px 0;
+    }
 }

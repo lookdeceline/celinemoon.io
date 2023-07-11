@@ -48,12 +48,13 @@
 }
 
 .cardItem:hover .cardContentTitle {
-    color: #0061f2;
+    color: #0061f2; 
+    /* color: #f590c7; */  /* try this the next time */
 }
 
-/* .cardItem:hover .cardContentIntro {
-    color: #1d1d1f;
-} */
+.cardItem:hover .cardContentIntro {
+    color: #45454b;
+}
 
 .cardItem:hover .chevron {
     stroke: #0061f2 !important;
@@ -177,7 +178,9 @@
 /* mobile screens */ 
 @media (max-width: 800px) {
     .cardItem {
-        padding: 16px 16px;
+        padding: 16px 0 0 0;
+        margin: 16px 0; 
+
         /* display: flex;
         flex-direction: row;
         justify-content: space-between; */

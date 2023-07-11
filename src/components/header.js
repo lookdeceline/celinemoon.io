@@ -77,9 +77,9 @@ export default function Header() {
 				</div>
 				
 				<button className={styles.burger} onClick={toggleNav}>
-					<div className={styles.line1}></div>
-                    <div className={styles.line2}></div>
-                    <div className={styles.line3}></div>
+					<div className={styles.bugerLine}></div>
+                    <div className={styles.bugerLine}></div>
+                    <div className={styles.bugerLine}></div>
 				</button>
 
 				<div className={menuActivated ? styles.dropdown : styles.dropdownHide}>
