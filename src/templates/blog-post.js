@@ -17,6 +17,20 @@ import * as styles from "./blog-post-styles.module.css"
 //   margin-bottom: 0;
 // `
 
+export function getColor(tag) {
+  switch(tag) {
+    case 'SwiftUI':
+      return "#0067FD";
+    case 'Programming':
+      return '#FF0000';
+    case 'Swift':
+      return "#FF6101"
+    default:
+      return '#414A56'; // default color
+  }
+}
+
+
 export default function BlogPost({ data }) {
     // console.log('data: ', data)
     const post = data.markdownRemark
@@ -28,9 +42,11 @@ export default function BlogPost({ data }) {
         <div className={styles.titleBackground}>
           <div className={styles.titleContent}>
             <div className={styles.tags}>
-            {post.frontmatter.tags.map((tag) => {
+            {post.frontmatter.tags.map((tag, index) => {
               return (
-                <div className={styles.tag}>{tag}</div>
+                <div className={styles.tag} style={{color: getColor(tag)}}>
+                  {`${tag}${index !== post.frontmatter.tags.length - 1 ? "," : ""}`}
+                  </div>
               )
             })}
             </div>

@@ -31,32 +31,40 @@ export default function Home({ data }) {
   let pottedPlant = data.allFile.nodes.filter(function(node) {
     return node && node.childImageSharp.fluid.originalName === "pottedPlant.png";
   })[0]
-console.log("pottedPlant: ", pottedPlant)
+// console.log("pottedPlant: ", pottedPlant)
   return (
     // <Layout>
     <div>
       <Header/>
       <SEO title="Home"/>
       {/* <div className={styles.about}> */}
-          <div className={styles.abountContainerContainer}>
+        <div className={styles.abountContainerContainer}>
           <div className={styles.aboutContainer}>
             <div className={styles.aboutTextContainer}>
             {/* <u style={{textDecorationThickness: `5px`, textDecorationColor: `#FB2B43`, textUnderlineOffset: `3px`}}> */}
               {/* <Img className={styles.profileImage} fluid={pottedPlant.childImageSharp.fluid} /> */}
-              <h1 className={styles.introTitle}>Hi, my name is Celine.</h1>
+              <h1 className={styles.introTitle}>Hello, my name is Celine.</h1>
             {/* <div className={styles.aboutContainer}> */}
               <h2 className={styles.intro}>
               {/* <span style={{color:"#FB2B43", fontWeight: 600}}> */}
-              I am currently working as an iOS software engineer at Sendbird. I write code to enable aesthetic and delightful user interfaces.
-              I designed, built, and maintain this site. 🪴
+              I am an iOS software engineer at Sendbird.
+              <br/>
+              I designed, built, and maintain this site. 
+              {/* 🪴 */}
               
               </h2>
-              <div className={styles.introLinks}>
-                <Link to="/about/" className={styles.pageLink}>Read more about me ↗&#xFE0E;</Link>
+
+              {/* About me page link deactivated */}
+
+              {/* <div className={styles.introLinks}> */}
+                {/* <Link to="/about/" className={styles.pageLink}>Read more about me ↗&#xFE0E;</Link> */}
                 {/* style={{padding: `14px 68px`}} */}
                 {/* CVPdf */}
-                <a href={""} target = "_blank" className={styles.pageLink} id="cvLink">Download CV ↗&#xFE0E;</a>
-              </div>
+                {/* <a href={""} target = "_blank" className={styles.pageLink} id="cvLink">Download CV ↗&#xFE0E;</a> */}
+              {/* </div> */}
+
+
+
             </div>
               {/* <Img className={styles.profileImage} fluid={data.file.childImageSharp.fluid} /> */}
               {/* <Img className={styles.profileImage} fluid={profilePic.childImageSharp.fluid} /> */}
@@ -67,24 +75,17 @@ console.log("pottedPlant: ", pottedPlant)
         </div>
       {/* </div>  */}
 
-      <div className={styles.body}>
-        <div className = {styles.projectSection}>
+
+      {/* <div className={styles.body}> */}
+        {/* <div className = {styles.projectSection}>
           <h3 className={styles.subSectionTitle}>Projects.</h3>
-          {/* a list of projects  */}
+
           <div className={styles.cardsContainer}>
             {projectList.map(({ node }) => (
               <Link to={`/projects/${node.frontmatter.path}`} >
               <div key={node.id} className={styles.cardItem} >
-                  {/* node.frontmatter.backgroundColor */}
-                {/* <Link to={node.fields.slug} > */}
 
-                  <div 
-                  className={styles.imageContainer}
-                  // style={{ backgroundImage: `url(../images.earth)`}}
-                  
-                  // `url(${node.frontmatter.featuredImage.childImageSharp.fluid})`
-                  
-                  >
+                  <div className={styles.imageContainer}>
                     <Img 
                     className={styles.image}
                     fluid={node.frontmatter.featuredImage.childImageSharp.fluid} 
@@ -96,23 +97,19 @@ console.log("pottedPlant: ", pottedPlant)
                     <div className={styles.cardContentTitle}>
                       {node.frontmatter.title}
                     </div>
-                    {/* <p className={styles.cardContentDate}>
-                      {node.frontmatter.date}
-                    </p> */}
+
                     <div className={styles.cardContentIntro}>
                       {node.frontmatter.intro}
                     </div>
 
                     <IconText type={node.frontmatter.type} text={node.frontmatter.text} size="small"/>
-                    
                   </div>
                   
-                {/* </Link> */}
               </div>
               </Link>
             ))}
           </div>
-        </div>
+        </div> */}
 
         {/* <div className={styles.blogSection}>
           <h3 className={styles.subSectionTitle}>Blog Posts</h3>
@@ -125,7 +122,7 @@ console.log("pottedPlant: ", pottedPlant)
                   </div>
         </div> */}
         
-      </div>
+      {/* </div> */}
       <Footer />
       </div>
     // </Layout>

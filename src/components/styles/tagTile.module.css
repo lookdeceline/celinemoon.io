@@ -16,16 +16,30 @@
 }
 
 .pillbox {
-    font-family: 'Urbanist', sans-serif;
-    font-size: 19px;
+    /* font-family: 'Urbanist', sans-serif; */
+    font-size: 14px;
     font-weight: 400;
     color: #414A56;
 
-    padding: 10px 30px;
-    border:  1.5px solid #414A56; 
-    border-radius: 30px;
-    background-color: #f3f6f9;
+    flex-basis: calc(20% - 10px); /* 33.33% for 3 columns layout, 10px for spacing */
+    margin: 5px 0;
+
+    /* padding: 10px 30px; */
+    /* border:  1.5px solid #414A56;  */
+    /* border-radius: 30px; */
+    /* background-color: #f3f6f9; */
 }
+
+.circle {
+    content: "";
+    height: 10px;
+    width: 10px;
+    /* background-color: #000;  */
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+  }
+  
 
 .pillbox:hover {
     /* text-decoration: underline;
@@ -33,4 +47,12 @@
     text-underline-offset: 3px; */
     color: #0061f2;
     /* background-color: #F0F5F9; */
+}
+
+
+/* blog small screen */
+@media (max-width: 800px) {
+    .pillbox {
+        flex-basis: calc(50% - 10px); /* 33.33% for 3 columns layout, 10px for spacing */
+    }
 }

@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
 
 .containerContainer {
     /* background-color: #FFF2BE; */
-    background-color: #FCEDBC;
+    /* background-color: #FCEDBC; */
     /* background-color: #6fa6dd; */
     /* background-color: #8ac2ff; */
     /* background-color: #DEECF4; */
@@ -17,16 +17,19 @@
 }
 
 .container{
-    font-family: 'Urbanist', sans-serif;
+    /* font-family: 'Urbanist', sans-serif; */
     color: #1d1d1f;
 
-    padding: 180px 16px 180px 16px;
-    max-width: 872px;
+    padding: 80px 0 25px 0;
+    /* padding: 180px 16px 180px 16px; */
+    max-width: 668px;
     margin: auto;
     display: flex;
     flex-direction: column;
     gap: 16px;
-    align-items: center;
+    align-items: left;
+
+    border-bottom: solid 3px #1D1D1F; 
 }
 
 .h1 {

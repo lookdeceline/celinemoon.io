@@ -54,18 +54,16 @@ export default function Header() {
 				</Link> */}
 
 				<div className={styles.listLink}> 
-					{/* <ListLink to="/about/">ABOUT</ListLink> */}
-					{/* <Link to="/projects/" className={styles.pageLink}>Projects</Link> */}
-					{/* <Link to="/blog/" className={styles.pageLink}>Blog</Link> */}
 					<Link to="/" className={styles.h3}>
 						<div>
-							{data.site.siteMetadata.title}
+							{"celine"}
+							{/* {data.site.siteMetadata.title} */}
 						</div>
 					</Link>
 					{/* <div className={styles.pageLinks}> */}
-						<Link to="/" className={styles.pageLink}>projects</Link>
-						<Link to="/blog/" className={styles.pageLink}>blog</Link>
-						<Link to="/about/" className={styles.pageLink}>about</Link>
+						{/* <Link to="/" className={styles.pageLink}>projects</Link> */}
+						{/* <Link to="/blog/" className={styles.pageLink}>blog</Link> */}
+						{/* <Link to="/about/" className={styles.pageLink}>about</Link> */}
 					{/* </div> */}
 				</div>
 				
@@ -86,9 +84,9 @@ export default function Header() {
 
 				<div className={menuActivated ? styles.dropdown : styles.dropdownHide}>
 					{/* "sdddd" */}
-					<Link to="/" className={styles.menuPageLink}>projects</Link>
-					<Link to="/blog/" className={styles.menuPageLink}>blog</Link>
-					<Link to="/about/" className={styles.menuPageLink}>about</Link>
+					{/* <Link to="/" className={styles.menuPageLink}>projects</Link> */}
+					{/* <Link to="/blog/" className={styles.menuPageLink}>blog</Link> */}
+					{/* <Link to="/about/" className={styles.menuPageLink}>about</Link> */}
 					
 					<Link to="https://github.com/lookdeceline" > <GithubIcon className={styles.socialIcon}/> </Link>
 					<Link to="https://www.linkedin.com/in/celinemoon/"> <LinkedInIcon className={styles.socialIcon}/> </Link>

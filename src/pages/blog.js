@@ -33,13 +33,13 @@ export default function Blog({ data }) {
       // <Layout>
       <div>
         <Header/>
-        <SEO title = "Dev Blog"/>
+        <SEO title = "All posts"/>
         {/* <div className={styles.pageContainer}> */}
 
-          <PagesTitle 
-          title="Dev Blog" 
-          titleIntro="I mostly write about iOS development."
-          />
+          {/* <PagesTitle 
+          title="All posts" 
+          // titleIntro="I mostly write about iOS dev"
+          /> */}
 
               {/* tags */}
               {/* <div className={styles.tagTilesSection}>
@@ -50,11 +50,12 @@ export default function Blog({ data }) {
                   ))}
                 </div>
               </div> */}
-              <TagsBar/>
+              
 
               {/* posts section */}
               <div className={styles.postsSectionBackground}>
                 <div className={styles.pageContainer}>  
+                <TagsBar/>
                     {data.allMarkdownRemark.edges
                     .filter(({node}) => node.frontmatter.publish)
                     .map(({ node }) => (

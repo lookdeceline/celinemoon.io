@@ -18,17 +18,9 @@ const SmallThumbnailPost = ({ node }) => {
             <div className={styles.cardWrapper}>
               <div className={styles.cardContent}>
 
-                <div className={styles.cardContentTitle}>
-                  {node.frontmatter.title}
-                </div>
-
-                <div className={styles.cardContentIntro}>
-                    {node.frontmatter.intro}
-                </div>
-
-               {/* <div className={styles.tagsAndArrow}> */}
                 <div className={styles.smallTagsContainer}>
                     {node.frontmatter.tags ? node.frontmatter.tags.map(( tag, index ) => {
+                      
                         return (
                             <SmallTagBox tag={tag} />
                         )
@@ -37,12 +29,34 @@ const SmallThumbnailPost = ({ node }) => {
                     }
                 </div>
 
+                <div className={styles.cardContentTitle}>
+                  {node.frontmatter.title}
+                </div>
+
+                <div className={styles.cardContentIntro}>
+                    {node.frontmatter.intro}
+                </div>
+
+                {/* bottom border */}
+                {/* <div className={styles.cardItemBottomBorder}>{}</div> */}
+
+               {/* <div className={styles.tagsAndArrow}> */}
+                {/* <div className={styles.smallTagsContainer}>
+                    {node.frontmatter.tags ? node.frontmatter.tags.map(( tag, index ) => {
+                        return (
+                            <SmallTagBox tag={tag} />
+                        )
+                    }) 
+                    : null
+                    }
+                </div> */}
+
                 {/* <SeePostIcon className={styles.chevron}/> */}
                {/* </div>  */}
               </div>
-              <div className={styles.chevronDiv}>
+              {/* <div className={styles.chevronDiv}>
                 <SeePostIcon className={styles.chevron}/>
-              </div>
+              </div> */}
 
              
               

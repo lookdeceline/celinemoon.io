@@ -48,12 +48,12 @@ export default function TagsBar({ selectedTag }) {
         }
         `
     )
-console.log("$$ data: ", data)
+// console.log("$$ data: ", data)
   let tags = data.allMarkdownRemark.group
   
-  console.log("$$ selectedTag: ", selectedTag)
+  // console.log("$$ selectedTag: ", selectedTag)
     return (
-      <div>
+      <div className={styles.barContainer}>
         {/* <Header/> */}
         {/* <SEO title = "Dev Blog"/> */}
 
@@ -75,7 +75,10 @@ console.log("$$ data: ", data)
                   .map( tag  => (
                     <TagTile tag={tag} isSelected={tag.fieldValue===selectedTag}/>
                   ))}
+                  
                 </div>
+
+                <div className={styles.bottomBorder}>{ }</div>
         {/* <Footer/> */}
       </div>
     )

@@ -3,7 +3,7 @@ title: "Presenting a Detail Sheet from a List’s Row"
 date: "2022-11-20"
 intro: "Create a list that shows a detail sheet view when a button of each row is tapped, and avoid a common mistake when attaching a sheet view modifier to a list. "
 featuredImage: ./swift-square-orange.png
-tags: ["SwiftUI", "modal", "sheet"]
+tags: ["SwiftUI"]
 path: "list-row-detail-sheet"
 publish: true
 ---
@@ -12,19 +12,24 @@ publish: true
 
 The goal of this post is to create a list that shows each row’s detail information on a modal sheet, when we tap on a button placed at each row. 
 
-<div class="articleImage" style="max-width: 100%; width:600px; margin: 30px auto; padding-bottom: 30px;">
+<div class="articleImage" style="max-width: 100%; width:500px; margin: 50px auto; padding-bottom: 30px;">
     <img src="./goal.png">
 </div>
 
 ## Presenting a Sheet
 
-There are two ways to present a sheet using a view modifier. 
+There are two ways to present a sheet using a view modifier.
+<br/>
+There are two ways to present a sheet using a view modifier.
+
+There are two ways to present a sheet using a view modifier.
+
 
 1) binding a sheet to a boolean  
--> [`sheet(isPresented:onDismiss:content:)`](https://developer.apple.com/documentation/swiftui/view/sheet(ispresented:ondismiss:content:))
+[`sheet(isPresented:onDismiss:content:)`](https://developer.apple.com/documentation/swiftui/view/sheet(ispresented:ondismiss:content:))
 
 2) binding a sheet to an item that acts as a data source for the sheet  
--> [`sheet(item:onDismiss:content:)`](https://developer.apple.com/documentation/swiftui/view/sheet(item:ondismiss:content:))
+[`sheet(item:onDismiss:content:)`](https://developer.apple.com/documentation/swiftui/view/sheet(item:ondismiss:content:))
 
 Because our sheet has to display different detail information depending on which task we tap on, we want our sheet to be binded to a task item that will act as a data source for the sheet.
 

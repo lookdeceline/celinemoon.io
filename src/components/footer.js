@@ -23,7 +23,7 @@ export default function Footer() {
 		<div className={styles.footerBackground}>
 			<div className={styles.footer} >
 				<div className={styles.leftSide}>
-					<div> Last update in April 2022 © {data.site.siteMetadata.title} </div>
+					<div> 2023 © {data.site.siteMetadata.title} </div>
 					{/* <div className={styles.comment}> Inspired by <a href="https://hohyeonmoon.com" target="_blank">Hohyeon</a></div> */}
 				</div>
 

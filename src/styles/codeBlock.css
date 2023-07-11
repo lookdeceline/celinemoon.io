@@ -4,14 +4,17 @@
  * @author Lea Verou
  */
 
- @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+ /* @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap'); */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100;200;300;400;500;600;700;800;900&display=swap'); */
 
  code[class*="language-"],
  pre[class*="language-"] {
-     color: "black";
+     color: #DFDFE0;
      background: none;
-     text-shadow: 0 1px white;
-     font-family: 'Roboto Mono', monospace;
+     /* text-shadow: 0 1px white; */
+     /* font-family: 'Roboto Mono', monospace; */
+     font-family: SF Mono,Menlo,monospace;
      text-align: left;
      white-space: pre;
      word-spacing: normal;
@@ -51,23 +54,26 @@
  
  /* Code blocks */
  pre[class*="language-"] {
-     padding: 1em;
-     margin: .5em 0;
+     padding: 2em;
+     margin: 2em 0;
      overflow: auto;
      font-size: 15.5px;
  }
  
  :not(pre) > code[class*="language-"],
  pre[class*="language-"] {
-     background: #f5f2f0;
-     border-radius: 5px;
+     background: #212228;
+     border-radius: 15px;
  }
  
  /* Inline code */
  :not(pre) > code[class*="language-"] {
-     padding: .1em .3em;
+     /* padding: .1em .3em;
      border-radius: .2em;
-     white-space: normal;
+     white-space: normal; */
+     background: transparent;
+     color: #6b7b8f;
+     font-size: 100%;
  }
  
  .token.comment,
@@ -92,7 +98,7 @@
  .token.constant,
  .token.symbol,
  .token.deleted {
-     color: #905;
+     color: #E2D386;
  }
  
  .token.selector,
@@ -101,7 +107,7 @@
  .token.char,
  .token.builtin,
  .token.inserted {
-     color: #690;
+     color: #ff8170;
  }
  
  .token.operator,
@@ -109,18 +115,18 @@
  .token.url,
  .language-css .token.string,
  .style .token.string {
-     color: #a67f59;
-     background: hsla(0, 0%, 100%, .5);
+     color: #DFDFE0;
+     /* background: hsla(0, 0%, 100%, .5); */
  }
  
  .token.atrule,
  .token.attr-value,
  .token.keyword {
-     color: #07a;
+     color: #ff7ab2;
  }
  
  .token.function {
-     color: #DD4A68;
+     color: #a97ced;
  }
  
  .token.regex,
@@ -140,3 +146,12 @@
  .token.entity {
      cursor: help;
  }
+
+ .token.class-name {
+    color: #b283ec;
+ }
+
+ .token.interpolation > :nth-child(1) {
+    color: #78c2b4;
+  }
+  

@@ -1,28 +1,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/* .entireBody {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+} */
 
 .abountContainerContainer {
     /* max-width: 840px; */
     /* margin: auto; */
-    /* background-color: #F0DEF8; */
-    background-color: #eaeff2;
+    /* background-color: #242528; */
+    /* background-color: #eaeff2; */
     /* background-color: #F5F8FA; */
     /* background-color: #ffe39d; */
     /* background-color: #ffdd88; */
     /* background-color: #FCEDBC; */
     /* background-color: #fff6d6; */
     /* background-color: #F9F9F9; */
-    font-family: Inter;
+    /* font-family: Inter; */
+    /* color: #f1f1f7; */
+    color: #000;
+    font-family: ui-compact, SF Pro Compact, system-ui, sans-serif;
+
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .aboutContainer {
-    padding: 200px 16px 200px 16px;
+    /* padding: 128px 16px 128px 16px; */
     /* padding-top: 70px; */
-    max-width: 872px;
+    max-width: 668px;
     margin: auto;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    justify-content: center;
+  align-items: center;
+    /* justify-content: space-between; */
+    /* align-items: flex-start; */
 
     /* background-color: #F2F2F8; */
     /* background-color: #F9F2FC; */
@@ -37,22 +55,22 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    font-family: 'Urbanist', sans-serif;
+    /* font-family: 'Urbanist', sans-serif; */
 }
 
 .introTitle {
-    font-family: 'Urbanist', sans-serif;
-    font-weight: 700;
-    font-size: 41px;
-    margin: 0 0 24px 0;
+    /* font-family: 'Urbanist', sans-serif; */
+    font-weight: 500;
+    font-size: 20px;
+    margin: 0 0 16px 0;
     padding:0;
 }
 
 .intro {
-    font-weight: 600;
+    font-weight: 300;
     font-size: 20px;
-    font-style: normal;
-    line-height: 33px;
+    /* font-style: normal; */
+    line-height: 150%;
     margin: 0;
 }
 
@@ -122,7 +140,7 @@
 .body {
     margin: 90px auto 180px auto;
     font-family: Inter;
-    max-width: 872px;
+    max-width: 668px;
     padding: 0 16px;
 }
 
@@ -345,6 +363,11 @@
 
  /* blog.js */
 
+ .barContainer {
+    max-width: 668px;
+    margin: auto;
+ }
+
  .tagTilesSection {
     /* background-color: #DDEBF4; */
     /* background-color: #FFFCF2; */
@@ -353,7 +376,7 @@
  }
 
  .tagTilesContainer {
-    max-width: 872px;
+    max-width: 668px;
     margin: auto;
     /* padding: 0 16px;  */
 
@@ -365,15 +388,27 @@
 }
 
 .pillboxContainer {
-    max-width: 872px;
-    margin: 60px auto 30px auto;
-    padding: 0 16px;
+    /* max-width: 668px; */
+    /* border-bottom: solid 2px #1D1D1F;  */
+    /* margin: 60px auto 30px auto; */
+    padding: 40px 0;
+    /* margin: auto; */
 
-    display: flex;
+    /* display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     row-gap: 10px;
-    column-gap: 20px;
+    column-gap: 20px; */
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.bottomBorder {
+  height: 2px; /* this is your border */
+  /* background-color: #9a9aab; */
+  background-color: #2A323C;
 }
 
 /* .postsSectionBackground {
@@ -382,9 +417,9 @@
 
  .pageContainer {
     margin: 0px auto 180px auto;
-    font-family: Inter;
-    max-width: 872px;
-    padding: 30px 16px;
+    /* font-family: Inter; */
+    max-width: 668px;
+    padding: 0 16px;
     /* background-color: #FFFCF2; */
  }
 
@@ -396,6 +431,7 @@
     }
 
     .pillboxContainer {
+        padding: 40px 0;
         margin: 40px auto 10px auto;
         column-gap: 10px;
     }

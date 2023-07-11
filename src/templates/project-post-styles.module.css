@@ -10,7 +10,7 @@
     align-items: center;
 
     font-family: Inter;
-    max-width: 872px;
+    max-width: 668px;
     margin: auto;
     padding: 128px 16px;
     /* align-items: center; */
@@ -71,7 +71,7 @@
 
 .mdBody {
     font-family: Inter;
-    max-width: 872px;
+    max-width: 668px;
     padding: 0 16px;
     margin: 90px auto 180px auto;
 }

@@ -86,7 +86,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
     // Extract tag data from query
     const tags = result.data.tagsGroup.group
-    console.log(tags)
+    // console.log(tags)
     // Make tag pages
     tags
     .forEach(tag => {
@@ -111,4 +111,13 @@ exports.createPages = async ({ graphql, actions }) => {
     //       },
     //     })
     //   })
+
+    // redirect home link to blog link
+    const { createRedirect } = actions
+    createRedirect({
+        fromPath: `/`,
+        isPermanent: true,
+        redirectInBrowser: true,
+        toPath: `/blog/`,
+    })
 }

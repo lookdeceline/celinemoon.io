@@ -10,6 +10,10 @@
     align-items: stretch;
 }   
 
+.cardItemBottomBorder {
+    height: 1.5px; /* this is your border */
+    background-color: #777;
+}
 
 .cardItem {
     height: auto;
@@ -18,8 +22,8 @@
     /* border: 1.5px solid #848488;
     border-radius: 15px; */
     border-radius: 5px 5px 5px 5px;
-    background-color: #fffef9;
-    border: 1.5px solid #000;
+    /* background-color: #fffef9; */
+    /* border: 1.5px solid #000; */
     /* background-color: white; */
     /* #848488; */
     /* border-radius: 23px; */
@@ -27,8 +31,8 @@
     /* border-left: 4px solid #000;
     background-color: #FBFBFD; */
     /* box-shadow:  0 0 5px rgba(0, 0, 0, 0.365); */
-    padding: 34px;
-    margin-bottom: 25px;
+    /* padding: 34px; */
+    margin: 64px 0;  /* gap = 34*2 + 25, width = 668*/ 
 
     display: flex;
     flex-direction: column;
@@ -42,6 +46,14 @@
     transform: scale(1.01);
     /* background-color: #F5F8FA; */
 }
+
+.cardItem:hover .cardContentTitle {
+    color: #0061f2;
+}
+
+/* .cardItem:hover .cardContentIntro {
+    color: #1d1d1f;
+} */
 
 .cardItem:hover .chevron {
     stroke: #0061f2 !important;
@@ -111,21 +123,22 @@
 }
 
 .cardContentTitle {
-    font-family: 'Urbanist', sans-serif;
-    font-size: 23px;
-    font-weight: 600;
+    /* font-family: 'Urbanist', sans-serif; */
+    font-size: 28px;
+    font-weight: 500;
     line-height: 29px;;
-    margin-bottom: 16px;
+    margin: 16px 0 16px 0;
 }
 
 .cardContentIntro {
     font-size: 17px;
-    /* color: #6e6e73; */
+    color: #6e6e73;
     /* color: #515154; */
     /* letter-spacing: -0.04em; */
-    line-height: 25px;
+    line-height: 150%;
     font-weight: 400;
     margin-bottom: 20px;
+
     /* margin-right: 68px; */
 }
 

@@ -5,9 +5,9 @@
 }
 
 .titleContent {
-    padding: 120px 16px 0px 16px;
+    padding: 80px 16px 0px 16px;
     /* padding-top: 70px; */
-    max-width: 872px;
+    max-width: 668px;
     margin: auto;
     /* display: flex;
     justify-content: space-between;
@@ -18,57 +18,69 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 16px;
+    gap: 8px;
 
-    font-family: 'Urbanist', sans-serif;
-    font-size: 17px;
+    font-family: ui-text, SF Pro Text, system-ui, sans-serif;
+    font-size: 16px;
     font-weight: 500;
+
+    /* font-family: 'Urbanist', sans-serif; */
+    
     color: #414A56;
 }
 
 .tag {
-    padding: 3px 16px;
+    /* padding: 3px 16px;
     border: 1px solid #414A56;
     border-radius: 20px;
-    background-color: #f5f8fa;
+    background-color: #f5f8fa; */
 }
 
 .h1{
-    font-family: 'Urbanist', sans-serif;
-    font-size: 39px;
+    /* font-family: 'Urbanist', sans-serif; */
+    /* font-family: -apple-system, BlinkMacSystemFont, sans-serif; */
+    font-family: ui-display, SF Pro Display, system-ui, sans-serif;
+    font-size: 36px;
     font-weight: 600;
     /* letter-spacing: -.05em; */
     overflow-wrap: break-word;
-    margin: 30px 0;
+    margin: 17px 0;
     /* padding: 0 0 26px 0;
     border-bottom: solid 3px #5a6777; */
 }
 
 .h2 {
-    font-family: 'Inter', sans-serif;
-    font-size: 19px;
-    font-weight: 400;
+    /* font-family: 'Inter', sans-serif; */
+    font-family: ui-text, SF Pro Text, system-ui, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 150%;
 
-    padding: 0 0 46px 0;
-    border-bottom: solid 2px #1D1D1F; 
+    margin: 0;
+    padding: 0 0 80px 0;
+    border-bottom: solid 1.5px #1D1D1F; 
 }
 
 /* article section */
 .article {
-    font-family: 'Inter';
+    font-family: ui-text, SF Pro Text, system-ui, sans-serif;
+    font-size: 17px;
+    line-height: 180%;
+    font-weight: 400;
 
-    margin: 60px auto 220px auto;
-    max-width: 872px;
+    margin: 80px auto 220px auto;
+    max-width: 668px;
     padding: 0 16px;
 }
 
 .article h2 {
     /* font-family: 'Inter'; */
     /* color: #1D1D1F; */
-    font-size: 29px;
+    font-family: ui-display, SF Pro Display, system-ui, sans-serif;
+    font-size: 25px;
     /* letter-spacing: -.05em; */
     font-weight: 600;
-    line-height: 27px;
+    line-height: 1.125;
     margin: 52px 0 26px 0;
     /* padding: 0 0 26px 0; */
     /* border-bottom: solid 3px #5a6777; */
@@ -96,16 +108,26 @@
 }
 
 .article p {
-    font-size: 17px;
+    /* font-size: 17px;
+    line-height: 150%;
+    font-weight: 300; */
     /* letter-spacing: -0.05rem; */
-    line-height: 24px;
+    /* line-height: 24px; */
+    margin-top: 0;
     margin-bottom: 0;
-    /* font-weight: 300; */
+    padding-bottom: 10px;
+}
+
+.article ol {
+    padding: 0;
+    padding-left: 20px;
+    margin: 0;
 }
 
 .article li {
+    padding-top: 10px;
     font-size: 17px;
-    line-height: 30px;
+    /* line-height: 30px; */
 }
 
 .article ul {
@@ -123,9 +145,12 @@
 }
 
 .article a {
-    color: #0088cc;
+    color: #06c;
 }
 
+.article a code {
+    color: #06c; /* or any other styles you want to apply */
+}
 
 @media (max-width: 800px) {
     .titleContent {

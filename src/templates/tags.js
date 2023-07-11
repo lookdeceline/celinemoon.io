@@ -24,9 +24,9 @@ export default function Tags({ pageContext, data }) {
     totalCount === 1 ? "" : "s"
   } tagged with "${tag}"`
   
-  console.log("### tag: ", tag)
-  console.log("### edges: ", edges)
-  console.log("### totalCount: ", totalCount)
+  // console.log("### tag: ", tag)
+  // console.log("### edges: ", edges)
+  // console.log("### totalCount: ", totalCount)
     return (
       // <Layout>
       <div>
@@ -34,8 +34,8 @@ export default function Tags({ pageContext, data }) {
         <SEO title = "Tags"/>
 
           <PagesTitle 
-          title="Dev Blog" 
-          titleIntro="I mostly write about iOS development."
+          title="All posts" 
+          // titleIntro="I mostly write about iOS development."
           />
 
           <TagsBar selectedTag={tag} />
