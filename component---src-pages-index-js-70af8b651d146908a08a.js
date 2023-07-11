@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunklookdeceline=self.webpackChunklookdeceline||[]).push([[678],{6558:function(e,l,n){n.r(l);var u=n(7294),c=n(1883);l.default=()=>((0,u.useEffect)((()=>{(0,c.navigate)("/blog/")}),[]),null)}}]);
+//# sourceMappingURL=component---src-pages-index-js-70af8b651d146908a08a.js.map
