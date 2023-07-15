@@ -1,12 +1,15 @@
+import React from "react"
 import { graphql } from "gatsby"
 import { useEffect } from 'react';
 import { navigate } from 'gatsby';
+
+import SEO from "../components/seo"
 
 export default () => {
   useEffect(() => {
     navigate('/blog/');
   }, []);
-  return null;
+  return <SEO title = "Home"/>
 };
 
 export const query = graphql`

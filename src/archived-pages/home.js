@@ -32,7 +32,7 @@ export default function Home({ data }) {
     return node && node.childImageSharp.fluid.originalName === "pottedPlant.png";
   })[0]
 // console.log("pottedPlant: ", pottedPlant)
-console.log("++ index page")
+// console.log("++ index page")
   return (
     // <Layout>
     <div>
