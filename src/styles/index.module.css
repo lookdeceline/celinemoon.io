@@ -34,7 +34,7 @@
 .aboutContainer {
     /* padding: 128px 16px 128px 16px; */
     /* padding-top: 70px; */
-    max-width: 668px;
+    max-width: 740px;
     margin: auto;
     display: flex;
     justify-content: center;
@@ -140,7 +140,7 @@
 .body {
     margin: 90px auto 180px auto;
     font-family: Inter;
-    max-width: 668px;
+    max-width: 740px;
     padding: 0 16px;
 }
 
@@ -364,7 +364,7 @@
  /* blog.js */
 
  .barContainer {
-    max-width: 668px;
+    max-width: 740px;
     margin: auto;
  }
 
@@ -376,7 +376,7 @@
  }
 
  .tagTilesContainer {
-    max-width: 668px;
+    max-width: 740px;
     margin: auto;
     /* padding: 0 16px;  */
 
@@ -388,7 +388,7 @@
 }
 
 .pillboxContainer {
-    /* max-width: 668px; */
+    /* max-width: 740px; */
     /* border-bottom: solid 2px #1D1D1F;  */
     /* margin: 60px auto 30px auto; */
     padding: 40px 0;
@@ -418,7 +418,7 @@
  .pageContainer {
     margin: 0px auto 180px auto;
     /* font-family: Inter; */
-    max-width: 668px;
+    max-width: 740px;
     padding: 0 16px;
     /* background-color: #FFFCF2; */
  }

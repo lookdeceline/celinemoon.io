@@ -7,20 +7,21 @@
  /* @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap'); */
 
 /* @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100;200;300;400;500;600;700;800;900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
  code[class*="language-"],
  pre[class*="language-"] {
      color: #DFDFE0;
      background: none;
      /* text-shadow: 0 1px white; */
-     /* font-family: 'Roboto Mono', monospace; */
-     font-family: SF Mono,Menlo,monospace;
+     font-family: 'Roboto Mono', monospace;
+     /* font-family: SF Mono,Menlo,monospace; */
      text-align: left;
      white-space: pre;
      word-spacing: normal;
      word-break: normal;
      word-wrap: normal;
-     font-size: 14.4px;
+     font-size: 87%;
      line-height: 1.5;
  
      -moz-tab-size: 4;
@@ -63,17 +64,20 @@
  :not(pre) > code[class*="language-"],
  pre[class*="language-"] {
      background: #212228;
-     border-radius: 15px;
+     border-radius: 19px;
  }
  
  /* Inline code */
  :not(pre) > code[class*="language-"] {
-     /* padding: .1em .3em;
-     border-radius: .2em;
-     white-space: normal; */
-     background: transparent;
-     color: #6b7b8f;
-     font-size: 100%;
+     padding: .05em .35em;
+     margin-right: .1em;
+     border-radius: .3em;
+     white-space: normal;
+     background: #EBEBF0; /*transparent;*/
+     color: #111;
+     font-weight: 400;
+     font-size: 85%;
+     line-height: 1.8;
  }
  
  .token.comment,

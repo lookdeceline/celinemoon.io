@@ -1,11 +1,11 @@
 ---
-title: "Presenting a Detail Sheet from a List’s Row"
-date: "2022-11-20"
+title: "How to Publish Your Custom Library"
+date: "2024-04-15"
 intro: "Create a list that shows a detail sheet view when a button of each row is tapped, and avoid a common mistake when attaching a sheet view modifier to a list. "
-featuredImage: ./swift-square-orange.png
+# featuredImage: ./swift-square-orange.png
 tags: ["SwiftUI"]
-path: "list-row-detail-sheet"
-publish: true
+path: "publish-custom-library"
+publish: false
 ---
 
 ## Goal of this post
@@ -17,6 +17,11 @@ The goal of this post is to create a list that shows each row’s detail informa
 </div>
 
 ## Presenting a Sheet
+
+There are two ways to present a sheet using a view modifier.
+<br/>
+There are two ways to present a sheet using a view modifier.
+
 There are two ways to present a sheet using a view modifier.
 
 
