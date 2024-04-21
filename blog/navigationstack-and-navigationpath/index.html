@@ -150,7 +150,7 @@
 <span class="token punctuation">}</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
 <h2>NavigationPath로 NavigationStack의 상태 관리하기</h2>
 <ul>
-<li>navigation stack을 여러번 타고 타고 들어가서 마지막 뷰로 이동하면 root view와 미자막 뷰 사이에 여러 개의 뷰가 스택으로 쌓인다.</li>
+<li>navigation stack을 여러번 타고 타고 들어가서 마지막 뷰로 이동하면 root view와 마지막 뷰 사이에 여러 개의 뷰가 스택으로 쌓인다.</li>
 <li>이럴때 마지막 뷰에서 루트뷰로 한번에 돌아가고 싶은 경우가 있다. 이때 <code class="language-text">NavigationPath</code>를 사용할 수 있다.</li>
 <li>한번 이동할때마다 path에 value를 append 해왔으니, 뒤로 돌아가기 위해선 value를 remove하면 되는 개념이다.</li>
 <li>아래 코드는 Content view -> Next view -> Next next view -> Content view로 이동하는 예시다.</li>
