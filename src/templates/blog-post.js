@@ -20,11 +20,13 @@ import * as styles from "./blog-post-styles.module.css"
 export function getColor(tag) {
   switch(tag) {
     case 'SwiftUI':
-      return "#0067FD";
+      return "#def0fd";
+      // return "#FBE9FA";
+      // return "#def6fd";
     case 'Programming':
-      return '#FF0000';
+      return '#e9e0ff';
     case 'Swift':
-      return "#FF6101"
+      return "#FFE4BE"
     default:
       return '#414A56'; // default color
   }
@@ -44,7 +46,7 @@ export default function BlogPost({ data }) {
             <div className={styles.tags}>
             {post.frontmatter.tags.map((tag, index) => {
               return (
-                <div className={styles.tag} style={{color: getColor(tag)}}>
+                <div className={styles.tag} style={{backgroundColor: getColor(tag)}}>
                   {`${tag}${index !== post.frontmatter.tags.length - 1 ? "," : ""}`}
                   </div>
               )

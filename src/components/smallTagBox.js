@@ -6,7 +6,8 @@ import * as styles from "./styles/smallTagBox.module.css"
 
 const SmallTagBox = (props) => {
     return (
-        <div className={styles.tag} style={{color: getColor(props.tag)}}>{props.tag}</div>
+        <div className={styles.tag} style={{backgroundColor: getColor(props.tag)}}>{props.tag}</div>
+        // <div className={styles.tag} >{props.tag}</div>
     )
 }
 

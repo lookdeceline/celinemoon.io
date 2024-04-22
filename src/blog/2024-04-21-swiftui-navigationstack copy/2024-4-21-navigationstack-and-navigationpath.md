@@ -10,10 +10,10 @@ publish: true
 
 SwiftUI에서 `NavigationStack`을 사용하는 방법은 세가지가 있다. 
 - `NavigationStack`과 `NavigationLink` 사용하기 
-- `NavigationStack`과 `NavigationLink`, `NavigationPath` 사용하기 
-- `NavigationStack`과 `NavigationPath`, `NavigationPath` 사용하기 
+- `NavigationStack`과 `NavigationLink`, `NavigationDestination` 사용하기 
+- `NavigationStack`과 `NavigationPath`, `NavigationDestination` 사용하기 
 각각의 사용법과 차이점을 알아본다. <br/>
-또한 `NavigationPath`를 사용해서 `NavigationStack`의 상태를 관리하는 방법을 알아본다. 
+또한 `NavigationPath`를 사용해서 `NavigationStack`의 state를 관리하는 방법을 알아본다. 
 
 > 해당 포스트 내용은 iOS 16.0 이상에만 해당합니다.
 
@@ -142,7 +142,7 @@ struct NextNextView: View {
 ```
 
 ## NavigationPath로 NavigationStack의 상태 관리하기
-- navigation stack을 여러번 타고 타고 들어가서 마지막 뷰로 이동하면 root view와 미자막 뷰 사이에 여러 개의 뷰가 스택으로 쌓인다. 
+- navigation stack을 여러번 타고 타고 들어가서 마지막 뷰로 이동하면 root view와 마지막 뷰 사이에 여러 개의 뷰가 스택으로 쌓인다. 
 - 이럴때 마지막 뷰에서 루트뷰로 한번에 돌아가고 싶은 경우가 있다. 이때 `NavigationPath`를 사용할 수 있다. 
 - 한번 이동할때마다 path에 value를 append 해왔으니, 뒤로 돌아가기 위해선 value를 remove하면 되는 개념이다.
 - 아래 코드는 Content view -> Next view -> Next next view -> Content view로 이동하는 예시다. 

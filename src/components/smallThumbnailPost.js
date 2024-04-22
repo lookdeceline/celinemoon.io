@@ -6,6 +6,7 @@ import SmallTagBox from "./smallTagBox"
 import * as styles from "./styles/smallThumbnailPost.module.css"
 import ChevronIcon from "../blog/images/chevron-right.svg"
 import SeePostIcon from "../blog/images/seePost2.svg"
+import PostIcon from "../blog/images/postIcon.svg"
 import ChevronRegularIcon from "../blog/images/chevron-right-regular.svg"
 
 const SmallThumbnailPost = ({ node }) => {
@@ -17,25 +18,29 @@ const SmallThumbnailPost = ({ node }) => {
             
             <div className={styles.cardWrapper}>
               <div className={styles.cardContent}>
+                {/* <PostIcon className={styles.item1}/> */}
+                {/* <div className={styles.item2}> */}
+                    <div className={styles.smallTagsContainer}>
+                        {node.frontmatter.tags ? node.frontmatter.tags.map(( tag, index ) => {
+                        
+                            return (
+                                <SmallTagBox tag={tag} />
+                            )
+                        }) 
+                        : null
+                        }
+                    </div>
 
-                <div className={styles.smallTagsContainer}>
-                    {node.frontmatter.tags ? node.frontmatter.tags.map(( tag, index ) => {
-                      
-                        return (
-                            <SmallTagBox tag={tag} />
-                        )
-                    }) 
-                    : null
-                    }
-                </div>
+                    <div className={styles.cardContentTitle}>
+                    {node.frontmatter.title}
+                    </div>
 
-                <div className={styles.cardContentTitle}>
-                  {node.frontmatter.title}
-                </div>
+                    <div className={styles.cardContentIntro}>
+                        {node.frontmatter.intro}
+                    </div>
 
-                <div className={styles.cardContentIntro}>
-                    {node.frontmatter.intro}
-                </div>
+                    
+                {/* </div> */}
 
                 {/* bottom border */}
                 {/* <div className={styles.cardItemBottomBorder}>{}</div> */}

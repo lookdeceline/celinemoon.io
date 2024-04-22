@@ -2,7 +2,7 @@
 .footerBackground {
     width: 100%;
     padding: 40px 0;
-    background-color: #191a1b;
+    background-color: #ebebf3; /* #F2F2F7; */
     /* background-color: #414a56; */
      /* #FCEDBC; */
 }
@@ -14,7 +14,7 @@
     /* font-family: 'Inter'; */
     /* font-family: 'Urbanist', sans-serif; */
     font-weight: 400;
-    color: #f1f1f7;
+    color: #595971;
     /* font-size: 30px; */
 
     margin: 0 auto;

@@ -23,8 +23,9 @@ export default function Footer() {
 		<div className={styles.footerBackground}>
 			<div className={styles.footer} >
 				<div className={styles.leftSide}>
-					<div> 2023 © {data.site.siteMetadata.title} </div>
-					{/* <div className={styles.comment}> Inspired by <a href="https://hohyeonmoon.com" target="_blank">Hohyeon</a></div> */}
+					<div> 2024 © celine.moon </div> 
+					{/* {data.site.siteMetadata.title} */}
+				
 				</div>
 
 				{/* <div className={styles.rightSide}>

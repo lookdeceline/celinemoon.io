@@ -1,7 +1,9 @@
 .tag {
     /* font-family: 'Urbanist', sans-serif; */
-    font-size: 15px;
+    font-size: 14.5px;
     font-weight: 500;
-    /* color: #0061f2; */
-    /* background-color: white; */
+    color: #6C6C70;
+    /* background-color: #E5E5EA; */
+    border-radius: 8px;
+    padding: 2px 7px;
 }

@@ -200,7 +200,7 @@
 } */
 
 .cardItem:hover .cardContentTitle {
-    color: #0061f2;
+    color: #2C82D2;
 }
 
 /* .cardItem:hover .cardContentIntro {
@@ -388,10 +388,13 @@
 }
 
 .pillboxContainer {
+    max-width: 740px;
+    margin: auto;
+    
     /* max-width: 740px; */
     /* border-bottom: solid 2px #1D1D1F;  */
     /* margin: 60px auto 30px auto; */
-    padding: 40px 0;
+    margin: 80px 0 60px 0;
     /* margin: auto; */
 
     /* display: flex;
@@ -401,14 +404,21 @@
     column-gap: 20px; */
 
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    justify-content: flex-start;
+
+    /* background-color: #F2F2F7; */ /* #e9e0ff; */
+    padding: 0 0 20px 0;
+    /* border-radius: 10px; */
+    /* border: 2px solid #E5E5EA; */
+    border-bottom: 2px solid #E5E5EA;
+    
 }
 
 .bottomBorder {
-  height: 2px; /* this is your border */
+  /* height: 2px; */
   /* background-color: #9a9aab; */
-  background-color: #2A323C;
+  /* background-color: #2A323C; */
 }
 
 /* .postsSectionBackground {
@@ -432,8 +442,12 @@
 
     .pillboxContainer {
         padding: 20px 0;
+        margin: 40px 0;
         /* margin: 40px auto 10px auto; */
-        column-gap: 10px;
+        /* column-gap: 10px; */
+        /* display: flex; */
+        
+        /* justify-content: flex-start; */
     }
 
     

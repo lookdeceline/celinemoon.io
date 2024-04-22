@@ -11,7 +11,7 @@
 .tile:hover {
     text-decoration: underline;
     text-underline-offset: 3px;
-    color: #0061f2;
+    color: #2C82D2;
     /* background-color: #F0F5F9; */
 }
 
@@ -21,15 +21,22 @@
     font-weight: 500;
     /* color: #414A56; */
 
-    flex-basis: calc(20% - 10px); /* 33.33% for 3 columns layout, 10px for spacing */
-    margin: 5px 0;
+    /*flex-basis: calc(20% - 10px);*/  /* 33.33% for 3 columns layout, 10px for spacing */
+    margin: 0 12px 0 0;
 
     /* padding: 10px 30px; */
     /* border:  1.5px solid #414A56;  */
     /* border-radius: 30px; */
-    /* background-color: #f3f6f9; */
+    background-color: #F2F2F7;
+    color: #4d4d63;
+    padding: 4px;
+    border-radius: 12px;
 }
 
+.tag {
+    padding: 4px 10px;
+    border-radius: 10px;
+}
 .circle {
     content: "";
     height: 10px;
@@ -45,7 +52,7 @@
     /* text-decoration: underline;
     text-decoration-thickness: 2.5px;
     text-underline-offset: 3px; */
-    color: #0061f2;
+    color: #2C82D2;
     /* background-color: #F0F5F9; */
 }
 
@@ -53,6 +60,6 @@
 /* blog small screen */
 @media (max-width: 800px) {
     .pillbox {
-        flex-basis: calc(50% - 10px); /* 33.33% for 3 columns layout, 10px for spacing */
+        /* flex-basis: calc(50% - 10px); */ /* 33.33% for 3 columns layout, 10px for spacing */
     }
 }

@@ -67,14 +67,14 @@
 }
 
 .youtubeLink {
-    color: #0061f2;
+    color: #2C82D2;
 }
 
 .youtubeLink:hover {
     text-decoration: underline;
     text-decoration-thickness: 2px;
     text-underline-offset: 2px;
-    color: #0061f2;
+    color: #2C82D2;
 }
 
 .pageLink {

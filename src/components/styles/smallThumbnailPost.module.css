@@ -21,7 +21,7 @@
     
     /* border: 1.5px solid #848488;
     border-radius: 15px; */
-    border-radius: 5px 5px 5px 5px;
+    border-radius: 5px;
     /* background-color: #fffef9; */
     /* border: 1.5px solid #000; */
     /* background-color: white; */
@@ -42,22 +42,22 @@
 }
 
 .cardItem:hover {
-    /* border-color: #0061f2; */
+    /* border-color: #2C82D2; */
     transform: scale(1.01);
     /* background-color: #F5F8FA; */
 }
 
 .cardItem:hover .cardContentTitle {
-    color: #0061f2; 
+    color: #2C82D2; /*#ff6f8c; */ /* #2C82D2; */
     /* color: #f590c7; */  /* try this the next time */
 }
 
 .cardItem:hover .cardContentIntro {
-    color: #45454b;
+    color: #2C2C2E;
 }
 
 .cardItem:hover .chevron {
-    stroke: #0061f2 !important;
+    stroke: #2C82D2 !important;
     stroke-width: 3;
 }
 /*
@@ -105,9 +105,24 @@
     padding: 0;
     /* color: black; */
     display: flex;
+    /* align-items: flex-start; */
     flex-direction: column;
     /* row-gap: 20px; */
 }
+
+.item1 {
+    min-width: 22px;
+    width: 22px;
+    height: auto;
+    fill: #4154FF;
+    /* stroke: #5161F0; */
+    stroke-width: 2;
+    margin: 16px 0 0 0;
+}
+.item2 {
+    padding: 0 30px;
+}
+
 
 .cardHeader {
     display: flex;
@@ -133,7 +148,7 @@
 
 .cardContentIntro {
     font-size: 17px;
-    color: #6e6e73;
+    color: #48484A;
     /* color: #515154; */
     /* letter-spacing: -0.04em; */
     line-height: 150%;
@@ -148,6 +163,7 @@
     flex-direction: row;
     justify-content: space-between;
 }
+
 
 .chevronDiv {
     align-self: center;
@@ -172,7 +188,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 12px;
 }
 
 /* mobile screens */ 

@@ -7,7 +7,7 @@ import * as styles from "./styles/tagTile.module.css"
 const TagTile = ({ tag, isSelected}) => {
     // console.log("^^ tagTile: ", tag, "isSelected: ", isSelected)
     // const backgroundColor = isSelected ? "#F0F5F9" : null
-    const textColor = isSelected ? "#0061f2" : null 
+    const textColor = isSelected ? "#2C82D2" : null 
     const fontWeight = isSelected ? "600" : null
 
     return (
@@ -15,8 +15,9 @@ const TagTile = ({ tag, isSelected}) => {
         className={styles.pillbox}
         // style={{backgroundColor: getColor(tag.fieldValue)}} 
         >
-            <span className={styles.circle} style={{backgroundColor: getColor(tag.fieldValue)}}></span>
-            <span style={{color: textColor, fontWeight: fontWeight}}>{tag.fieldValue}</span>
+            {/* <span className={styles.circle} style={{backgroundColor: getColor(tag.fieldValue)}}></span> */}
+            {/* <span className={styles.tag} style={{color: textColor, fontWeight: fontWeight, backgroundColor: getColor(tag.fieldValue)}}>{tag.fieldValue}</span> */}
+            <span className={styles.tag} style={{color: textColor, fontWeight: fontWeight}}>{tag.fieldValue}</span>
         </Link>
     )
 }

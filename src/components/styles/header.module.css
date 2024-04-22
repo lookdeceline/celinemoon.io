@@ -4,17 +4,17 @@
 
 .headerBackground {
     width: 100%;
-    /* background-color: #F2F5F7; */
-    background-color: #191a1b;
+    background-color: #ebebf3;  /* #F2F2F7 */
     /* padding: 4px 0 30px 0; */
     padding: 40px 0;
     margin: auto;
-    /* border-bottom: 1.5px solid black; */
+    /* border-bottom: 1.5px solid #2C82D2; */
+    /* box-shadow: 0 4px 6px #4154FF; */
 }
 
 .header {
     font-family: ui-display, SF Pro Display, system-ui, sans-serif;
-    color: #fff;
+    color: #000;
     /* background-color: #000000; */
     /* font-family: 'Inter'; */
 
@@ -32,12 +32,14 @@
 }
 
 .h3 {
-    font-family: ui-display, SF Pro Display, system-ui, sans-serif;
-    color: #f1f1f7;
+    font-family: SF Pro Display, ui-display, system-ui, sans-serif;
+    /* color: #7D5FD0;  */
+    /*  #595971;*/
+    color: #2d42fe;
     display: inline;
     margin-right: 54px;
-    font-size: 22px;
-    font-weight: 400;
+    font-size: 24px;
+    font-weight: 500;
     line-height: 100%;
     /* letter-spacing: -0.06em; */
     
@@ -50,8 +52,9 @@
 
 .h3:hover {
     /* text-decoration: underline; */
-    text-decoration-color: #0061f2;
-    color: #0061f2;
+    text-decoration-color: #2C82D2;
+    color: #8793ff;
+     /* #2C6ED2; */
     
     /* text-decoration-skip-ink: none; */
     /* text-underline-offset: 3px;
@@ -91,9 +94,9 @@
 
 .pageLink:hover {
     /* text-decoration: underline; */
-    /* text-decoration-color: #0061f2; */
+    /* text-decoration-color: #2C82D2; */
     /* text-decoration-thickness: 3px; */
-    color: #0061f2;
+    color: #2C82D2;
     
     text-decoration-skip-ink: none;
     text-underline-offset: 3px;
@@ -119,14 +122,14 @@
 .socialIcon {
     width: auto;
     height: 20px;
-    fill: #9a9aab;
+    fill: #666681;
     /* padding-left: 8px;
     padding-right: 8px; */
 }
 
 .socialIcon:hover {
     /* fill: #FB2B43; */
-    fill: #0061f2;
+    fill: #2C82D2;
     
 }
 
@@ -182,7 +185,7 @@
 .burger div {
     width: 25px;
     height: 3px;
-    background-color: #f1f1f7;
+    background-color: #666681;
     margin: 4px 0 0 0;
     border-radius: 6px;
 }

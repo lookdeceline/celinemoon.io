@@ -56,7 +56,7 @@ export default function Header() {
 				<div className={styles.listLink}> 
 					<Link to="/" className={styles.h3}>
 						<div>
-							{"celine moon"}
+							{"celine.moon"}
 							{/* {data.site.siteMetadata.title} */}
 						</div>
 					</Link>

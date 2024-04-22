@@ -16,7 +16,7 @@
 
 .tags {
     display: flex;
-    flex-direction: row;
+    flex-direction: row;  
     flex-wrap: wrap;
     gap: 8px;
 
@@ -26,14 +26,14 @@
 
     /* font-family: 'Urbanist', sans-serif; */
     
-    color: #414A56;
+    color: #576374;
 }
 
 .tag {
-    /* padding: 3px 16px;
-    border: 1px solid #414A56;
-    border-radius: 20px;
-    background-color: #f5f8fa; */
+    padding: 6px 16px;
+    /* border: 1px solid #414A56; */
+    border-radius: 14px;
+    /* background-color: #f5f8fa; */
 }
 
 .h1{
