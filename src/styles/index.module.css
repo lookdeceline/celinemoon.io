@@ -200,7 +200,7 @@
 } */
 
 .cardItem:hover .cardContentTitle {
-    color: #2C82D2;
+    color: #4f60f6;
 }
 
 /* .cardItem:hover .cardContentIntro {
@@ -408,10 +408,10 @@
     justify-content: flex-start;
 
     /* background-color: #F2F2F7; */ /* #e9e0ff; */
-    padding: 0 0 20px 0;
+    padding: 0 0 18px 0;
     /* border-radius: 10px; */
     /* border: 2px solid #E5E5EA; */
-    border-bottom: 2px solid #E5E5EA;
+    border-bottom: 2.5px solid #E5E5EA;
     
 }
 
@@ -441,8 +441,8 @@
     }
 
     .pillboxContainer {
-        padding: 20px 0;
-        margin: 40px 0;
+        padding: 16px 0;
+        margin: 0 0 40px 0;
         /* margin: 40px auto 10px auto; */
         /* column-gap: 10px; */
         /* display: flex; */

@@ -18,7 +18,7 @@ function SEO({ description, lang, meta, title, featuredImage}) {
             defaultSiteImage
           }
         }
-        defaultImage: file(relativePath: { eq: "images/previewImage3.png" }) {
+        defaultImage: file(relativePath: { eq: "images/previewImage4.png" }) {
           childImageSharp {
             fluid(maxWidth: 800, quality: 100) {
               ...GatsbyImageSharpFluid

@@ -47,8 +47,18 @@
     /* background-color: #F5F8FA; */
 }
 
+.cardContentTitle {
+    font-family: ui-display, SF Pro Display, system-ui, sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 29px;;
+    margin: 16px 0 8px 0;
+}
+
 .cardItem:hover .cardContentTitle {
-    color: #2C82D2; /*#ff6f8c; */ /* #2C82D2; */
+    color: #4f60f6
+    /* #2C82D2;  */
+    /*#ff6f8c; */ /* #2C82D2; */
     /* color: #f590c7; */  /* try this the next time */
 }
 
@@ -138,14 +148,6 @@
     font-weight: 300;
 }
 
-.cardContentTitle {
-    /* font-family: 'Urbanist', sans-serif; */
-    font-size: 28px;
-    font-weight: 500;
-    line-height: 29px;;
-    margin: 16px 0 8px 0;
-}
-
 .cardContentIntro {
     font-size: 17px;
     color: #48484A;
@@ -193,8 +195,9 @@
 
 /* mobile screens */ 
 @media (max-width: 800px) {
+
     .cardItem {
-        padding: 16px 0 0 0;
+        padding: 24px 0 0 0;
         margin: 16px 0; 
 
         /* display: flex;

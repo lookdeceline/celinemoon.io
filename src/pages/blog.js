@@ -34,7 +34,7 @@ export default function Blog({ data }) {
       // <Layout>
       <div>
         <Header/>
-        <SEO title = "All posts"/>
+        <SEO title = "Blog"/>
         {/* <div className={styles.pageContainer}> */}
 
           {/* <PagesTitle 

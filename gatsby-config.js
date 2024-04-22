@@ -10,7 +10,7 @@ module.exports = {
     description: "celine's iOS blog",
     siteUrl: "https://celinemoon.com",
     author: "Celine Moon",
-    defaultSiteImage: `src/images/moonStars.png`,
+    defaultSiteImage: `src/images/moonIcon.png`,
     // defaultSiteImage: `src/images/pottedPlant.png`,
     // defaultSocialCardImage: `src/images/previewImage2.png`,
   },
@@ -89,10 +89,10 @@ module.exports = {
         name: `gatsby-starter-default`,
         short_name: `starter`,
         start_url: `/`,
-        background_color: `#F2F2F7`,
-        theme_color: `#F2F2F7`,
+        background_color: `#E6E6F8`,
+        theme_color: `#E6E6F8`,
         display: `minimal-ui`,
-        icon: `src/images/moonStars.png`, // This path is relative to the root of the site.
+        icon: `src/images/moonIcon.png`, // This path is relative to the root of the site.
       },
     },
 

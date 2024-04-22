@@ -4,9 +4,9 @@
 
 .headerBackground {
     width: 100%;
-    background-color: #ebebf3;  /* #F2F2F7 */
+    background-color: #E6E6F8;  /* #F2F2F7 */
     /* padding: 4px 0 30px 0; */
-    padding: 40px 0;
+    padding: 44px 0;
     margin: auto;
     /* border-bottom: 1.5px solid #2C82D2; */
     /* box-shadow: 0 4px 6px #4154FF; */
@@ -35,10 +35,11 @@
     font-family: SF Pro Display, ui-display, system-ui, sans-serif;
     /* color: #7D5FD0;  */
     /*  #595971;*/
-    color: #2d42fe;
+    /* #5767FF; */
+    color: #5364fe;;
     display: inline;
     margin-right: 54px;
-    font-size: 24px;
+    font-size: 24.6px;
     font-weight: 500;
     line-height: 100%;
     /* letter-spacing: -0.06em; */
@@ -53,7 +54,8 @@
 .h3:hover {
     /* text-decoration: underline; */
     text-decoration-color: #2C82D2;
-    color: #8793ff;
+    color: #3c4cd6;
+    /* #8793ff; */
      /* #2C6ED2; */
     
     /* text-decoration-skip-ink: none; */
@@ -96,7 +98,7 @@
     /* text-decoration: underline; */
     /* text-decoration-color: #2C82D2; */
     /* text-decoration-thickness: 3px; */
-    color: #2C82D2;
+    color: #4f60f6;
     
     text-decoration-skip-ink: none;
     text-underline-offset: 3px;
@@ -129,7 +131,7 @@
 
 .socialIcon:hover {
     /* fill: #FB2B43; */
-    fill: #2C82D2;
+    fill: #4f60f6;
     
 }
 
@@ -232,6 +234,6 @@
 }
 
 .headerBackground {
-    padding: 20px 0;
+    padding: 30px 0;
 }
 }

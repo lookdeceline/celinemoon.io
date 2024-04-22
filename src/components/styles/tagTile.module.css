@@ -11,7 +11,7 @@
 .tile:hover {
     text-decoration: underline;
     text-underline-offset: 3px;
-    color: #2C82D2;
+    color: #4f60f6;
     /* background-color: #F0F5F9; */
 }
 
@@ -28,8 +28,8 @@
     /* border:  1.5px solid #414A56;  */
     /* border-radius: 30px; */
     background-color: #F2F2F7;
-    color: #4d4d63;
-    padding: 4px;
+    color: #65657b;
+    padding: 5px 4px;
     border-radius: 12px;
 }
 
@@ -52,7 +52,7 @@
     /* text-decoration: underline;
     text-decoration-thickness: 2.5px;
     text-underline-offset: 3px; */
-    color: #2C82D2;
+    color: #4f60f6;
     /* background-color: #F0F5F9; */
 }
 

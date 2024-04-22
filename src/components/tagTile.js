@@ -7,7 +7,7 @@ import * as styles from "./styles/tagTile.module.css"
 const TagTile = ({ tag, isSelected}) => {
     // console.log("^^ tagTile: ", tag, "isSelected: ", isSelected)
     // const backgroundColor = isSelected ? "#F0F5F9" : null
-    const textColor = isSelected ? "#2C82D2" : null 
+    const textColor = isSelected ? "#4f60f6" : null 
     const fontWeight = isSelected ? "600" : null
 
     return (
