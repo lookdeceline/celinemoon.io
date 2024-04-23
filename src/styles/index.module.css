@@ -443,12 +443,5 @@
     .pillboxContainer {
         padding: 16px 0;
         margin: 0 0 40px 0;
-        /* margin: 40px auto 10px auto; */
-        /* column-gap: 10px; */
-        /* display: flex; */
-        
-        /* justify-content: flex-start; */
     }
-
-    
 }
