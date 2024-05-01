@@ -22,7 +22,7 @@
      word-break: normal;
      word-wrap: normal;
      font-size: 87%;
-     line-height: 1.5;
+     line-height: 1.4;
  
      -moz-tab-size: 4;
      -o-tab-size: 4;
@@ -33,6 +33,37 @@
      -ms-hyphens: none;
      hyphens: none;
  }
+
+ /* highlight in a code block */
+ .gatsby-highlight-code-line {
+    /* background-color: #39393d; */
+    background-color: #e2effe18;
+    /* display: block; */
+    margin-right: -2.3em;
+    margin-left: -2.3em;
+    /* padding-right: 1em; */
+    padding-left: 1.9em;
+    display: block;
+    /* width: 100%; */
+    border-left: 0.35em solid #a8d2ff;
+    /* border-left: 0.35em solid #5090ff; */
+    /* line-height: 1.6; */
+    padding-top: 0.15em;
+    padding-bottom: 0.15em;
+    /* border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px; */
+}
+
+/* .gatsby-highlight {
+    overflow: auto;
+}
+
+.gatsby-highlight pre[class*="language-"] {
+    overflow: auto;
+    float: left;
+    min-width: 100%;
+} */
+  
  
  pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
  code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
@@ -56,14 +87,14 @@
  /* Code blocks */
  pre[class*="language-"] {
      padding: 2em;
-     margin: 2em 0;
+     margin: 1.4em 0;
      overflow: auto;
      font-size: 15.5px;
  }
  
  :not(pre) > code[class*="language-"],
  pre[class*="language-"] {
-     background: #212228;
+     background: #292A2F;
      border-radius: 19px;
  }
  
@@ -76,7 +107,7 @@
      background: #EBEBF0; /*transparent;*/
      color: #111;
      font-weight: 400;
-     font-size: 85%;
+     font-size: 86%;
      line-height: 1.8;
  }
  

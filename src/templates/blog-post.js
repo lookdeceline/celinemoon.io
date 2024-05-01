@@ -36,7 +36,7 @@ export function getColor(tag) {
 export default function BlogPost({ data }) {
     // console.log('data: ', data)
     const post = data.markdownRemark
-    console.log(post)
+    // console.log(post)
     return(
       <div>
         <Header/>
@@ -56,6 +56,7 @@ export default function BlogPost({ data }) {
             <h1 className={styles.h1}>{post.frontmatter.title}</h1>
             {/* <h5 className={styles.h5}>{post.frontmatter.date}</h5> */}
             <h2 className={styles.h2}>{post.frontmatter.intro}</h2>
+            <h5 className={styles.h5}>{post.frontmatter.date}</h5>
           </div>
         </div>
         {/* <Layout> */}
@@ -73,7 +74,7 @@ export const query = graphql`
       html
       frontmatter {
         title
-        date(formatString: "DD MMMM, YYYY")
+        date(formatString: "MMM DD, YYYY")
         intro
         tags
         featuredImage {

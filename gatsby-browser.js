@@ -7,3 +7,6 @@ import "./src/styles/global.css"
 // require("prismjs/plugins/line-numbers/prism-line-numbers.css")
 
 require("./src/styles/codeBlock.css")
+
+// prismJS line number css 
+// require("prismjs/plugins/line-numbers/prism-line-numbers.css")
