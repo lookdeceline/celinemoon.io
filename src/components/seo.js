@@ -25,6 +25,13 @@ function SEO({ description, lang, meta, title, featuredImage}) {
             }
           }
         }
+        twitterLargeImage: file(relativePath: { eq: "images/twitter-large-card.png"}) {
+          childImageSharp {
+            fluid(maxWidth: 1260, quality: 100) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
     `
   )
@@ -43,11 +50,13 @@ function SEO({ description, lang, meta, title, featuredImage}) {
 
   const metaDescription = description || data.site.siteMetadata.description
   const pagePreviewImage = data.site.siteMetadata.siteUrl + (featuredImage || data.defaultImage.childImageSharp.fluid.src)
+  const twitterLargeImage = data.site.siteMetadata.siteUrl + (data.twitterLargeImage.childImageSharp.fluid.src)
   // + (featuredImage || 'src/images/previewImage2.png')
   // console.log("siteURL: ", data.site.siteMetadata.siteUrl)
   // console.log("featuredImage: ", featuredImage)
   // console.log("++ defaultImage: ", data.defaultImage.childImageSharp.fluid.src)
-  // console.log("seo: ", pagePreviewImage)
+  // console.log("++ pagePreviewImage: ", pagePreviewImage)
+  // console.log("++ twitterLargeImage: ", twitterLargeImage)
 
   return (
     <Helmet
@@ -79,27 +88,23 @@ function SEO({ description, lang, meta, title, featuredImage}) {
         },
         {
           name: `twitter:card`,
-          content: `summary`,
+          content: `summary_large_image`,  // `summary`
         },
-        {
-          name: `twitter:creator`,
-          content: data.site.siteMetadata.author,
-        },
+        // {
+        //   name: `twitter:creator`,
+        //   content: data.site.siteMetadata.author,
+        // },
         {
           name: `twitter:title`,
           content: title,
         },
         {
           name: `twitter:description`,
-          content: metaDescription,
+          content: description,  // metaDescription,
         },
         {
-          property: `twitter:image`,
-          content: pagePreviewImage,
-        },
-        {
-          name: "twitter:card",
-          content: pagePreviewImage,
+          name: `twitter:image`,
+          content: twitterLargeImage, // pagePreviewImage,
         }
       ].concat(meta)}
     />

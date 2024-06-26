@@ -40,7 +40,7 @@ export default function BlogPost({ data }) {
     return(
       <div>
         <Header/>
-        <SEO title={post.frontmatter.title}/>
+        <SEO description={post.frontmatter.intro} title={post.frontmatter.title}/>
         <div className={styles.titleBackground}>
           <div className={styles.titleContent}>
             <div className={styles.tags}>

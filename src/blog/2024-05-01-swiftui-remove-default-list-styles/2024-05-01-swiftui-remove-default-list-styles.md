@@ -1,7 +1,7 @@
 ---
 title: "SwiftUI List의 디폴트 스타일 제거하기"
 date: "2024-05-01"
-intro: "디폴트 스타일이 적용된 List에서 디폴트 스타일을 제거해본다."
+intro: "커스텀 List 구현을 위한 준비 작업"
 # featuredImage: ./swift-square-orange.png
 tags: ["SwiftUI"]
 path: "remove-swiftui-list-default-styles"
