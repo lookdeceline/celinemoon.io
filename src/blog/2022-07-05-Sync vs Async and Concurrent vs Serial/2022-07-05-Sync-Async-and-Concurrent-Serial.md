@@ -5,7 +5,7 @@ intro: "This post defines `Asnychronous vs Synchronous` and `Concurrent vs Seria
 featuredImage: ./swift-square-orange.png
 tags: ["Programming", "Swift"]
 path: "sync-async-serial-concurrent"
-publish: true
+publish: false
 ---
 
 Asnychronous vs Synchronous and Concurrent vs Serial are two separate concepts.

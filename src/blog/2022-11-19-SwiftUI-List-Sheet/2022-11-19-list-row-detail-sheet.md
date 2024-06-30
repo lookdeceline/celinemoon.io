@@ -5,7 +5,7 @@ intro: "Create a list that shows a detail sheet view when a button of each row i
 featuredImage: ./swift-square-orange.png
 tags: ["SwiftUI"]
 path: "list-row-detail-sheet"
-publish: true
+publish: false
 ---
 
 ## Goal of this post

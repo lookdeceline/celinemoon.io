@@ -5,7 +5,7 @@ intro: "This post explains how to programmatically scroll SwiftUI's List to a ce
 featuredImage: ./swift-square-orange.png
 tags: ["SwiftUI",]
 path: "list-scrollTo"
-publish: true
+publish: false
 ---
 Sometimes, we want our `List` to scroll to a certain row upon a button tap, or on View's `onAppear`.
 This post explains how to scroll SwiftUI's `List` to a certain row programmatically.
