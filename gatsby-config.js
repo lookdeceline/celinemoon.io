@@ -101,7 +101,42 @@ module.exports = {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
-          // must define this first.
+          {
+            resolve: `gatsby-remark-copy-linked-files`,
+            options: {},
+          },
+          {
+            resolve: `gatsby-remark-videos`,
+            options: {
+              pipelines: [
+                {
+                  name: 'vp9',
+                  transcode: chain =>
+                    chain
+                      .videoCodec('libvpx-vp9')
+                      .noAudio()
+                      .outputOptions(['-crf 20', '-b:v 0']),
+                  maxHeight: 480,
+                  maxWidth: 900,
+                  fileExtension: 'webm',
+                },
+                {
+                  name: 'h264',
+                  transcode: chain =>
+                    chain
+                      .videoCodec('libx264')
+                      .noAudio()
+                      .addOption('-profile:v', 'main')
+                      .addOption('-pix_fmt', 'yuv420p')
+                      .outputOptions(['-movflags faststart'])
+                      .videoBitrate('1000k'),
+                  maxHeight: 480,
+                  maxWidth: 900,
+                  fileExtension: 'mp4',
+                },
+              ],
+            }
+          },
           {
             resolve: "gatsby-remark-embed-video",
             options: {
@@ -122,7 +157,6 @@ module.exports = {
               iframeId: false, //Optional: if true, iframe's id will be set to what is provided after 'video:' (YouTube IFrame player API requires iframe id)
             },
           },
-          // `@bonobolabs/gatsby-remark-images-custom-widths`, 
           {
             resolve: `gatsby-remark-images`,
             options: {
