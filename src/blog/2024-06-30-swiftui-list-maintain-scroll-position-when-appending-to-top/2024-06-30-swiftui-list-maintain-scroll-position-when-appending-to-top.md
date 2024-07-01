@@ -8,6 +8,7 @@ path: "swiftui-list-maintain-scroll-position-when-appending-to-top"
 publish: true
 ---
 
+- pagination에는 두 가지가 있다. 이미 로딩된 데이터보다 이후의 데이터를 불러오는 
 - SwiftUI List의 아래 방향으로 `loadNext()` 등을 호출해서 pagination 추가는 쉽게 구현된다.
 - 그런데 List의 윗 방향으로 `loadPrevious()` 등을 호출해서 이전 데이터 페이징을 실행하면 List가 위쪽으로 자동 스크롤 되는 문제가 발생한다. 
 
